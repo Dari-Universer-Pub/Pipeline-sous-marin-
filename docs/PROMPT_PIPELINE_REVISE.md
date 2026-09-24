@@ -1068,6 +1068,13 @@ ORDRE DE TRAVAIL OBLIGATOIRE
 Ne génère pas le jeu final au début.
 Suis précisément cet ordre :
 
+0. Produire l’AUDIT DE COUVERTURE — PASSE 1 (plan). Avant d’écrire la moindre
+   ligne de code, recense chaque item exigé par ce prompt et déclare, pour
+   chacun, comment tu comptes l’implémenter et comment tu le prouveras. Les
+   manques doivent apparaître comme des cases vides dans un PLAN, pas comme
+   des défauts découverts dans un livrable. Soumets ce tableau avant de
+   construire. Toute case sans implémentation prévue est une question à me
+   poser, pas une chose à laisser de côté.
 1. Vérifier la présence des fichiers du bootstrapper.
 2. Lire intégralement INPUT/game_brief.md.
 3. Lire intégralement INPUT/canon_initial.md.
@@ -1142,8 +1149,19 @@ Suis précisément cet ordre :
 72. Vérifier qu’ASSETS_BIN ne contient aucune fixture de test.
 73. Relire ce prompt en entier et corriger tout item omis, ou le déclarer.
 
-AUDIT DE COUVERTURE (OBLIGATOIRE, DERNIÈRE ÉTAPE)
+AUDIT DE COUVERTURE (OBLIGATOIRE, EN DEUX PASSES)
 Ce prompt contient de longues listes. Une omission y est facile et invisible.
+
+PASSE 1 — LE PLAN, AVANT DE CONSTRUIRE (étape 0)
+Recense chaque item exigé et produis un tableau à trois colonnes :
+
+  item exigé | comment je vais l'implémenter | comment je le prouverai
+
+Une case vide en colonne 2 est un manque VISIBLE avant qu'il ne devienne un
+défaut. Ne la comble pas en inventant : pose-moi la question. Cette passe
+coûte quelques minutes et évite de colmater après coup.
+
+PASSE 2 — LA VÉRIFICATION, APRÈS AVOIR CONSTRUIT (étape 70)
 Avant de déclarer quoi que ce soit terminé, reprends CHAQUE item de CHAQUE
 liste de ce prompt — capacités obligatoires, livrables numérotés, familles de
 validation, tests exigés, règles des objets / maps / assets / animations / PNJ
@@ -1161,7 +1179,9 @@ Règles de cet audit :
 * NON APPLICABLE exige une citation du canon qui le justifie ;
 * ne vérifie pas la présence d'une chaîne de caractères dans le code :
   vérifie le COMPORTEMENT, en l'exécutant sur un cas qui doit échouer ;
-* compte les items et donne le total : exigés, implémentés, partiels, omis.
+* compte les items et donne le total : exigés, implémentés, partiels, omis ;
+* compare la PASSE 2 à la PASSE 1 : tout écart entre ce que tu avais prévu
+  et ce que tu as réellement livré doit être expliqué, ligne par ligne.
 
 Cet audit est un livrable. Une pipeline sans son audit de couverture est
 incomplète, même si tout le reste fonctionne.
@@ -1244,8 +1264,10 @@ La pipeline ne peut être déclarée terminée que si :
 * la reproductibilité est vérifiée ;
 * le jeu final n’a pas besoin d’un LLM pendant son exécution ;
 * le jeu final n’a pas besoin de Blender pendant son exécution ;
-* l’audit de couverture est produit, chiffré, et chaque item PARTIEL ou NON
-  IMPLÉMENTÉ y porte sa raison ;
+* l’audit de couverture est produit dans ses DEUX passes (plan puis
+  vérification), chiffré, et chaque item PARTIEL ou NON IMPLÉMENTÉ y porte sa
+  raison ;
+* tout écart entre le plan annoncé en passe 1 et le livrable réel est expliqué ;
 * aucun doublon d’empreinte SHA-256 n’existe entre deux asset_id ;
 * ASSETS_BIN ne contient aucune fixture de test.
 
