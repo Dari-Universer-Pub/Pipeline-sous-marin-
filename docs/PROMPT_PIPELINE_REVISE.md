@@ -669,7 +669,15 @@ Chaque PNJ ou agent important doit pouvoir avoir :
 * des horaires ;
 * des souvenirs ;
 * des réactions conditionnelles ;
-* des conséquences.
+* des conséquences ;
+* des assets nécessaires, ou la décision explicite qu'il n'est jamais montré ;
+* des animations nécessaires si le PNJ est visible.
+
+Un PNJ canonique sans aucun asset planifié est une DÉCISION, pas un oubli : soit
+il est visible et ses assets sont planifiés, soit il est délibérément hors champ
+et cela est inscrit comme décision du propriétaire, avec sa justification. Ne
+laisse jamais une entité canonique sans représentation visuelle ET sans décision
+écrite. Cette règle vaut pour toute entité canonique, pas seulement les PNJ.
 
 Les dialogues doivent être générés à partir de :
 
