@@ -1,0 +1,105 @@
+{
+  "adapter_returns": [
+    "produced_files",
+    "output_path",
+    "asset_id",
+    "dimensions",
+    "formats",
+    "sha256",
+    "status",
+    "warnings",
+    "errors",
+    "produced_variants",
+    "produced_directions",
+    "produced_animations"
+  ],
+  "adapter_sends": [
+    "entity_id",
+    "asset_id",
+    "visual_family",
+    "asset_type",
+    "dimensions",
+    "resolution",
+    "style",
+    "palette",
+    "variants",
+    "directions",
+    "expected_animations",
+    "output_rules",
+    "required_validations"
+  ],
+  "contract_split": {
+    "blender_owns": [
+      "production visuelle",
+      "modeles",
+      "materiaux",
+      "rendus",
+      "sprites",
+      "animations produites",
+      "exports demandes"
+    ],
+    "pipeline_owns": [
+      "identite de l'entite",
+      "fonction gameplay",
+      "canon",
+      "relations",
+      "dimensions attendues",
+      "variantes",
+      "directions",
+      "animations attendues",
+      "regles de placement",
+      "validation",
+      "integration runtime"
+    ]
+  },
+  "framework": {
+    "errors": [
+      {
+        "code": "tool.path_missing",
+        "detail": "(aucun chemin declare)"
+      }
+    ],
+    "missing_path": "(aucun chemin declare)",
+    "ok": false,
+    "produced_files": [],
+    "reason": "chemin du framework Blender inexistant",
+    "remediation": {
+      "cause": "Le framework Blender est introuvable. Aucun outil de substitution n'est utilise et aucun asset n'est genere.",
+      "fix_options": [
+        {
+          "command_posix": "export ABYSSAL_BLENDER_FRAMEWORK=\"/chemin/reel/FRAMEWORK_BLENDER\"",
+          "command_windows": "setx ABYSSAL_BLENDER_FRAMEWORK \"D:\\chemin\\reel\\FRAMEWORK_BLENDER\"",
+          "how": "variable d'environnement",
+          "order": 1
+        },
+        {
+          "content": {
+            "blender_framework": {
+              "path": "/chemin/reel/FRAMEWORK_BLENDER"
+            }
+          },
+          "file": "config/external_tools.json",
+          "how": "fichier de configuration",
+          "order": 2
+        },
+        {
+          "file": "INPUT/external_tools.md",
+          "how": "declaration officielle",
+          "note": "Fichier ABSENT du bootstrapper. Gabarit fourni dans docs/external_tools.template.md. C'est la source de verite des outils externes selon la commande.",
+          "order": 3
+        }
+      ],
+      "never": [
+        "inventer un chemin",
+        "generer les assets autrement",
+        "dessiner un placeholder a la place d'un binaire attendu"
+      ]
+    },
+    "resolution_source": null,
+    "status": "BLOCKED"
+  },
+  "report_version": "1.0.0",
+  "runtime_dependency": false,
+  "runtime_note": "Blender est un outil HORS LIGNE. Le jeu final n'en depend pas.",
+  "verdict": "BLOCKED"
+}

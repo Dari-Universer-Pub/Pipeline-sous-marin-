@@ -1,0 +1,20 @@
+{
+  "_comment": "EXEMPLE DE SORTIE INVALIDE. Chaque défaut ci-dessous est rejeté avec un code d'erreur explicite par pipeline/importers.py.",
+  "_defauts_attendus": {
+    "asset.file_dimensions": "width/height déclarés 64x64 alors que le manifest impose 32x32",
+    "import.unknown_variant": "variante 'doree' absente du manifest",
+    "asset.file_hash": "file_sha256 ne correspond pas au binaire réel",
+    "asset.file_palette": "binaire hors de la palette imposée",
+    "asset.file_format": "binaire réellement PNG malgré une extension .jpg"
+  },
+  "asset_id": "asset_systeme_oxygene_cadran",
+  "entity_id": "systeme_oxygene",
+  "status": "GENERATED",
+  "width": 64,
+  "height": 64,
+  "format": "png",
+  "variants": ["doree"],
+  "directions": ["none"],
+  "file": "ASSETS_IN/famille_cockpit/asset_systeme_oxygene_cadran.jpg",
+  "file_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+}

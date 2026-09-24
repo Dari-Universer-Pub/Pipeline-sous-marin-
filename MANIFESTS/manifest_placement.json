@@ -1,0 +1,60 @@
+{
+  "count": 2,
+  "entries": [
+    {
+      "accessibility": "non_bloquant_pour_le_retour",
+      "allowed_terrain": [
+        "terrain_roche"
+      ],
+      "applies_to": "terrain_roche",
+      "clustering": {
+        "mode": "disperse"
+      },
+      "density": {
+        "per_window": [
+          2,
+          5
+        ]
+      },
+      "discovery_conditions": [],
+      "forbidden_terrain": [
+        "terrain_vase"
+      ],
+      "id": "placement_relief_proche",
+      "min_distance": 32,
+      "poi_relations": [],
+      "season": "none",
+      "weather": "none"
+    },
+    {
+      "accessibility": "atteignable_avec_propulsion_nominale",
+      "allowed_terrain": [
+        "terrain_vase",
+        "terrain_roche"
+      ],
+      "applies_to": "artefact_*",
+      "clustering": {
+        "mode": "isole"
+      },
+      "density": {
+        "per_window": [
+          0,
+          1
+        ]
+      },
+      "discovery_conditions": [
+        {
+          "op": "eq",
+          "subject": "systeme_projecteur.on",
+          "value": true
+        }
+      ],
+      "forbidden_terrain": [],
+      "id": "placement_artefact",
+      "min_distance": 64,
+      "poi_relations": [],
+      "season": "none",
+      "weather": "none"
+    }
+  ]
+}

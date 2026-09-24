@@ -1,0 +1,15 @@
+{
+  "_comment": "EXEMPLE DE SORTIE VALIDE attendue d'une autre IA ou du framework Blender. Les champs 'file' et 'file_sha256' déclenchent la vérification binaire. Sans eux, la réponse reste une spécification valide et l'asset demeure PLANNED.",
+  "asset_id": "asset_systeme_oxygene_cadran",
+  "entity_id": "systeme_oxygene",
+  "status": "GENERATED",
+  "width": 32,
+  "height": 32,
+  "format": "png",
+  "variants": ["nominal"],
+  "directions": ["none"],
+  "animations": [],
+  "warnings": [],
+  "file": "ASSETS_IN/famille_cockpit/asset_systeme_oxygene_cadran.png",
+  "file_sha256": "<empreinte SHA-256 réelle du binaire livré, 64 hex minuscules>"
+}

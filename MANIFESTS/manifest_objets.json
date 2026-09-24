@@ -1,0 +1,120 @@
+{
+  "count": 5,
+  "entries": [
+    {
+      "animations": [],
+      "assets": [
+        "asset_artefact_carte_des_profondeurs_icone"
+      ],
+      "category": "information",
+      "display_name": "Carte des profondeurs",
+      "function": "Situer les zones et leurs liaisons.",
+      "gameplay_verb": "action_interpreter",
+      "id": "artefact_carte_des_profondeurs",
+      "loop_position": "boucle 1",
+      "obtained_by": [
+        "trouve dans les abysses"
+      ],
+      "progression": "boucle 1",
+      "status": "CANONICAL",
+      "tests": [
+        "test_artefact_carte_des_profondeurs_usage_reel"
+      ],
+      "used_by": [
+        "equipage_pilote"
+      ]
+    },
+    {
+      "animations": [],
+      "assets": [
+        "asset_artefact_flasque_d_oxygene_icone"
+      ],
+      "category": "consommable",
+      "display_name": "Flasque d'oxygène",
+      "function": "Prolonger la plongee.",
+      "gameplay_verb": "action_recuperer",
+      "id": "artefact_flasque_d_oxygene",
+      "loop_position": "boucle 3",
+      "obtained_by": [
+        "trouve dans les abysses"
+      ],
+      "progression": "boucle 3",
+      "status": "CANONICAL",
+      "tests": [
+        "test_artefact_flasque_d_oxygene_usage_reel"
+      ],
+      "used_by": [
+        "equipage_pilote"
+      ]
+    },
+    {
+      "animations": [],
+      "assets": [
+        "asset_artefact_fragment_d_archive_abyssale_icone"
+      ],
+      "category": "preuve",
+      "display_name": "Fragment d'archive abyssale",
+      "function": "Porter une trace de l'intelligence ancienne (canon).",
+      "gameplay_verb": "action_interpreter",
+      "id": "artefact_fragment_d_archive_abyssale",
+      "loop_position": "boucle 6",
+      "obtained_by": [
+        "trouve dans les abysses"
+      ],
+      "progression": "boucle 6",
+      "status": "CANONICAL",
+      "tests": [
+        "test_artefact_fragment_d_archive_abyssale_usage_reel"
+      ],
+      "used_by": [
+        "equipage_pilote"
+      ]
+    },
+    {
+      "animations": [],
+      "assets": [
+        "asset_artefact_lampe_de_secours_icone"
+      ],
+      "category": "outil",
+      "display_name": "Lampe de secours",
+      "function": "Eclairer sans consommer la batterie principale.",
+      "gameplay_verb": "action_observer",
+      "id": "artefact_lampe_de_secours",
+      "loop_position": "boucle 2",
+      "obtained_by": [
+        "trouve dans les abysses"
+      ],
+      "progression": "boucle 2",
+      "status": "CANONICAL",
+      "tests": [
+        "test_artefact_lampe_de_secours_usage_reel"
+      ],
+      "used_by": [
+        "equipage_pilote"
+      ]
+    },
+    {
+      "animations": [],
+      "assets": [
+        "asset_artefact_outil_de_reparation_de_coque_icone"
+      ],
+      "category": "outil",
+      "display_name": "Outil de réparation de coque",
+      "function": "Restaurer l'integrite de la coque.",
+      "gameplay_verb": "action_reparer",
+      "id": "artefact_outil_de_reparation_de_coque",
+      "loop_position": "boucle 5",
+      "obtained_by": [
+        "trouve dans les abysses"
+      ],
+      "progression": "boucle 5",
+      "status": "CANONICAL",
+      "tests": [
+        "test_artefact_outil_de_reparation_de_coque_usage_reel"
+      ],
+      "used_by": [
+        "equipage_pilote"
+      ]
+    }
+  ]
+}

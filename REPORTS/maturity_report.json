@@ -1,0 +1,194 @@
+{
+  "complete": 0,
+  "distribution": {
+    "PLANNED": 23
+  },
+  "rows": [
+    {
+      "complete": false,
+      "id": "anim_systeme_batterie_etat_alerte",
+      "kind": "animation",
+      "next_step": "GENERATED",
+      "status": "PLANNED",
+      "stored_binary": false
+    },
+    {
+      "complete": false,
+      "id": "anim_systeme_batterie_etat_critique",
+      "kind": "animation",
+      "next_step": "GENERATED",
+      "status": "PLANNED",
+      "stored_binary": false
+    },
+    {
+      "complete": false,
+      "id": "anim_systeme_coque_etat_alerte",
+      "kind": "animation",
+      "next_step": "GENERATED",
+      "status": "PLANNED",
+      "stored_binary": false
+    },
+    {
+      "complete": false,
+      "id": "anim_systeme_coque_etat_critique",
+      "kind": "animation",
+      "next_step": "GENERATED",
+      "status": "PLANNED",
+      "stored_binary": false
+    },
+    {
+      "complete": false,
+      "id": "anim_systeme_oxygene_etat_alerte",
+      "kind": "animation",
+      "next_step": "GENERATED",
+      "status": "PLANNED",
+      "stored_binary": false
+    },
+    {
+      "complete": false,
+      "id": "anim_systeme_oxygene_etat_critique",
+      "kind": "animation",
+      "next_step": "GENERATED",
+      "status": "PLANNED",
+      "stored_binary": false
+    },
+    {
+      "complete": false,
+      "id": "anim_systeme_projecteur_etat_alerte",
+      "kind": "animation",
+      "next_step": "GENERATED",
+      "status": "PLANNED",
+      "stored_binary": false
+    },
+    {
+      "complete": false,
+      "id": "anim_systeme_projecteur_etat_critique",
+      "kind": "animation",
+      "next_step": "GENERATED",
+      "status": "PLANNED",
+      "stored_binary": false
+    },
+    {
+      "complete": false,
+      "id": "anim_systeme_propulsion_etat_alerte",
+      "kind": "animation",
+      "next_step": "GENERATED",
+      "status": "PLANNED",
+      "stored_binary": false
+    },
+    {
+      "complete": false,
+      "id": "anim_systeme_propulsion_etat_critique",
+      "kind": "animation",
+      "next_step": "GENERATED",
+      "status": "PLANNED",
+      "stored_binary": false
+    },
+    {
+      "complete": false,
+      "id": "asset_artefact_carte_des_profondeurs_icone",
+      "kind": "asset",
+      "next_step": "GENERATED",
+      "status": "PLANNED",
+      "stored_binary": true
+    },
+    {
+      "complete": false,
+      "id": "asset_artefact_flasque_d_oxygene_icone",
+      "kind": "asset",
+      "next_step": "GENERATED",
+      "status": "PLANNED",
+      "stored_binary": false
+    },
+    {
+      "complete": false,
+      "id": "asset_artefact_fragment_d_archive_abyssale_icone",
+      "kind": "asset",
+      "next_step": "GENERATED",
+      "status": "PLANNED",
+      "stored_binary": false
+    },
+    {
+      "complete": false,
+      "id": "asset_artefact_lampe_de_secours_icone",
+      "kind": "asset",
+      "next_step": "GENERATED",
+      "status": "PLANNED",
+      "stored_binary": false
+    },
+    {
+      "complete": false,
+      "id": "asset_artefact_outil_de_reparation_de_coque_icone",
+      "kind": "asset",
+      "next_step": "GENERATED",
+      "status": "PLANNED",
+      "stored_binary": false
+    },
+    {
+      "complete": false,
+      "id": "asset_systeme_batterie_cadran",
+      "kind": "asset",
+      "next_step": "GENERATED",
+      "status": "PLANNED",
+      "stored_binary": true
+    },
+    {
+      "complete": false,
+      "id": "asset_systeme_coque_cadran",
+      "kind": "asset",
+      "next_step": "GENERATED",
+      "status": "PLANNED",
+      "stored_binary": false
+    },
+    {
+      "complete": false,
+      "id": "asset_systeme_oxygene_cadran",
+      "kind": "asset",
+      "next_step": "GENERATED",
+      "status": "PLANNED",
+      "stored_binary": false
+    },
+    {
+      "complete": false,
+      "id": "asset_systeme_projecteur_cadran",
+      "kind": "asset",
+      "next_step": "GENERATED",
+      "status": "PLANNED",
+      "stored_binary": false
+    },
+    {
+      "complete": false,
+      "id": "asset_systeme_propulsion_cadran",
+      "kind": "asset",
+      "next_step": "GENERATED",
+      "status": "PLANNED",
+      "stored_binary": false
+    },
+    {
+      "complete": false,
+      "id": "asset_zone_la_faille_des_echos_fond",
+      "kind": "asset",
+      "next_step": "GENERATED",
+      "status": "PLANNED",
+      "stored_binary": false
+    },
+    {
+      "complete": false,
+      "id": "asset_zone_le_corridor_des_yeux_fond",
+      "kind": "asset",
+      "next_step": "GENERATED",
+      "status": "PLANNED",
+      "stored_binary": false
+    },
+    {
+      "complete": false,
+      "id": "asset_zone_les_ruines_du_son_fond",
+      "kind": "asset",
+      "next_step": "GENERATED",
+      "status": "PLANNED",
+      "stored_binary": false
+    }
+  ],
+  "rule": "Aucun asset n'est termine avant ART_GREEN. Un asset GENERATED mais non importe, valide et teste en contexte est INCOMPLET.",
+  "total": 23
+}

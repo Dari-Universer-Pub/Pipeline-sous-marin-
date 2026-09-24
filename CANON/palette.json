@@ -1,0 +1,108 @@
+{
+  "colors_hex": [
+    "#030508",
+    "#080c12",
+    "#0e161e",
+    "#14222c",
+    "#1c323c",
+    "#26464e",
+    "#345e62",
+    "#487876",
+    "#62948c",
+    "#8cb4ac",
+    "#bad2c8",
+    "#e8eee6",
+    "#561c20",
+    "#8c342c",
+    "#c47e3a",
+    "#3a1842"
+  ],
+  "colors_rgb": [
+    [
+      3,
+      5,
+      8
+    ],
+    [
+      8,
+      12,
+      18
+    ],
+    [
+      14,
+      22,
+      30
+    ],
+    [
+      20,
+      34,
+      44
+    ],
+    [
+      28,
+      50,
+      60
+    ],
+    [
+      38,
+      70,
+      78
+    ],
+    [
+      52,
+      94,
+      98
+    ],
+    [
+      72,
+      120,
+      118
+    ],
+    [
+      98,
+      148,
+      140
+    ],
+    [
+      140,
+      180,
+      172
+    ],
+    [
+      186,
+      210,
+      200
+    ],
+    [
+      232,
+      238,
+      230
+    ],
+    [
+      86,
+      28,
+      32
+    ],
+    [
+      140,
+      52,
+      44
+    ],
+    [
+      196,
+      126,
+      58
+    ],
+    [
+      58,
+      24,
+      66
+    ]
+  ],
+  "decision": "dec_palette",
+  "justification": "Aucune palette n'est specifiee dans les entrees; valeur technique par defaut, modulaire et versionnee.",
+  "palette_id": "palette_abysse_16",
+  "size": 16,
+  "source": "pipeline",
+  "status": "PROPOSED"
+}

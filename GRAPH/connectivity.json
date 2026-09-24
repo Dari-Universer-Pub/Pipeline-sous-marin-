@@ -1,0 +1,328 @@
+{
+  "component_count": 1,
+  "components": [],
+  "connected": true,
+  "metrics": {
+    "action_avancer": {
+      "causal_depth": 2,
+      "degree": 1,
+      "in": 0,
+      "out": 1,
+      "reachable": 3,
+      "systems_touched": [
+        "vessel_system"
+      ]
+    },
+    "action_eteindre_les_lumieres": {
+      "causal_depth": 2,
+      "degree": 1,
+      "in": 0,
+      "out": 1,
+      "reachable": 3,
+      "systems_touched": [
+        "vessel_system"
+      ]
+    },
+    "action_fuir": {
+      "causal_depth": 2,
+      "degree": 1,
+      "in": 0,
+      "out": 1,
+      "reachable": 3,
+      "systems_touched": [
+        "vessel_system"
+      ]
+    },
+    "action_interpreter": {
+      "causal_depth": 0,
+      "degree": 2,
+      "in": 2,
+      "out": 0,
+      "reachable": 1,
+      "systems_touched": [
+        "artifact"
+      ]
+    },
+    "action_observer": {
+      "causal_depth": 0,
+      "degree": 1,
+      "in": 1,
+      "out": 0,
+      "reachable": 1,
+      "systems_touched": [
+        "artifact"
+      ]
+    },
+    "action_reculer": {
+      "causal_depth": 2,
+      "degree": 1,
+      "in": 0,
+      "out": 1,
+      "reachable": 3,
+      "systems_touched": [
+        "vessel_system"
+      ]
+    },
+    "action_recuperer": {
+      "causal_depth": 0,
+      "degree": 1,
+      "in": 1,
+      "out": 0,
+      "reachable": 1,
+      "systems_touched": [
+        "artifact"
+      ]
+    },
+    "action_reparer": {
+      "causal_depth": 1,
+      "degree": 2,
+      "in": 1,
+      "out": 1,
+      "reachable": 2,
+      "systems_touched": [
+        "artifact",
+        "vessel_system"
+      ]
+    },
+    "artefact_carte_des_profondeurs": {
+      "causal_depth": 3,
+      "degree": 2,
+      "in": 0,
+      "out": 2,
+      "reachable": 7,
+      "systems_touched": [
+        "action",
+        "zone"
+      ]
+    },
+    "artefact_flasque_d_oxygene": {
+      "causal_depth": 3,
+      "degree": 3,
+      "in": 0,
+      "out": 3,
+      "reachable": 8,
+      "systems_touched": [
+        "action",
+        "vessel_system",
+        "zone"
+      ]
+    },
+    "artefact_fragment_d_archive_abyssale": {
+      "causal_depth": 3,
+      "degree": 2,
+      "in": 0,
+      "out": 2,
+      "reachable": 7,
+      "systems_touched": [
+        "action",
+        "zone"
+      ]
+    },
+    "artefact_lampe_de_secours": {
+      "causal_depth": 3,
+      "degree": 3,
+      "in": 0,
+      "out": 3,
+      "reachable": 9,
+      "systems_touched": [
+        "action",
+        "vessel_system",
+        "zone"
+      ]
+    },
+    "artefact_outil_de_reparation_de_coque": {
+      "causal_depth": 2,
+      "degree": 3,
+      "in": 0,
+      "out": 3,
+      "reachable": 7,
+      "systems_touched": [
+        "action",
+        "vessel_system",
+        "zone"
+      ]
+    },
+    "equipage_ilyan": {
+      "causal_depth": 3,
+      "degree": 1,
+      "in": 0,
+      "out": 1,
+      "reachable": 6,
+      "systems_touched": [
+        "zone"
+      ]
+    },
+    "equipage_mara": {
+      "causal_depth": 2,
+      "degree": 6,
+      "in": 0,
+      "out": 6,
+      "reachable": 10,
+      "systems_touched": [
+        "vessel_system",
+        "zone"
+      ]
+    },
+    "equipage_pilote": {
+      "causal_depth": 3,
+      "degree": 1,
+      "in": 0,
+      "out": 1,
+      "reachable": 6,
+      "systems_touched": [
+        "zone"
+      ]
+    },
+    "equipage_sorel": {
+      "causal_depth": 3,
+      "degree": 1,
+      "in": 0,
+      "out": 1,
+      "reachable": 6,
+      "systems_touched": [
+        "zone"
+      ]
+    },
+    "systeme_batterie": {
+      "causal_depth": 0,
+      "degree": 3,
+      "in": 3,
+      "out": 0,
+      "reachable": 1,
+      "systems_touched": [
+        "crew",
+        "vessel_system"
+      ]
+    },
+    "systeme_coque": {
+      "causal_depth": 0,
+      "degree": 6,
+      "in": 6,
+      "out": 0,
+      "reachable": 1,
+      "systems_touched": [
+        "action",
+        "artifact",
+        "crew",
+        "zone"
+      ]
+    },
+    "systeme_oxygene": {
+      "causal_depth": 0,
+      "degree": 2,
+      "in": 2,
+      "out": 0,
+      "reachable": 1,
+      "systems_touched": [
+        "artifact",
+        "crew"
+      ]
+    },
+    "systeme_projecteur": {
+      "causal_depth": 1,
+      "degree": 4,
+      "in": 3,
+      "out": 1,
+      "reachable": 2,
+      "systems_touched": [
+        "action",
+        "artifact",
+        "crew",
+        "vessel_system"
+      ]
+    },
+    "systeme_propulsion": {
+      "causal_depth": 1,
+      "degree": 5,
+      "in": 4,
+      "out": 1,
+      "reachable": 2,
+      "systems_touched": [
+        "action",
+        "crew",
+        "vessel_system"
+      ]
+    },
+    "zone_la_faille_des_echos": {
+      "causal_depth": 2,
+      "degree": 2,
+      "in": 1,
+      "out": 2,
+      "reachable": 5,
+      "systems_touched": [
+        "vessel_system",
+        "zone"
+      ]
+    },
+    "zone_le_corridor_des_yeux": {
+      "causal_depth": 2,
+      "degree": 2,
+      "in": 1,
+      "out": 2,
+      "reachable": 5,
+      "systems_touched": [
+        "vessel_system",
+        "zone"
+      ]
+    },
+    "zone_le_vitrail_noire": {
+      "causal_depth": 2,
+      "degree": 12,
+      "in": 12,
+      "out": 3,
+      "reachable": 5,
+      "systems_touched": [
+        "artifact",
+        "crew",
+        "zone"
+      ]
+    },
+    "zone_les_ruines_du_son": {
+      "causal_depth": 2,
+      "degree": 2,
+      "in": 1,
+      "out": 2,
+      "reachable": 5,
+      "systems_touched": [
+        "vessel_system",
+        "zone"
+      ]
+    }
+  },
+  "orphans": [],
+  "sinks": [
+    "action_interpreter",
+    "action_observer",
+    "action_recuperer",
+    "systeme_batterie",
+    "systeme_coque",
+    "systeme_oxygene"
+  ],
+  "sources": [
+    "action_avancer",
+    "action_eteindre_les_lumieres",
+    "action_fuir",
+    "action_reculer",
+    "artefact_carte_des_profondeurs",
+    "artefact_flasque_d_oxygene",
+    "artefact_fragment_d_archive_abyssale",
+    "artefact_lampe_de_secours",
+    "artefact_outil_de_reparation_de_coque",
+    "equipage_ilyan",
+    "equipage_mara",
+    "equipage_pilote",
+    "equipage_sorel"
+  ],
+  "weakly_useful": [
+    "action_avancer",
+    "action_eteindre_les_lumieres",
+    "action_fuir",
+    "action_interpreter",
+    "action_observer",
+    "action_reculer",
+    "action_recuperer",
+    "equipage_ilyan",
+    "equipage_pilote",
+    "equipage_sorel"
+  ]
+}

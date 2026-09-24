@@ -1,0 +1,5274 @@
+{
+  "determinism_note": "meme graine => meme trace, verifie par test_reproductibilite",
+  "failures": [
+    "fuyard"
+  ],
+  "profile_count": 8,
+  "runs": {
+    "econome": {
+      "final": {
+        "alive": true,
+        "battery": 73,
+        "depth": 450,
+        "elapsed": 24,
+        "hull": 91,
+        "lights_on": false,
+        "oxygen": 67
+      },
+      "profile": "econome",
+      "seed": 20260924,
+      "survived": true,
+      "systems_exercised": [
+        "battery",
+        "depth",
+        "hull",
+        "oxygen"
+      ],
+      "trace": [
+        {
+          "action": "observer",
+          "after": {
+            "alive": true,
+            "battery": 99,
+            "depth": 0,
+            "elapsed": 1,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 99
+          },
+          "before": {
+            "alive": true,
+            "battery": 100,
+            "depth": 0,
+            "elapsed": 0,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 100
+          },
+          "effects": [
+            "oxygen: 100 -> 99",
+            "battery: 100 -> 99"
+          ],
+          "turn": 0
+        },
+        {
+          "action": "avancer",
+          "after": {
+            "alive": true,
+            "battery": 96,
+            "depth": 50,
+            "elapsed": 2,
+            "hull": 99,
+            "lights_on": true,
+            "oxygen": 97
+          },
+          "before": {
+            "alive": true,
+            "battery": 99,
+            "depth": 0,
+            "elapsed": 1,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 99
+          },
+          "effects": [
+            "oxygen: 99 -> 97",
+            "battery: 99 -> 96",
+            "hull: 100 -> 99",
+            "depth: 0 -> 50"
+          ],
+          "turn": 1
+        },
+        {
+          "action": "observer",
+          "after": {
+            "alive": true,
+            "battery": 95,
+            "depth": 50,
+            "elapsed": 3,
+            "hull": 99,
+            "lights_on": true,
+            "oxygen": 96
+          },
+          "before": {
+            "alive": true,
+            "battery": 96,
+            "depth": 50,
+            "elapsed": 2,
+            "hull": 99,
+            "lights_on": true,
+            "oxygen": 97
+          },
+          "effects": [
+            "oxygen: 97 -> 96",
+            "battery: 96 -> 95"
+          ],
+          "turn": 2
+        },
+        {
+          "action": "observer",
+          "after": {
+            "alive": true,
+            "battery": 94,
+            "depth": 50,
+            "elapsed": 4,
+            "hull": 99,
+            "lights_on": true,
+            "oxygen": 95
+          },
+          "before": {
+            "alive": true,
+            "battery": 95,
+            "depth": 50,
+            "elapsed": 3,
+            "hull": 99,
+            "lights_on": true,
+            "oxygen": 96
+          },
+          "effects": [
+            "oxygen: 96 -> 95",
+            "battery: 95 -> 94"
+          ],
+          "turn": 3
+        },
+        {
+          "action": "avancer",
+          "after": {
+            "alive": true,
+            "battery": 91,
+            "depth": 100,
+            "elapsed": 5,
+            "hull": 98,
+            "lights_on": true,
+            "oxygen": 93
+          },
+          "before": {
+            "alive": true,
+            "battery": 94,
+            "depth": 50,
+            "elapsed": 4,
+            "hull": 99,
+            "lights_on": true,
+            "oxygen": 95
+          },
+          "effects": [
+            "oxygen: 95 -> 93",
+            "battery: 94 -> 91",
+            "hull: 99 -> 98",
+            "depth: 50 -> 100"
+          ],
+          "turn": 4
+        },
+        {
+          "action": "observer",
+          "after": {
+            "alive": true,
+            "battery": 90,
+            "depth": 100,
+            "elapsed": 6,
+            "hull": 98,
+            "lights_on": true,
+            "oxygen": 92
+          },
+          "before": {
+            "alive": true,
+            "battery": 91,
+            "depth": 100,
+            "elapsed": 5,
+            "hull": 98,
+            "lights_on": true,
+            "oxygen": 93
+          },
+          "effects": [
+            "oxygen: 93 -> 92",
+            "battery: 91 -> 90"
+          ],
+          "turn": 5
+        },
+        {
+          "action": "eteindre",
+          "after": {
+            "alive": true,
+            "battery": 92,
+            "depth": 100,
+            "elapsed": 7,
+            "hull": 98,
+            "lights_on": false,
+            "oxygen": 91
+          },
+          "before": {
+            "alive": true,
+            "battery": 90,
+            "depth": 100,
+            "elapsed": 6,
+            "hull": 98,
+            "lights_on": true,
+            "oxygen": 92
+          },
+          "effects": [
+            "oxygen: 92 -> 91",
+            "battery: 90 -> 92"
+          ],
+          "turn": 6
+        },
+        {
+          "action": "avancer",
+          "after": {
+            "alive": true,
+            "battery": 89,
+            "depth": 150,
+            "elapsed": 8,
+            "hull": 97,
+            "lights_on": false,
+            "oxygen": 89
+          },
+          "before": {
+            "alive": true,
+            "battery": 92,
+            "depth": 100,
+            "elapsed": 7,
+            "hull": 98,
+            "lights_on": false,
+            "oxygen": 91
+          },
+          "effects": [
+            "oxygen: 91 -> 89",
+            "battery: 92 -> 89",
+            "hull: 98 -> 97",
+            "depth: 100 -> 150"
+          ],
+          "turn": 7
+        },
+        {
+          "action": "observer",
+          "after": {
+            "alive": true,
+            "battery": 88,
+            "depth": 150,
+            "elapsed": 9,
+            "hull": 97,
+            "lights_on": false,
+            "oxygen": 88
+          },
+          "before": {
+            "alive": true,
+            "battery": 89,
+            "depth": 150,
+            "elapsed": 8,
+            "hull": 97,
+            "lights_on": false,
+            "oxygen": 89
+          },
+          "effects": [
+            "oxygen: 89 -> 88",
+            "battery: 89 -> 88"
+          ],
+          "turn": 8
+        },
+        {
+          "action": "eteindre",
+          "after": {
+            "alive": true,
+            "battery": 90,
+            "depth": 150,
+            "elapsed": 10,
+            "hull": 97,
+            "lights_on": false,
+            "oxygen": 87
+          },
+          "before": {
+            "alive": true,
+            "battery": 88,
+            "depth": 150,
+            "elapsed": 9,
+            "hull": 97,
+            "lights_on": false,
+            "oxygen": 88
+          },
+          "effects": [
+            "oxygen: 88 -> 87",
+            "battery: 88 -> 90"
+          ],
+          "turn": 9
+        },
+        {
+          "action": "avancer",
+          "after": {
+            "alive": true,
+            "battery": 87,
+            "depth": 200,
+            "elapsed": 11,
+            "hull": 96,
+            "lights_on": false,
+            "oxygen": 85
+          },
+          "before": {
+            "alive": true,
+            "battery": 90,
+            "depth": 150,
+            "elapsed": 10,
+            "hull": 97,
+            "lights_on": false,
+            "oxygen": 87
+          },
+          "effects": [
+            "oxygen: 87 -> 85",
+            "battery: 90 -> 87",
+            "hull: 97 -> 96",
+            "depth: 150 -> 200"
+          ],
+          "turn": 10
+        },
+        {
+          "action": "observer",
+          "after": {
+            "alive": true,
+            "battery": 86,
+            "depth": 200,
+            "elapsed": 12,
+            "hull": 96,
+            "lights_on": false,
+            "oxygen": 84
+          },
+          "before": {
+            "alive": true,
+            "battery": 87,
+            "depth": 200,
+            "elapsed": 11,
+            "hull": 96,
+            "lights_on": false,
+            "oxygen": 85
+          },
+          "effects": [
+            "oxygen: 85 -> 84",
+            "battery: 87 -> 86"
+          ],
+          "turn": 11
+        },
+        {
+          "action": "eteindre",
+          "after": {
+            "alive": true,
+            "battery": 88,
+            "depth": 200,
+            "elapsed": 13,
+            "hull": 96,
+            "lights_on": false,
+            "oxygen": 83
+          },
+          "before": {
+            "alive": true,
+            "battery": 86,
+            "depth": 200,
+            "elapsed": 12,
+            "hull": 96,
+            "lights_on": false,
+            "oxygen": 84
+          },
+          "effects": [
+            "oxygen: 84 -> 83",
+            "battery: 86 -> 88"
+          ],
+          "turn": 12
+        },
+        {
+          "action": "avancer",
+          "after": {
+            "alive": true,
+            "battery": 85,
+            "depth": 250,
+            "elapsed": 14,
+            "hull": 95,
+            "lights_on": false,
+            "oxygen": 81
+          },
+          "before": {
+            "alive": true,
+            "battery": 88,
+            "depth": 200,
+            "elapsed": 13,
+            "hull": 96,
+            "lights_on": false,
+            "oxygen": 83
+          },
+          "effects": [
+            "oxygen: 83 -> 81",
+            "battery: 88 -> 85",
+            "hull: 96 -> 95",
+            "depth: 200 -> 250"
+          ],
+          "turn": 13
+        },
+        {
+          "action": "observer",
+          "after": {
+            "alive": true,
+            "battery": 84,
+            "depth": 250,
+            "elapsed": 15,
+            "hull": 95,
+            "lights_on": false,
+            "oxygen": 80
+          },
+          "before": {
+            "alive": true,
+            "battery": 85,
+            "depth": 250,
+            "elapsed": 14,
+            "hull": 95,
+            "lights_on": false,
+            "oxygen": 81
+          },
+          "effects": [
+            "oxygen: 81 -> 80",
+            "battery: 85 -> 84"
+          ],
+          "turn": 14
+        },
+        {
+          "action": "eteindre",
+          "after": {
+            "alive": true,
+            "battery": 86,
+            "depth": 250,
+            "elapsed": 16,
+            "hull": 95,
+            "lights_on": false,
+            "oxygen": 79
+          },
+          "before": {
+            "alive": true,
+            "battery": 84,
+            "depth": 250,
+            "elapsed": 15,
+            "hull": 95,
+            "lights_on": false,
+            "oxygen": 80
+          },
+          "effects": [
+            "oxygen: 80 -> 79",
+            "battery: 84 -> 86"
+          ],
+          "turn": 15
+        },
+        {
+          "action": "avancer",
+          "after": {
+            "alive": true,
+            "battery": 83,
+            "depth": 300,
+            "elapsed": 17,
+            "hull": 94,
+            "lights_on": false,
+            "oxygen": 77
+          },
+          "before": {
+            "alive": true,
+            "battery": 86,
+            "depth": 250,
+            "elapsed": 16,
+            "hull": 95,
+            "lights_on": false,
+            "oxygen": 79
+          },
+          "effects": [
+            "oxygen: 79 -> 77",
+            "battery: 86 -> 83",
+            "hull: 95 -> 94",
+            "depth: 250 -> 300"
+          ],
+          "turn": 16
+        },
+        {
+          "action": "observer",
+          "after": {
+            "alive": true,
+            "battery": 82,
+            "depth": 300,
+            "elapsed": 18,
+            "hull": 94,
+            "lights_on": false,
+            "oxygen": 76
+          },
+          "before": {
+            "alive": true,
+            "battery": 83,
+            "depth": 300,
+            "elapsed": 17,
+            "hull": 94,
+            "lights_on": false,
+            "oxygen": 77
+          },
+          "effects": [
+            "oxygen: 77 -> 76",
+            "battery: 83 -> 82"
+          ],
+          "turn": 17
+        },
+        {
+          "action": "eteindre",
+          "after": {
+            "alive": true,
+            "battery": 84,
+            "depth": 300,
+            "elapsed": 19,
+            "hull": 94,
+            "lights_on": false,
+            "oxygen": 75
+          },
+          "before": {
+            "alive": true,
+            "battery": 82,
+            "depth": 300,
+            "elapsed": 18,
+            "hull": 94,
+            "lights_on": false,
+            "oxygen": 76
+          },
+          "effects": [
+            "oxygen: 76 -> 75",
+            "battery: 82 -> 84"
+          ],
+          "turn": 18
+        },
+        {
+          "action": "avancer",
+          "after": {
+            "alive": true,
+            "battery": 81,
+            "depth": 350,
+            "elapsed": 20,
+            "hull": 93,
+            "lights_on": false,
+            "oxygen": 73
+          },
+          "before": {
+            "alive": true,
+            "battery": 84,
+            "depth": 300,
+            "elapsed": 19,
+            "hull": 94,
+            "lights_on": false,
+            "oxygen": 75
+          },
+          "effects": [
+            "oxygen: 75 -> 73",
+            "battery: 84 -> 81",
+            "hull: 94 -> 93",
+            "depth: 300 -> 350"
+          ],
+          "turn": 19
+        },
+        {
+          "action": "observer",
+          "after": {
+            "alive": true,
+            "battery": 80,
+            "depth": 350,
+            "elapsed": 21,
+            "hull": 93,
+            "lights_on": false,
+            "oxygen": 72
+          },
+          "before": {
+            "alive": true,
+            "battery": 81,
+            "depth": 350,
+            "elapsed": 20,
+            "hull": 93,
+            "lights_on": false,
+            "oxygen": 73
+          },
+          "effects": [
+            "oxygen: 73 -> 72",
+            "battery: 81 -> 80"
+          ],
+          "turn": 20
+        },
+        {
+          "action": "avancer",
+          "after": {
+            "alive": true,
+            "battery": 77,
+            "depth": 400,
+            "elapsed": 22,
+            "hull": 92,
+            "lights_on": false,
+            "oxygen": 70
+          },
+          "before": {
+            "alive": true,
+            "battery": 80,
+            "depth": 350,
+            "elapsed": 21,
+            "hull": 93,
+            "lights_on": false,
+            "oxygen": 72
+          },
+          "effects": [
+            "oxygen: 72 -> 70",
+            "battery: 80 -> 77",
+            "hull: 93 -> 92",
+            "depth: 350 -> 400"
+          ],
+          "turn": 21
+        },
+        {
+          "action": "avancer",
+          "after": {
+            "alive": true,
+            "battery": 74,
+            "depth": 450,
+            "elapsed": 23,
+            "hull": 91,
+            "lights_on": false,
+            "oxygen": 68
+          },
+          "before": {
+            "alive": true,
+            "battery": 77,
+            "depth": 400,
+            "elapsed": 22,
+            "hull": 92,
+            "lights_on": false,
+            "oxygen": 70
+          },
+          "effects": [
+            "oxygen: 70 -> 68",
+            "battery: 77 -> 74",
+            "hull: 92 -> 91",
+            "depth: 400 -> 450"
+          ],
+          "turn": 22
+        },
+        {
+          "action": "observer",
+          "after": {
+            "alive": true,
+            "battery": 73,
+            "depth": 450,
+            "elapsed": 24,
+            "hull": 91,
+            "lights_on": false,
+            "oxygen": 67
+          },
+          "before": {
+            "alive": true,
+            "battery": 74,
+            "depth": 450,
+            "elapsed": 23,
+            "hull": 91,
+            "lights_on": false,
+            "oxygen": 68
+          },
+          "effects": [
+            "oxygen: 68 -> 67",
+            "battery: 74 -> 73"
+          ],
+          "turn": 23
+        }
+      ],
+      "turns_played": 24
+    },
+    "explorateur": {
+      "final": {
+        "alive": true,
+        "battery": 48,
+        "depth": 700,
+        "elapsed": 24,
+        "hull": 86,
+        "lights_on": true,
+        "oxygen": 62
+      },
+      "profile": "explorateur",
+      "seed": 20260924,
+      "survived": true,
+      "systems_exercised": [
+        "battery",
+        "depth",
+        "hull",
+        "oxygen"
+      ],
+      "trace": [
+        {
+          "action": "observer",
+          "after": {
+            "alive": true,
+            "battery": 99,
+            "depth": 0,
+            "elapsed": 1,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 99
+          },
+          "before": {
+            "alive": true,
+            "battery": 100,
+            "depth": 0,
+            "elapsed": 0,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 100
+          },
+          "effects": [
+            "oxygen: 100 -> 99",
+            "battery: 100 -> 99"
+          ],
+          "turn": 0
+        },
+        {
+          "action": "avancer",
+          "after": {
+            "alive": true,
+            "battery": 96,
+            "depth": 50,
+            "elapsed": 2,
+            "hull": 99,
+            "lights_on": true,
+            "oxygen": 97
+          },
+          "before": {
+            "alive": true,
+            "battery": 99,
+            "depth": 0,
+            "elapsed": 1,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 99
+          },
+          "effects": [
+            "oxygen: 99 -> 97",
+            "battery: 99 -> 96",
+            "hull: 100 -> 99",
+            "depth: 0 -> 50"
+          ],
+          "turn": 1
+        },
+        {
+          "action": "observer",
+          "after": {
+            "alive": true,
+            "battery": 95,
+            "depth": 50,
+            "elapsed": 3,
+            "hull": 99,
+            "lights_on": true,
+            "oxygen": 96
+          },
+          "before": {
+            "alive": true,
+            "battery": 96,
+            "depth": 50,
+            "elapsed": 2,
+            "hull": 99,
+            "lights_on": true,
+            "oxygen": 97
+          },
+          "effects": [
+            "oxygen: 97 -> 96",
+            "battery: 96 -> 95"
+          ],
+          "turn": 2
+        },
+        {
+          "action": "observer",
+          "after": {
+            "alive": true,
+            "battery": 94,
+            "depth": 50,
+            "elapsed": 4,
+            "hull": 99,
+            "lights_on": true,
+            "oxygen": 95
+          },
+          "before": {
+            "alive": true,
+            "battery": 95,
+            "depth": 50,
+            "elapsed": 3,
+            "hull": 99,
+            "lights_on": true,
+            "oxygen": 96
+          },
+          "effects": [
+            "oxygen: 96 -> 95",
+            "battery: 95 -> 94"
+          ],
+          "turn": 3
+        },
+        {
+          "action": "avancer",
+          "after": {
+            "alive": true,
+            "battery": 91,
+            "depth": 100,
+            "elapsed": 5,
+            "hull": 98,
+            "lights_on": true,
+            "oxygen": 93
+          },
+          "before": {
+            "alive": true,
+            "battery": 94,
+            "depth": 50,
+            "elapsed": 4,
+            "hull": 99,
+            "lights_on": true,
+            "oxygen": 95
+          },
+          "effects": [
+            "oxygen: 95 -> 93",
+            "battery: 94 -> 91",
+            "hull: 99 -> 98",
+            "depth: 50 -> 100"
+          ],
+          "turn": 4
+        },
+        {
+          "action": "observer",
+          "after": {
+            "alive": true,
+            "battery": 90,
+            "depth": 100,
+            "elapsed": 6,
+            "hull": 98,
+            "lights_on": true,
+            "oxygen": 92
+          },
+          "before": {
+            "alive": true,
+            "battery": 91,
+            "depth": 100,
+            "elapsed": 5,
+            "hull": 98,
+            "lights_on": true,
+            "oxygen": 93
+          },
+          "effects": [
+            "oxygen: 93 -> 92",
+            "battery: 91 -> 90"
+          ],
+          "turn": 5
+        },
+        {
+          "action": "avancer",
+          "after": {
+            "alive": true,
+            "battery": 87,
+            "depth": 150,
+            "elapsed": 7,
+            "hull": 97,
+            "lights_on": true,
+            "oxygen": 90
+          },
+          "before": {
+            "alive": true,
+            "battery": 90,
+            "depth": 100,
+            "elapsed": 6,
+            "hull": 98,
+            "lights_on": true,
+            "oxygen": 92
+          },
+          "effects": [
+            "oxygen: 92 -> 90",
+            "battery: 90 -> 87",
+            "hull: 98 -> 97",
+            "depth: 100 -> 150"
+          ],
+          "turn": 6
+        },
+        {
+          "action": "avancer",
+          "after": {
+            "alive": true,
+            "battery": 84,
+            "depth": 200,
+            "elapsed": 8,
+            "hull": 96,
+            "lights_on": true,
+            "oxygen": 88
+          },
+          "before": {
+            "alive": true,
+            "battery": 87,
+            "depth": 150,
+            "elapsed": 7,
+            "hull": 97,
+            "lights_on": true,
+            "oxygen": 90
+          },
+          "effects": [
+            "oxygen: 90 -> 88",
+            "battery: 87 -> 84",
+            "hull: 97 -> 96",
+            "depth: 150 -> 200"
+          ],
+          "turn": 7
+        },
+        {
+          "action": "observer",
+          "after": {
+            "alive": true,
+            "battery": 83,
+            "depth": 200,
+            "elapsed": 9,
+            "hull": 96,
+            "lights_on": true,
+            "oxygen": 87
+          },
+          "before": {
+            "alive": true,
+            "battery": 84,
+            "depth": 200,
+            "elapsed": 8,
+            "hull": 96,
+            "lights_on": true,
+            "oxygen": 88
+          },
+          "effects": [
+            "oxygen: 88 -> 87",
+            "battery: 84 -> 83"
+          ],
+          "turn": 8
+        },
+        {
+          "action": "avancer",
+          "after": {
+            "alive": true,
+            "battery": 80,
+            "depth": 250,
+            "elapsed": 10,
+            "hull": 95,
+            "lights_on": true,
+            "oxygen": 85
+          },
+          "before": {
+            "alive": true,
+            "battery": 83,
+            "depth": 200,
+            "elapsed": 9,
+            "hull": 96,
+            "lights_on": true,
+            "oxygen": 87
+          },
+          "effects": [
+            "oxygen: 87 -> 85",
+            "battery: 83 -> 80",
+            "hull: 96 -> 95",
+            "depth: 200 -> 250"
+          ],
+          "turn": 9
+        },
+        {
+          "action": "avancer",
+          "after": {
+            "alive": true,
+            "battery": 77,
+            "depth": 300,
+            "elapsed": 11,
+            "hull": 94,
+            "lights_on": true,
+            "oxygen": 83
+          },
+          "before": {
+            "alive": true,
+            "battery": 80,
+            "depth": 250,
+            "elapsed": 10,
+            "hull": 95,
+            "lights_on": true,
+            "oxygen": 85
+          },
+          "effects": [
+            "oxygen: 85 -> 83",
+            "battery: 80 -> 77",
+            "hull: 95 -> 94",
+            "depth: 250 -> 300"
+          ],
+          "turn": 10
+        },
+        {
+          "action": "observer",
+          "after": {
+            "alive": true,
+            "battery": 76,
+            "depth": 300,
+            "elapsed": 12,
+            "hull": 94,
+            "lights_on": true,
+            "oxygen": 82
+          },
+          "before": {
+            "alive": true,
+            "battery": 77,
+            "depth": 300,
+            "elapsed": 11,
+            "hull": 94,
+            "lights_on": true,
+            "oxygen": 83
+          },
+          "effects": [
+            "oxygen: 83 -> 82",
+            "battery: 77 -> 76"
+          ],
+          "turn": 11
+        },
+        {
+          "action": "avancer",
+          "after": {
+            "alive": true,
+            "battery": 73,
+            "depth": 350,
+            "elapsed": 13,
+            "hull": 93,
+            "lights_on": true,
+            "oxygen": 80
+          },
+          "before": {
+            "alive": true,
+            "battery": 76,
+            "depth": 300,
+            "elapsed": 12,
+            "hull": 94,
+            "lights_on": true,
+            "oxygen": 82
+          },
+          "effects": [
+            "oxygen: 82 -> 80",
+            "battery: 76 -> 73",
+            "hull: 94 -> 93",
+            "depth: 300 -> 350"
+          ],
+          "turn": 12
+        },
+        {
+          "action": "avancer",
+          "after": {
+            "alive": true,
+            "battery": 70,
+            "depth": 400,
+            "elapsed": 14,
+            "hull": 92,
+            "lights_on": true,
+            "oxygen": 78
+          },
+          "before": {
+            "alive": true,
+            "battery": 73,
+            "depth": 350,
+            "elapsed": 13,
+            "hull": 93,
+            "lights_on": true,
+            "oxygen": 80
+          },
+          "effects": [
+            "oxygen: 80 -> 78",
+            "battery: 73 -> 70",
+            "hull: 93 -> 92",
+            "depth: 350 -> 400"
+          ],
+          "turn": 13
+        },
+        {
+          "action": "observer",
+          "after": {
+            "alive": true,
+            "battery": 69,
+            "depth": 400,
+            "elapsed": 15,
+            "hull": 92,
+            "lights_on": true,
+            "oxygen": 77
+          },
+          "before": {
+            "alive": true,
+            "battery": 70,
+            "depth": 400,
+            "elapsed": 14,
+            "hull": 92,
+            "lights_on": true,
+            "oxygen": 78
+          },
+          "effects": [
+            "oxygen: 78 -> 77",
+            "battery: 70 -> 69"
+          ],
+          "turn": 14
+        },
+        {
+          "action": "avancer",
+          "after": {
+            "alive": true,
+            "battery": 66,
+            "depth": 450,
+            "elapsed": 16,
+            "hull": 91,
+            "lights_on": true,
+            "oxygen": 75
+          },
+          "before": {
+            "alive": true,
+            "battery": 69,
+            "depth": 400,
+            "elapsed": 15,
+            "hull": 92,
+            "lights_on": true,
+            "oxygen": 77
+          },
+          "effects": [
+            "oxygen: 77 -> 75",
+            "battery: 69 -> 66",
+            "hull: 92 -> 91",
+            "depth: 400 -> 450"
+          ],
+          "turn": 15
+        },
+        {
+          "action": "avancer",
+          "after": {
+            "alive": true,
+            "battery": 63,
+            "depth": 500,
+            "elapsed": 17,
+            "hull": 90,
+            "lights_on": true,
+            "oxygen": 73
+          },
+          "before": {
+            "alive": true,
+            "battery": 66,
+            "depth": 450,
+            "elapsed": 16,
+            "hull": 91,
+            "lights_on": true,
+            "oxygen": 75
+          },
+          "effects": [
+            "oxygen: 75 -> 73",
+            "battery: 66 -> 63",
+            "hull: 91 -> 90",
+            "depth: 450 -> 500"
+          ],
+          "turn": 16
+        },
+        {
+          "action": "observer",
+          "after": {
+            "alive": true,
+            "battery": 62,
+            "depth": 500,
+            "elapsed": 18,
+            "hull": 90,
+            "lights_on": true,
+            "oxygen": 72
+          },
+          "before": {
+            "alive": true,
+            "battery": 63,
+            "depth": 500,
+            "elapsed": 17,
+            "hull": 90,
+            "lights_on": true,
+            "oxygen": 73
+          },
+          "effects": [
+            "oxygen: 73 -> 72",
+            "battery: 63 -> 62"
+          ],
+          "turn": 17
+        },
+        {
+          "action": "avancer",
+          "after": {
+            "alive": true,
+            "battery": 59,
+            "depth": 550,
+            "elapsed": 19,
+            "hull": 89,
+            "lights_on": true,
+            "oxygen": 70
+          },
+          "before": {
+            "alive": true,
+            "battery": 62,
+            "depth": 500,
+            "elapsed": 18,
+            "hull": 90,
+            "lights_on": true,
+            "oxygen": 72
+          },
+          "effects": [
+            "oxygen: 72 -> 70",
+            "battery: 62 -> 59",
+            "hull: 90 -> 89",
+            "depth: 500 -> 550"
+          ],
+          "turn": 18
+        },
+        {
+          "action": "avancer",
+          "after": {
+            "alive": true,
+            "battery": 56,
+            "depth": 600,
+            "elapsed": 20,
+            "hull": 88,
+            "lights_on": true,
+            "oxygen": 68
+          },
+          "before": {
+            "alive": true,
+            "battery": 59,
+            "depth": 550,
+            "elapsed": 19,
+            "hull": 89,
+            "lights_on": true,
+            "oxygen": 70
+          },
+          "effects": [
+            "oxygen: 70 -> 68",
+            "battery: 59 -> 56",
+            "hull: 89 -> 88",
+            "depth: 550 -> 600"
+          ],
+          "turn": 19
+        },
+        {
+          "action": "observer",
+          "after": {
+            "alive": true,
+            "battery": 55,
+            "depth": 600,
+            "elapsed": 21,
+            "hull": 88,
+            "lights_on": true,
+            "oxygen": 67
+          },
+          "before": {
+            "alive": true,
+            "battery": 56,
+            "depth": 600,
+            "elapsed": 20,
+            "hull": 88,
+            "lights_on": true,
+            "oxygen": 68
+          },
+          "effects": [
+            "oxygen: 68 -> 67",
+            "battery: 56 -> 55"
+          ],
+          "turn": 20
+        },
+        {
+          "action": "avancer",
+          "after": {
+            "alive": true,
+            "battery": 52,
+            "depth": 650,
+            "elapsed": 22,
+            "hull": 87,
+            "lights_on": true,
+            "oxygen": 65
+          },
+          "before": {
+            "alive": true,
+            "battery": 55,
+            "depth": 600,
+            "elapsed": 21,
+            "hull": 88,
+            "lights_on": true,
+            "oxygen": 67
+          },
+          "effects": [
+            "oxygen: 67 -> 65",
+            "battery: 55 -> 52",
+            "hull: 88 -> 87",
+            "depth: 600 -> 650"
+          ],
+          "turn": 21
+        },
+        {
+          "action": "avancer",
+          "after": {
+            "alive": true,
+            "battery": 49,
+            "depth": 700,
+            "elapsed": 23,
+            "hull": 86,
+            "lights_on": true,
+            "oxygen": 63
+          },
+          "before": {
+            "alive": true,
+            "battery": 52,
+            "depth": 650,
+            "elapsed": 22,
+            "hull": 87,
+            "lights_on": true,
+            "oxygen": 65
+          },
+          "effects": [
+            "oxygen: 65 -> 63",
+            "battery: 52 -> 49",
+            "hull: 87 -> 86",
+            "depth: 650 -> 700"
+          ],
+          "turn": 22
+        },
+        {
+          "action": "observer",
+          "after": {
+            "alive": true,
+            "battery": 48,
+            "depth": 700,
+            "elapsed": 24,
+            "hull": 86,
+            "lights_on": true,
+            "oxygen": 62
+          },
+          "before": {
+            "alive": true,
+            "battery": 49,
+            "depth": 700,
+            "elapsed": 23,
+            "hull": 86,
+            "lights_on": true,
+            "oxygen": 63
+          },
+          "effects": [
+            "oxygen: 63 -> 62",
+            "battery: 49 -> 48"
+          ],
+          "turn": 23
+        }
+      ],
+      "turns_played": 24
+    },
+    "fuyard": {
+      "final": {
+        "alive": false,
+        "battery": 0,
+        "depth": 0,
+        "elapsed": 22,
+        "hull": 79,
+        "lights_on": true,
+        "oxygen": 40
+      },
+      "profile": "fuyard",
+      "seed": 20260924,
+      "survived": false,
+      "systems_exercised": [
+        "ECHEC",
+        "battery",
+        "depth",
+        "hull",
+        "oxygen"
+      ],
+      "trace": [
+        {
+          "action": "reculer",
+          "after": {
+            "alive": true,
+            "battery": 97,
+            "depth": 0,
+            "elapsed": 1,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 98
+          },
+          "before": {
+            "alive": true,
+            "battery": 100,
+            "depth": 0,
+            "elapsed": 0,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 100
+          },
+          "effects": [
+            "oxygen: 100 -> 98",
+            "battery: 100 -> 97"
+          ],
+          "turn": 0
+        },
+        {
+          "action": "fuir",
+          "after": {
+            "alive": true,
+            "battery": 89,
+            "depth": 0,
+            "elapsed": 2,
+            "hull": 98,
+            "lights_on": true,
+            "oxygen": 94
+          },
+          "before": {
+            "alive": true,
+            "battery": 97,
+            "depth": 0,
+            "elapsed": 1,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 98
+          },
+          "effects": [
+            "oxygen: 98 -> 94",
+            "battery: 97 -> 89",
+            "hull: 100 -> 98"
+          ],
+          "turn": 1
+        },
+        {
+          "action": "reculer",
+          "after": {
+            "alive": true,
+            "battery": 86,
+            "depth": 0,
+            "elapsed": 3,
+            "hull": 98,
+            "lights_on": true,
+            "oxygen": 92
+          },
+          "before": {
+            "alive": true,
+            "battery": 89,
+            "depth": 0,
+            "elapsed": 2,
+            "hull": 98,
+            "lights_on": true,
+            "oxygen": 94
+          },
+          "effects": [
+            "oxygen: 94 -> 92",
+            "battery: 89 -> 86"
+          ],
+          "turn": 2
+        },
+        {
+          "action": "reculer",
+          "after": {
+            "alive": true,
+            "battery": 83,
+            "depth": 0,
+            "elapsed": 4,
+            "hull": 98,
+            "lights_on": true,
+            "oxygen": 90
+          },
+          "before": {
+            "alive": true,
+            "battery": 86,
+            "depth": 0,
+            "elapsed": 3,
+            "hull": 98,
+            "lights_on": true,
+            "oxygen": 92
+          },
+          "effects": [
+            "oxygen: 92 -> 90",
+            "battery: 86 -> 83"
+          ],
+          "turn": 3
+        },
+        {
+          "action": "fuir",
+          "after": {
+            "alive": true,
+            "battery": 75,
+            "depth": 0,
+            "elapsed": 5,
+            "hull": 96,
+            "lights_on": true,
+            "oxygen": 86
+          },
+          "before": {
+            "alive": true,
+            "battery": 83,
+            "depth": 0,
+            "elapsed": 4,
+            "hull": 98,
+            "lights_on": true,
+            "oxygen": 90
+          },
+          "effects": [
+            "oxygen: 90 -> 86",
+            "battery: 83 -> 75",
+            "hull: 98 -> 96"
+          ],
+          "turn": 4
+        },
+        {
+          "action": "reculer",
+          "after": {
+            "alive": true,
+            "battery": 72,
+            "depth": 0,
+            "elapsed": 6,
+            "hull": 96,
+            "lights_on": true,
+            "oxygen": 84
+          },
+          "before": {
+            "alive": true,
+            "battery": 75,
+            "depth": 0,
+            "elapsed": 5,
+            "hull": 96,
+            "lights_on": true,
+            "oxygen": 86
+          },
+          "effects": [
+            "oxygen: 86 -> 84",
+            "battery: 75 -> 72"
+          ],
+          "turn": 5
+        },
+        {
+          "action": "avancer",
+          "after": {
+            "alive": true,
+            "battery": 69,
+            "depth": 50,
+            "elapsed": 7,
+            "hull": 95,
+            "lights_on": true,
+            "oxygen": 82
+          },
+          "before": {
+            "alive": true,
+            "battery": 72,
+            "depth": 0,
+            "elapsed": 6,
+            "hull": 96,
+            "lights_on": true,
+            "oxygen": 84
+          },
+          "effects": [
+            "oxygen: 84 -> 82",
+            "battery: 72 -> 69",
+            "hull: 96 -> 95",
+            "depth: 0 -> 50"
+          ],
+          "turn": 6
+        },
+        {
+          "action": "fuir",
+          "after": {
+            "alive": true,
+            "battery": 61,
+            "depth": 0,
+            "elapsed": 8,
+            "hull": 93,
+            "lights_on": true,
+            "oxygen": 78
+          },
+          "before": {
+            "alive": true,
+            "battery": 69,
+            "depth": 50,
+            "elapsed": 7,
+            "hull": 95,
+            "lights_on": true,
+            "oxygen": 82
+          },
+          "effects": [
+            "oxygen: 82 -> 78",
+            "battery: 69 -> 61",
+            "hull: 95 -> 93",
+            "depth: 50 -> 0"
+          ],
+          "turn": 7
+        },
+        {
+          "action": "reculer",
+          "after": {
+            "alive": true,
+            "battery": 58,
+            "depth": 0,
+            "elapsed": 9,
+            "hull": 93,
+            "lights_on": true,
+            "oxygen": 76
+          },
+          "before": {
+            "alive": true,
+            "battery": 61,
+            "depth": 0,
+            "elapsed": 8,
+            "hull": 93,
+            "lights_on": true,
+            "oxygen": 78
+          },
+          "effects": [
+            "oxygen: 78 -> 76",
+            "battery: 61 -> 58"
+          ],
+          "turn": 8
+        },
+        {
+          "action": "avancer",
+          "after": {
+            "alive": true,
+            "battery": 55,
+            "depth": 50,
+            "elapsed": 10,
+            "hull": 92,
+            "lights_on": true,
+            "oxygen": 74
+          },
+          "before": {
+            "alive": true,
+            "battery": 58,
+            "depth": 0,
+            "elapsed": 9,
+            "hull": 93,
+            "lights_on": true,
+            "oxygen": 76
+          },
+          "effects": [
+            "oxygen: 76 -> 74",
+            "battery: 58 -> 55",
+            "hull: 93 -> 92",
+            "depth: 0 -> 50"
+          ],
+          "turn": 9
+        },
+        {
+          "action": "fuir",
+          "after": {
+            "alive": true,
+            "battery": 47,
+            "depth": 0,
+            "elapsed": 11,
+            "hull": 90,
+            "lights_on": true,
+            "oxygen": 70
+          },
+          "before": {
+            "alive": true,
+            "battery": 55,
+            "depth": 50,
+            "elapsed": 10,
+            "hull": 92,
+            "lights_on": true,
+            "oxygen": 74
+          },
+          "effects": [
+            "oxygen: 74 -> 70",
+            "battery: 55 -> 47",
+            "hull: 92 -> 90",
+            "depth: 50 -> 0"
+          ],
+          "turn": 10
+        },
+        {
+          "action": "reculer",
+          "after": {
+            "alive": true,
+            "battery": 44,
+            "depth": 0,
+            "elapsed": 12,
+            "hull": 90,
+            "lights_on": true,
+            "oxygen": 68
+          },
+          "before": {
+            "alive": true,
+            "battery": 47,
+            "depth": 0,
+            "elapsed": 11,
+            "hull": 90,
+            "lights_on": true,
+            "oxygen": 70
+          },
+          "effects": [
+            "oxygen: 70 -> 68",
+            "battery: 47 -> 44"
+          ],
+          "turn": 11
+        },
+        {
+          "action": "avancer",
+          "after": {
+            "alive": true,
+            "battery": 41,
+            "depth": 50,
+            "elapsed": 13,
+            "hull": 89,
+            "lights_on": true,
+            "oxygen": 66
+          },
+          "before": {
+            "alive": true,
+            "battery": 44,
+            "depth": 0,
+            "elapsed": 12,
+            "hull": 90,
+            "lights_on": true,
+            "oxygen": 68
+          },
+          "effects": [
+            "oxygen: 68 -> 66",
+            "battery: 44 -> 41",
+            "hull: 90 -> 89",
+            "depth: 0 -> 50"
+          ],
+          "turn": 12
+        },
+        {
+          "action": "fuir",
+          "after": {
+            "alive": true,
+            "battery": 33,
+            "depth": 0,
+            "elapsed": 14,
+            "hull": 87,
+            "lights_on": true,
+            "oxygen": 62
+          },
+          "before": {
+            "alive": true,
+            "battery": 41,
+            "depth": 50,
+            "elapsed": 13,
+            "hull": 89,
+            "lights_on": true,
+            "oxygen": 66
+          },
+          "effects": [
+            "oxygen: 66 -> 62",
+            "battery: 41 -> 33",
+            "hull: 89 -> 87",
+            "depth: 50 -> 0"
+          ],
+          "turn": 13
+        },
+        {
+          "action": "reculer",
+          "after": {
+            "alive": true,
+            "battery": 30,
+            "depth": 0,
+            "elapsed": 15,
+            "hull": 87,
+            "lights_on": true,
+            "oxygen": 60
+          },
+          "before": {
+            "alive": true,
+            "battery": 33,
+            "depth": 0,
+            "elapsed": 14,
+            "hull": 87,
+            "lights_on": true,
+            "oxygen": 62
+          },
+          "effects": [
+            "oxygen: 62 -> 60",
+            "battery: 33 -> 30"
+          ],
+          "turn": 14
+        },
+        {
+          "action": "avancer",
+          "after": {
+            "alive": true,
+            "battery": 27,
+            "depth": 50,
+            "elapsed": 16,
+            "hull": 86,
+            "lights_on": true,
+            "oxygen": 58
+          },
+          "before": {
+            "alive": true,
+            "battery": 30,
+            "depth": 0,
+            "elapsed": 15,
+            "hull": 87,
+            "lights_on": true,
+            "oxygen": 60
+          },
+          "effects": [
+            "oxygen: 60 -> 58",
+            "battery: 30 -> 27",
+            "hull: 87 -> 86",
+            "depth: 0 -> 50"
+          ],
+          "turn": 15
+        },
+        {
+          "action": "fuir",
+          "after": {
+            "alive": true,
+            "battery": 19,
+            "depth": 0,
+            "elapsed": 17,
+            "hull": 84,
+            "lights_on": true,
+            "oxygen": 54
+          },
+          "before": {
+            "alive": true,
+            "battery": 27,
+            "depth": 50,
+            "elapsed": 16,
+            "hull": 86,
+            "lights_on": true,
+            "oxygen": 58
+          },
+          "effects": [
+            "oxygen: 58 -> 54",
+            "battery: 27 -> 19",
+            "hull: 86 -> 84",
+            "depth: 50 -> 0"
+          ],
+          "turn": 16
+        },
+        {
+          "action": "reculer",
+          "after": {
+            "alive": true,
+            "battery": 16,
+            "depth": 0,
+            "elapsed": 18,
+            "hull": 84,
+            "lights_on": true,
+            "oxygen": 52
+          },
+          "before": {
+            "alive": true,
+            "battery": 19,
+            "depth": 0,
+            "elapsed": 17,
+            "hull": 84,
+            "lights_on": true,
+            "oxygen": 54
+          },
+          "effects": [
+            "oxygen: 54 -> 52",
+            "battery: 19 -> 16"
+          ],
+          "turn": 17
+        },
+        {
+          "action": "avancer",
+          "after": {
+            "alive": true,
+            "battery": 13,
+            "depth": 50,
+            "elapsed": 19,
+            "hull": 83,
+            "lights_on": true,
+            "oxygen": 50
+          },
+          "before": {
+            "alive": true,
+            "battery": 16,
+            "depth": 0,
+            "elapsed": 18,
+            "hull": 84,
+            "lights_on": true,
+            "oxygen": 52
+          },
+          "effects": [
+            "oxygen: 52 -> 50",
+            "battery: 16 -> 13",
+            "hull: 84 -> 83",
+            "depth: 0 -> 50"
+          ],
+          "turn": 18
+        },
+        {
+          "action": "fuir",
+          "after": {
+            "alive": true,
+            "battery": 5,
+            "depth": 0,
+            "elapsed": 20,
+            "hull": 81,
+            "lights_on": true,
+            "oxygen": 46
+          },
+          "before": {
+            "alive": true,
+            "battery": 13,
+            "depth": 50,
+            "elapsed": 19,
+            "hull": 83,
+            "lights_on": true,
+            "oxygen": 50
+          },
+          "effects": [
+            "oxygen: 50 -> 46",
+            "battery: 13 -> 5",
+            "hull: 83 -> 81",
+            "depth: 50 -> 0"
+          ],
+          "turn": 19
+        },
+        {
+          "action": "reculer",
+          "after": {
+            "alive": true,
+            "battery": 2,
+            "depth": 0,
+            "elapsed": 21,
+            "hull": 81,
+            "lights_on": true,
+            "oxygen": 44
+          },
+          "before": {
+            "alive": true,
+            "battery": 5,
+            "depth": 0,
+            "elapsed": 20,
+            "hull": 81,
+            "lights_on": true,
+            "oxygen": 46
+          },
+          "effects": [
+            "oxygen: 46 -> 44",
+            "battery: 5 -> 2"
+          ],
+          "turn": 20
+        },
+        {
+          "action": "fuir",
+          "after": {
+            "alive": false,
+            "battery": 0,
+            "depth": 0,
+            "elapsed": 22,
+            "hull": 79,
+            "lights_on": true,
+            "oxygen": 40
+          },
+          "before": {
+            "alive": true,
+            "battery": 2,
+            "depth": 0,
+            "elapsed": 21,
+            "hull": 81,
+            "lights_on": true,
+            "oxygen": 44
+          },
+          "effects": [
+            "oxygen: 44 -> 40",
+            "battery: 2 -> 0",
+            "hull: 81 -> 79",
+            "ECHEC: systeme_batterie a zero"
+          ],
+          "turn": 21
+        }
+      ],
+      "turns_played": 22
+    },
+    "ignore_les_signes": {
+      "final": {
+        "alive": true,
+        "battery": 28,
+        "depth": 1200,
+        "elapsed": 24,
+        "hull": 60,
+        "lights_on": true,
+        "oxygen": 52
+      },
+      "profile": "ignore_les_signes",
+      "seed": 20260924,
+      "survived": true,
+      "systems_exercised": [
+        "battery",
+        "depth",
+        "hull",
+        "oxygen"
+      ],
+      "trace": [
+        {
+          "action": "avancer",
+          "after": {
+            "alive": true,
+            "battery": 97,
+            "depth": 50,
+            "elapsed": 1,
+            "hull": 99,
+            "lights_on": true,
+            "oxygen": 98
+          },
+          "before": {
+            "alive": true,
+            "battery": 100,
+            "depth": 0,
+            "elapsed": 0,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 100
+          },
+          "effects": [
+            "oxygen: 100 -> 98",
+            "battery: 100 -> 97",
+            "hull: 100 -> 99",
+            "depth: 0 -> 50"
+          ],
+          "turn": 0
+        },
+        {
+          "action": "avancer",
+          "after": {
+            "alive": true,
+            "battery": 94,
+            "depth": 100,
+            "elapsed": 2,
+            "hull": 98,
+            "lights_on": true,
+            "oxygen": 96
+          },
+          "before": {
+            "alive": true,
+            "battery": 97,
+            "depth": 50,
+            "elapsed": 1,
+            "hull": 99,
+            "lights_on": true,
+            "oxygen": 98
+          },
+          "effects": [
+            "oxygen: 98 -> 96",
+            "battery: 97 -> 94",
+            "hull: 99 -> 98",
+            "depth: 50 -> 100"
+          ],
+          "turn": 1
+        },
+        {
+          "action": "avancer",
+          "after": {
+            "alive": true,
+            "battery": 91,
+            "depth": 150,
+            "elapsed": 3,
+            "hull": 97,
+            "lights_on": true,
+            "oxygen": 94
+          },
+          "before": {
+            "alive": true,
+            "battery": 94,
+            "depth": 100,
+            "elapsed": 2,
+            "hull": 98,
+            "lights_on": true,
+            "oxygen": 96
+          },
+          "effects": [
+            "oxygen: 96 -> 94",
+            "battery: 94 -> 91",
+            "hull: 98 -> 97",
+            "depth: 100 -> 150"
+          ],
+          "turn": 2
+        },
+        {
+          "action": "avancer",
+          "after": {
+            "alive": true,
+            "battery": 88,
+            "depth": 200,
+            "elapsed": 4,
+            "hull": 96,
+            "lights_on": true,
+            "oxygen": 92
+          },
+          "before": {
+            "alive": true,
+            "battery": 91,
+            "depth": 150,
+            "elapsed": 3,
+            "hull": 97,
+            "lights_on": true,
+            "oxygen": 94
+          },
+          "effects": [
+            "oxygen: 94 -> 92",
+            "battery: 91 -> 88",
+            "hull: 97 -> 96",
+            "depth: 150 -> 200"
+          ],
+          "turn": 3
+        },
+        {
+          "action": "avancer",
+          "after": {
+            "alive": true,
+            "battery": 85,
+            "depth": 250,
+            "elapsed": 5,
+            "hull": 95,
+            "lights_on": true,
+            "oxygen": 90
+          },
+          "before": {
+            "alive": true,
+            "battery": 88,
+            "depth": 200,
+            "elapsed": 4,
+            "hull": 96,
+            "lights_on": true,
+            "oxygen": 92
+          },
+          "effects": [
+            "oxygen: 92 -> 90",
+            "battery: 88 -> 85",
+            "hull: 96 -> 95",
+            "depth: 200 -> 250"
+          ],
+          "turn": 4
+        },
+        {
+          "action": "avancer",
+          "after": {
+            "alive": true,
+            "battery": 82,
+            "depth": 300,
+            "elapsed": 6,
+            "hull": 94,
+            "lights_on": true,
+            "oxygen": 88
+          },
+          "before": {
+            "alive": true,
+            "battery": 85,
+            "depth": 250,
+            "elapsed": 5,
+            "hull": 95,
+            "lights_on": true,
+            "oxygen": 90
+          },
+          "effects": [
+            "oxygen: 90 -> 88",
+            "battery: 85 -> 82",
+            "hull: 95 -> 94",
+            "depth: 250 -> 300"
+          ],
+          "turn": 5
+        },
+        {
+          "action": "avancer",
+          "after": {
+            "alive": true,
+            "battery": 79,
+            "depth": 350,
+            "elapsed": 7,
+            "hull": 93,
+            "lights_on": true,
+            "oxygen": 86
+          },
+          "before": {
+            "alive": true,
+            "battery": 82,
+            "depth": 300,
+            "elapsed": 6,
+            "hull": 94,
+            "lights_on": true,
+            "oxygen": 88
+          },
+          "effects": [
+            "oxygen: 88 -> 86",
+            "battery: 82 -> 79",
+            "hull: 94 -> 93",
+            "depth: 300 -> 350"
+          ],
+          "turn": 6
+        },
+        {
+          "action": "avancer",
+          "after": {
+            "alive": true,
+            "battery": 76,
+            "depth": 400,
+            "elapsed": 8,
+            "hull": 92,
+            "lights_on": true,
+            "oxygen": 84
+          },
+          "before": {
+            "alive": true,
+            "battery": 79,
+            "depth": 350,
+            "elapsed": 7,
+            "hull": 93,
+            "lights_on": true,
+            "oxygen": 86
+          },
+          "effects": [
+            "oxygen: 86 -> 84",
+            "battery: 79 -> 76",
+            "hull: 93 -> 92",
+            "depth: 350 -> 400"
+          ],
+          "turn": 7
+        },
+        {
+          "action": "avancer",
+          "after": {
+            "alive": true,
+            "battery": 73,
+            "depth": 450,
+            "elapsed": 9,
+            "hull": 91,
+            "lights_on": true,
+            "oxygen": 82
+          },
+          "before": {
+            "alive": true,
+            "battery": 76,
+            "depth": 400,
+            "elapsed": 8,
+            "hull": 92,
+            "lights_on": true,
+            "oxygen": 84
+          },
+          "effects": [
+            "oxygen: 84 -> 82",
+            "battery: 76 -> 73",
+            "hull: 92 -> 91",
+            "depth: 400 -> 450"
+          ],
+          "turn": 8
+        },
+        {
+          "action": "avancer",
+          "after": {
+            "alive": true,
+            "battery": 70,
+            "depth": 500,
+            "elapsed": 10,
+            "hull": 90,
+            "lights_on": true,
+            "oxygen": 80
+          },
+          "before": {
+            "alive": true,
+            "battery": 73,
+            "depth": 450,
+            "elapsed": 9,
+            "hull": 91,
+            "lights_on": true,
+            "oxygen": 82
+          },
+          "effects": [
+            "oxygen: 82 -> 80",
+            "battery: 73 -> 70",
+            "hull: 91 -> 90",
+            "depth: 450 -> 500"
+          ],
+          "turn": 9
+        },
+        {
+          "action": "avancer",
+          "after": {
+            "alive": true,
+            "battery": 67,
+            "depth": 550,
+            "elapsed": 11,
+            "hull": 89,
+            "lights_on": true,
+            "oxygen": 78
+          },
+          "before": {
+            "alive": true,
+            "battery": 70,
+            "depth": 500,
+            "elapsed": 10,
+            "hull": 90,
+            "lights_on": true,
+            "oxygen": 80
+          },
+          "effects": [
+            "oxygen: 80 -> 78",
+            "battery: 70 -> 67",
+            "hull: 90 -> 89",
+            "depth: 500 -> 550"
+          ],
+          "turn": 10
+        },
+        {
+          "action": "avancer",
+          "after": {
+            "alive": true,
+            "battery": 64,
+            "depth": 600,
+            "elapsed": 12,
+            "hull": 88,
+            "lights_on": true,
+            "oxygen": 76
+          },
+          "before": {
+            "alive": true,
+            "battery": 67,
+            "depth": 550,
+            "elapsed": 11,
+            "hull": 89,
+            "lights_on": true,
+            "oxygen": 78
+          },
+          "effects": [
+            "oxygen: 78 -> 76",
+            "battery: 67 -> 64",
+            "hull: 89 -> 88",
+            "depth: 550 -> 600"
+          ],
+          "turn": 11
+        },
+        {
+          "action": "avancer",
+          "after": {
+            "alive": true,
+            "battery": 61,
+            "depth": 650,
+            "elapsed": 13,
+            "hull": 87,
+            "lights_on": true,
+            "oxygen": 74
+          },
+          "before": {
+            "alive": true,
+            "battery": 64,
+            "depth": 600,
+            "elapsed": 12,
+            "hull": 88,
+            "lights_on": true,
+            "oxygen": 76
+          },
+          "effects": [
+            "oxygen: 76 -> 74",
+            "battery: 64 -> 61",
+            "hull: 88 -> 87",
+            "depth: 600 -> 650"
+          ],
+          "turn": 12
+        },
+        {
+          "action": "avancer",
+          "after": {
+            "alive": true,
+            "battery": 58,
+            "depth": 700,
+            "elapsed": 14,
+            "hull": 86,
+            "lights_on": true,
+            "oxygen": 72
+          },
+          "before": {
+            "alive": true,
+            "battery": 61,
+            "depth": 650,
+            "elapsed": 13,
+            "hull": 87,
+            "lights_on": true,
+            "oxygen": 74
+          },
+          "effects": [
+            "oxygen: 74 -> 72",
+            "battery: 61 -> 58",
+            "hull: 87 -> 86",
+            "depth: 650 -> 700"
+          ],
+          "turn": 13
+        },
+        {
+          "action": "avancer",
+          "after": {
+            "alive": true,
+            "battery": 55,
+            "depth": 750,
+            "elapsed": 15,
+            "hull": 85,
+            "lights_on": true,
+            "oxygen": 70
+          },
+          "before": {
+            "alive": true,
+            "battery": 58,
+            "depth": 700,
+            "elapsed": 14,
+            "hull": 86,
+            "lights_on": true,
+            "oxygen": 72
+          },
+          "effects": [
+            "oxygen: 72 -> 70",
+            "battery: 58 -> 55",
+            "hull: 86 -> 85",
+            "depth: 700 -> 750"
+          ],
+          "turn": 14
+        },
+        {
+          "action": "avancer",
+          "after": {
+            "alive": true,
+            "battery": 52,
+            "depth": 800,
+            "elapsed": 16,
+            "hull": 84,
+            "lights_on": true,
+            "oxygen": 68
+          },
+          "before": {
+            "alive": true,
+            "battery": 55,
+            "depth": 750,
+            "elapsed": 15,
+            "hull": 85,
+            "lights_on": true,
+            "oxygen": 70
+          },
+          "effects": [
+            "oxygen: 70 -> 68",
+            "battery: 55 -> 52",
+            "hull: 85 -> 84",
+            "depth: 750 -> 800"
+          ],
+          "turn": 15
+        },
+        {
+          "action": "avancer",
+          "after": {
+            "alive": true,
+            "battery": 49,
+            "depth": 850,
+            "elapsed": 17,
+            "hull": 81,
+            "lights_on": true,
+            "oxygen": 66
+          },
+          "before": {
+            "alive": true,
+            "battery": 52,
+            "depth": 800,
+            "elapsed": 16,
+            "hull": 84,
+            "lights_on": true,
+            "oxygen": 68
+          },
+          "effects": [
+            "oxygen: 68 -> 66",
+            "battery: 52 -> 49",
+            "hull: 84 -> 81",
+            "depth: 800 -> 850"
+          ],
+          "turn": 16
+        },
+        {
+          "action": "avancer",
+          "after": {
+            "alive": true,
+            "battery": 46,
+            "depth": 900,
+            "elapsed": 18,
+            "hull": 78,
+            "lights_on": true,
+            "oxygen": 64
+          },
+          "before": {
+            "alive": true,
+            "battery": 49,
+            "depth": 850,
+            "elapsed": 17,
+            "hull": 81,
+            "lights_on": true,
+            "oxygen": 66
+          },
+          "effects": [
+            "oxygen: 66 -> 64",
+            "battery: 49 -> 46",
+            "hull: 81 -> 78",
+            "depth: 850 -> 900"
+          ],
+          "turn": 17
+        },
+        {
+          "action": "avancer",
+          "after": {
+            "alive": true,
+            "battery": 43,
+            "depth": 950,
+            "elapsed": 19,
+            "hull": 75,
+            "lights_on": true,
+            "oxygen": 62
+          },
+          "before": {
+            "alive": true,
+            "battery": 46,
+            "depth": 900,
+            "elapsed": 18,
+            "hull": 78,
+            "lights_on": true,
+            "oxygen": 64
+          },
+          "effects": [
+            "oxygen: 64 -> 62",
+            "battery: 46 -> 43",
+            "hull: 78 -> 75",
+            "depth: 900 -> 950"
+          ],
+          "turn": 18
+        },
+        {
+          "action": "avancer",
+          "after": {
+            "alive": true,
+            "battery": 40,
+            "depth": 1000,
+            "elapsed": 20,
+            "hull": 72,
+            "lights_on": true,
+            "oxygen": 60
+          },
+          "before": {
+            "alive": true,
+            "battery": 43,
+            "depth": 950,
+            "elapsed": 19,
+            "hull": 75,
+            "lights_on": true,
+            "oxygen": 62
+          },
+          "effects": [
+            "oxygen: 62 -> 60",
+            "battery: 43 -> 40",
+            "hull: 75 -> 72",
+            "depth: 950 -> 1000"
+          ],
+          "turn": 19
+        },
+        {
+          "action": "avancer",
+          "after": {
+            "alive": true,
+            "battery": 37,
+            "depth": 1050,
+            "elapsed": 21,
+            "hull": 69,
+            "lights_on": true,
+            "oxygen": 58
+          },
+          "before": {
+            "alive": true,
+            "battery": 40,
+            "depth": 1000,
+            "elapsed": 20,
+            "hull": 72,
+            "lights_on": true,
+            "oxygen": 60
+          },
+          "effects": [
+            "oxygen: 60 -> 58",
+            "battery: 40 -> 37",
+            "hull: 72 -> 69",
+            "depth: 1000 -> 1050"
+          ],
+          "turn": 20
+        },
+        {
+          "action": "avancer",
+          "after": {
+            "alive": true,
+            "battery": 34,
+            "depth": 1100,
+            "elapsed": 22,
+            "hull": 66,
+            "lights_on": true,
+            "oxygen": 56
+          },
+          "before": {
+            "alive": true,
+            "battery": 37,
+            "depth": 1050,
+            "elapsed": 21,
+            "hull": 69,
+            "lights_on": true,
+            "oxygen": 58
+          },
+          "effects": [
+            "oxygen: 58 -> 56",
+            "battery: 37 -> 34",
+            "hull: 69 -> 66",
+            "depth: 1050 -> 1100"
+          ],
+          "turn": 21
+        },
+        {
+          "action": "avancer",
+          "after": {
+            "alive": true,
+            "battery": 31,
+            "depth": 1150,
+            "elapsed": 23,
+            "hull": 63,
+            "lights_on": true,
+            "oxygen": 54
+          },
+          "before": {
+            "alive": true,
+            "battery": 34,
+            "depth": 1100,
+            "elapsed": 22,
+            "hull": 66,
+            "lights_on": true,
+            "oxygen": 56
+          },
+          "effects": [
+            "oxygen: 56 -> 54",
+            "battery: 34 -> 31",
+            "hull: 66 -> 63",
+            "depth: 1100 -> 1150"
+          ],
+          "turn": 22
+        },
+        {
+          "action": "avancer",
+          "after": {
+            "alive": true,
+            "battery": 28,
+            "depth": 1200,
+            "elapsed": 24,
+            "hull": 60,
+            "lights_on": true,
+            "oxygen": 52
+          },
+          "before": {
+            "alive": true,
+            "battery": 31,
+            "depth": 1150,
+            "elapsed": 23,
+            "hull": 63,
+            "lights_on": true,
+            "oxygen": 54
+          },
+          "effects": [
+            "oxygen: 54 -> 52",
+            "battery: 31 -> 28",
+            "hull: 63 -> 60",
+            "depth: 1150 -> 1200"
+          ],
+          "turn": 23
+        }
+      ],
+      "turns_played": 24
+    },
+    "opposant": {
+      "final": {
+        "alive": true,
+        "battery": 73,
+        "depth": 0,
+        "elapsed": 24,
+        "hull": 100,
+        "lights_on": false,
+        "oxygen": 61
+      },
+      "profile": "opposant",
+      "seed": 20260924,
+      "survived": true,
+      "systems_exercised": [
+        "battery",
+        "oxygen"
+      ],
+      "trace": [
+        {
+          "action": "reculer",
+          "after": {
+            "alive": true,
+            "battery": 97,
+            "depth": 0,
+            "elapsed": 1,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 98
+          },
+          "before": {
+            "alive": true,
+            "battery": 100,
+            "depth": 0,
+            "elapsed": 0,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 100
+          },
+          "effects": [
+            "oxygen: 100 -> 98",
+            "battery: 100 -> 97"
+          ],
+          "turn": 0
+        },
+        {
+          "action": "eteindre",
+          "after": {
+            "alive": true,
+            "battery": 99,
+            "depth": 0,
+            "elapsed": 2,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 97
+          },
+          "before": {
+            "alive": true,
+            "battery": 97,
+            "depth": 0,
+            "elapsed": 1,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 98
+          },
+          "effects": [
+            "oxygen: 98 -> 97",
+            "battery: 97 -> 99"
+          ],
+          "turn": 1
+        },
+        {
+          "action": "reculer",
+          "after": {
+            "alive": true,
+            "battery": 96,
+            "depth": 0,
+            "elapsed": 3,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 95
+          },
+          "before": {
+            "alive": true,
+            "battery": 99,
+            "depth": 0,
+            "elapsed": 2,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 97
+          },
+          "effects": [
+            "oxygen: 97 -> 95",
+            "battery: 99 -> 96"
+          ],
+          "turn": 2
+        },
+        {
+          "action": "reculer",
+          "after": {
+            "alive": true,
+            "battery": 93,
+            "depth": 0,
+            "elapsed": 4,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 93
+          },
+          "before": {
+            "alive": true,
+            "battery": 96,
+            "depth": 0,
+            "elapsed": 3,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 95
+          },
+          "effects": [
+            "oxygen: 95 -> 93",
+            "battery: 96 -> 93"
+          ],
+          "turn": 3
+        },
+        {
+          "action": "eteindre",
+          "after": {
+            "alive": true,
+            "battery": 95,
+            "depth": 0,
+            "elapsed": 5,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 92
+          },
+          "before": {
+            "alive": true,
+            "battery": 93,
+            "depth": 0,
+            "elapsed": 4,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 93
+          },
+          "effects": [
+            "oxygen: 93 -> 92",
+            "battery: 93 -> 95"
+          ],
+          "turn": 4
+        },
+        {
+          "action": "reculer",
+          "after": {
+            "alive": true,
+            "battery": 92,
+            "depth": 0,
+            "elapsed": 6,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 90
+          },
+          "before": {
+            "alive": true,
+            "battery": 95,
+            "depth": 0,
+            "elapsed": 5,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 92
+          },
+          "effects": [
+            "oxygen: 92 -> 90",
+            "battery: 95 -> 92"
+          ],
+          "turn": 5
+        },
+        {
+          "action": "reculer",
+          "after": {
+            "alive": true,
+            "battery": 89,
+            "depth": 0,
+            "elapsed": 7,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 88
+          },
+          "before": {
+            "alive": true,
+            "battery": 92,
+            "depth": 0,
+            "elapsed": 6,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 90
+          },
+          "effects": [
+            "oxygen: 90 -> 88",
+            "battery: 92 -> 89"
+          ],
+          "turn": 6
+        },
+        {
+          "action": "eteindre",
+          "after": {
+            "alive": true,
+            "battery": 91,
+            "depth": 0,
+            "elapsed": 8,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 87
+          },
+          "before": {
+            "alive": true,
+            "battery": 89,
+            "depth": 0,
+            "elapsed": 7,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 88
+          },
+          "effects": [
+            "oxygen: 88 -> 87",
+            "battery: 89 -> 91"
+          ],
+          "turn": 7
+        },
+        {
+          "action": "reculer",
+          "after": {
+            "alive": true,
+            "battery": 88,
+            "depth": 0,
+            "elapsed": 9,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 85
+          },
+          "before": {
+            "alive": true,
+            "battery": 91,
+            "depth": 0,
+            "elapsed": 8,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 87
+          },
+          "effects": [
+            "oxygen: 87 -> 85",
+            "battery: 91 -> 88"
+          ],
+          "turn": 8
+        },
+        {
+          "action": "reculer",
+          "after": {
+            "alive": true,
+            "battery": 85,
+            "depth": 0,
+            "elapsed": 10,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 83
+          },
+          "before": {
+            "alive": true,
+            "battery": 88,
+            "depth": 0,
+            "elapsed": 9,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 85
+          },
+          "effects": [
+            "oxygen: 85 -> 83",
+            "battery: 88 -> 85"
+          ],
+          "turn": 9
+        },
+        {
+          "action": "eteindre",
+          "after": {
+            "alive": true,
+            "battery": 87,
+            "depth": 0,
+            "elapsed": 11,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 82
+          },
+          "before": {
+            "alive": true,
+            "battery": 85,
+            "depth": 0,
+            "elapsed": 10,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 83
+          },
+          "effects": [
+            "oxygen: 83 -> 82",
+            "battery: 85 -> 87"
+          ],
+          "turn": 10
+        },
+        {
+          "action": "reculer",
+          "after": {
+            "alive": true,
+            "battery": 84,
+            "depth": 0,
+            "elapsed": 12,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 80
+          },
+          "before": {
+            "alive": true,
+            "battery": 87,
+            "depth": 0,
+            "elapsed": 11,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 82
+          },
+          "effects": [
+            "oxygen: 82 -> 80",
+            "battery: 87 -> 84"
+          ],
+          "turn": 11
+        },
+        {
+          "action": "reculer",
+          "after": {
+            "alive": true,
+            "battery": 81,
+            "depth": 0,
+            "elapsed": 13,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 78
+          },
+          "before": {
+            "alive": true,
+            "battery": 84,
+            "depth": 0,
+            "elapsed": 12,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 80
+          },
+          "effects": [
+            "oxygen: 80 -> 78",
+            "battery: 84 -> 81"
+          ],
+          "turn": 12
+        },
+        {
+          "action": "eteindre",
+          "after": {
+            "alive": true,
+            "battery": 83,
+            "depth": 0,
+            "elapsed": 14,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 77
+          },
+          "before": {
+            "alive": true,
+            "battery": 81,
+            "depth": 0,
+            "elapsed": 13,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 78
+          },
+          "effects": [
+            "oxygen: 78 -> 77",
+            "battery: 81 -> 83"
+          ],
+          "turn": 13
+        },
+        {
+          "action": "reculer",
+          "after": {
+            "alive": true,
+            "battery": 80,
+            "depth": 0,
+            "elapsed": 15,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 75
+          },
+          "before": {
+            "alive": true,
+            "battery": 83,
+            "depth": 0,
+            "elapsed": 14,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 77
+          },
+          "effects": [
+            "oxygen: 77 -> 75",
+            "battery: 83 -> 80"
+          ],
+          "turn": 14
+        },
+        {
+          "action": "reculer",
+          "after": {
+            "alive": true,
+            "battery": 77,
+            "depth": 0,
+            "elapsed": 16,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 73
+          },
+          "before": {
+            "alive": true,
+            "battery": 80,
+            "depth": 0,
+            "elapsed": 15,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 75
+          },
+          "effects": [
+            "oxygen: 75 -> 73",
+            "battery: 80 -> 77"
+          ],
+          "turn": 15
+        },
+        {
+          "action": "eteindre",
+          "after": {
+            "alive": true,
+            "battery": 79,
+            "depth": 0,
+            "elapsed": 17,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 72
+          },
+          "before": {
+            "alive": true,
+            "battery": 77,
+            "depth": 0,
+            "elapsed": 16,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 73
+          },
+          "effects": [
+            "oxygen: 73 -> 72",
+            "battery: 77 -> 79"
+          ],
+          "turn": 16
+        },
+        {
+          "action": "reculer",
+          "after": {
+            "alive": true,
+            "battery": 76,
+            "depth": 0,
+            "elapsed": 18,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 70
+          },
+          "before": {
+            "alive": true,
+            "battery": 79,
+            "depth": 0,
+            "elapsed": 17,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 72
+          },
+          "effects": [
+            "oxygen: 72 -> 70",
+            "battery: 79 -> 76"
+          ],
+          "turn": 17
+        },
+        {
+          "action": "reculer",
+          "after": {
+            "alive": true,
+            "battery": 73,
+            "depth": 0,
+            "elapsed": 19,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 68
+          },
+          "before": {
+            "alive": true,
+            "battery": 76,
+            "depth": 0,
+            "elapsed": 18,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 70
+          },
+          "effects": [
+            "oxygen: 70 -> 68",
+            "battery: 76 -> 73"
+          ],
+          "turn": 18
+        },
+        {
+          "action": "eteindre",
+          "after": {
+            "alive": true,
+            "battery": 75,
+            "depth": 0,
+            "elapsed": 20,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 67
+          },
+          "before": {
+            "alive": true,
+            "battery": 73,
+            "depth": 0,
+            "elapsed": 19,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 68
+          },
+          "effects": [
+            "oxygen: 68 -> 67",
+            "battery: 73 -> 75"
+          ],
+          "turn": 19
+        },
+        {
+          "action": "reculer",
+          "after": {
+            "alive": true,
+            "battery": 72,
+            "depth": 0,
+            "elapsed": 21,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 65
+          },
+          "before": {
+            "alive": true,
+            "battery": 75,
+            "depth": 0,
+            "elapsed": 20,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 67
+          },
+          "effects": [
+            "oxygen: 67 -> 65",
+            "battery: 75 -> 72"
+          ],
+          "turn": 20
+        },
+        {
+          "action": "eteindre",
+          "after": {
+            "alive": true,
+            "battery": 74,
+            "depth": 0,
+            "elapsed": 22,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 64
+          },
+          "before": {
+            "alive": true,
+            "battery": 72,
+            "depth": 0,
+            "elapsed": 21,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 65
+          },
+          "effects": [
+            "oxygen: 65 -> 64",
+            "battery: 72 -> 74"
+          ],
+          "turn": 21
+        },
+        {
+          "action": "eteindre",
+          "after": {
+            "alive": true,
+            "battery": 76,
+            "depth": 0,
+            "elapsed": 23,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 63
+          },
+          "before": {
+            "alive": true,
+            "battery": 74,
+            "depth": 0,
+            "elapsed": 22,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 64
+          },
+          "effects": [
+            "oxygen: 64 -> 63",
+            "battery: 74 -> 76"
+          ],
+          "turn": 22
+        },
+        {
+          "action": "reculer",
+          "after": {
+            "alive": true,
+            "battery": 73,
+            "depth": 0,
+            "elapsed": 24,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 61
+          },
+          "before": {
+            "alive": true,
+            "battery": 76,
+            "depth": 0,
+            "elapsed": 23,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 63
+          },
+          "effects": [
+            "oxygen: 63 -> 61",
+            "battery: 76 -> 73"
+          ],
+          "turn": 23
+        }
+      ],
+      "turns_played": 24
+    },
+    "optimiseur": {
+      "final": {
+        "alive": true,
+        "battery": 73,
+        "depth": 450,
+        "elapsed": 24,
+        "hull": 91,
+        "lights_on": false,
+        "oxygen": 57
+      },
+      "profile": "optimiseur",
+      "seed": 20260924,
+      "survived": true,
+      "systems_exercised": [
+        "battery",
+        "depth",
+        "hull",
+        "oxygen"
+      ],
+      "trace": [
+        {
+          "action": "recuperer",
+          "after": {
+            "alive": true,
+            "battery": 99,
+            "depth": 0,
+            "elapsed": 1,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 98
+          },
+          "before": {
+            "alive": true,
+            "battery": 100,
+            "depth": 0,
+            "elapsed": 0,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 100
+          },
+          "effects": [
+            "oxygen: 100 -> 98",
+            "battery: 100 -> 99"
+          ],
+          "turn": 0
+        },
+        {
+          "action": "avancer",
+          "after": {
+            "alive": true,
+            "battery": 96,
+            "depth": 50,
+            "elapsed": 2,
+            "hull": 99,
+            "lights_on": true,
+            "oxygen": 96
+          },
+          "before": {
+            "alive": true,
+            "battery": 99,
+            "depth": 0,
+            "elapsed": 1,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 98
+          },
+          "effects": [
+            "oxygen: 98 -> 96",
+            "battery: 99 -> 96",
+            "hull: 100 -> 99",
+            "depth: 0 -> 50"
+          ],
+          "turn": 1
+        },
+        {
+          "action": "recuperer",
+          "after": {
+            "alive": true,
+            "battery": 95,
+            "depth": 50,
+            "elapsed": 3,
+            "hull": 99,
+            "lights_on": true,
+            "oxygen": 94
+          },
+          "before": {
+            "alive": true,
+            "battery": 96,
+            "depth": 50,
+            "elapsed": 2,
+            "hull": 99,
+            "lights_on": true,
+            "oxygen": 96
+          },
+          "effects": [
+            "oxygen: 96 -> 94",
+            "battery: 96 -> 95"
+          ],
+          "turn": 2
+        },
+        {
+          "action": "recuperer",
+          "after": {
+            "alive": true,
+            "battery": 94,
+            "depth": 50,
+            "elapsed": 4,
+            "hull": 99,
+            "lights_on": true,
+            "oxygen": 92
+          },
+          "before": {
+            "alive": true,
+            "battery": 95,
+            "depth": 50,
+            "elapsed": 3,
+            "hull": 99,
+            "lights_on": true,
+            "oxygen": 94
+          },
+          "effects": [
+            "oxygen: 94 -> 92",
+            "battery: 95 -> 94"
+          ],
+          "turn": 3
+        },
+        {
+          "action": "avancer",
+          "after": {
+            "alive": true,
+            "battery": 91,
+            "depth": 100,
+            "elapsed": 5,
+            "hull": 98,
+            "lights_on": true,
+            "oxygen": 90
+          },
+          "before": {
+            "alive": true,
+            "battery": 94,
+            "depth": 50,
+            "elapsed": 4,
+            "hull": 99,
+            "lights_on": true,
+            "oxygen": 92
+          },
+          "effects": [
+            "oxygen: 92 -> 90",
+            "battery: 94 -> 91",
+            "hull: 99 -> 98",
+            "depth: 50 -> 100"
+          ],
+          "turn": 4
+        },
+        {
+          "action": "recuperer",
+          "after": {
+            "alive": true,
+            "battery": 90,
+            "depth": 100,
+            "elapsed": 6,
+            "hull": 98,
+            "lights_on": true,
+            "oxygen": 88
+          },
+          "before": {
+            "alive": true,
+            "battery": 91,
+            "depth": 100,
+            "elapsed": 5,
+            "hull": 98,
+            "lights_on": true,
+            "oxygen": 90
+          },
+          "effects": [
+            "oxygen: 90 -> 88",
+            "battery: 91 -> 90"
+          ],
+          "turn": 5
+        },
+        {
+          "action": "eteindre",
+          "after": {
+            "alive": true,
+            "battery": 92,
+            "depth": 100,
+            "elapsed": 7,
+            "hull": 98,
+            "lights_on": false,
+            "oxygen": 87
+          },
+          "before": {
+            "alive": true,
+            "battery": 90,
+            "depth": 100,
+            "elapsed": 6,
+            "hull": 98,
+            "lights_on": true,
+            "oxygen": 88
+          },
+          "effects": [
+            "oxygen: 88 -> 87",
+            "battery: 90 -> 92"
+          ],
+          "turn": 6
+        },
+        {
+          "action": "avancer",
+          "after": {
+            "alive": true,
+            "battery": 89,
+            "depth": 150,
+            "elapsed": 8,
+            "hull": 97,
+            "lights_on": false,
+            "oxygen": 85
+          },
+          "before": {
+            "alive": true,
+            "battery": 92,
+            "depth": 100,
+            "elapsed": 7,
+            "hull": 98,
+            "lights_on": false,
+            "oxygen": 87
+          },
+          "effects": [
+            "oxygen: 87 -> 85",
+            "battery: 92 -> 89",
+            "hull: 98 -> 97",
+            "depth: 100 -> 150"
+          ],
+          "turn": 7
+        },
+        {
+          "action": "recuperer",
+          "after": {
+            "alive": true,
+            "battery": 88,
+            "depth": 150,
+            "elapsed": 9,
+            "hull": 97,
+            "lights_on": false,
+            "oxygen": 83
+          },
+          "before": {
+            "alive": true,
+            "battery": 89,
+            "depth": 150,
+            "elapsed": 8,
+            "hull": 97,
+            "lights_on": false,
+            "oxygen": 85
+          },
+          "effects": [
+            "oxygen: 85 -> 83",
+            "battery: 89 -> 88"
+          ],
+          "turn": 8
+        },
+        {
+          "action": "eteindre",
+          "after": {
+            "alive": true,
+            "battery": 90,
+            "depth": 150,
+            "elapsed": 10,
+            "hull": 97,
+            "lights_on": false,
+            "oxygen": 82
+          },
+          "before": {
+            "alive": true,
+            "battery": 88,
+            "depth": 150,
+            "elapsed": 9,
+            "hull": 97,
+            "lights_on": false,
+            "oxygen": 83
+          },
+          "effects": [
+            "oxygen: 83 -> 82",
+            "battery: 88 -> 90"
+          ],
+          "turn": 9
+        },
+        {
+          "action": "avancer",
+          "after": {
+            "alive": true,
+            "battery": 87,
+            "depth": 200,
+            "elapsed": 11,
+            "hull": 96,
+            "lights_on": false,
+            "oxygen": 80
+          },
+          "before": {
+            "alive": true,
+            "battery": 90,
+            "depth": 150,
+            "elapsed": 10,
+            "hull": 97,
+            "lights_on": false,
+            "oxygen": 82
+          },
+          "effects": [
+            "oxygen: 82 -> 80",
+            "battery: 90 -> 87",
+            "hull: 97 -> 96",
+            "depth: 150 -> 200"
+          ],
+          "turn": 10
+        },
+        {
+          "action": "recuperer",
+          "after": {
+            "alive": true,
+            "battery": 86,
+            "depth": 200,
+            "elapsed": 12,
+            "hull": 96,
+            "lights_on": false,
+            "oxygen": 78
+          },
+          "before": {
+            "alive": true,
+            "battery": 87,
+            "depth": 200,
+            "elapsed": 11,
+            "hull": 96,
+            "lights_on": false,
+            "oxygen": 80
+          },
+          "effects": [
+            "oxygen: 80 -> 78",
+            "battery: 87 -> 86"
+          ],
+          "turn": 11
+        },
+        {
+          "action": "eteindre",
+          "after": {
+            "alive": true,
+            "battery": 88,
+            "depth": 200,
+            "elapsed": 13,
+            "hull": 96,
+            "lights_on": false,
+            "oxygen": 77
+          },
+          "before": {
+            "alive": true,
+            "battery": 86,
+            "depth": 200,
+            "elapsed": 12,
+            "hull": 96,
+            "lights_on": false,
+            "oxygen": 78
+          },
+          "effects": [
+            "oxygen: 78 -> 77",
+            "battery: 86 -> 88"
+          ],
+          "turn": 12
+        },
+        {
+          "action": "avancer",
+          "after": {
+            "alive": true,
+            "battery": 85,
+            "depth": 250,
+            "elapsed": 14,
+            "hull": 95,
+            "lights_on": false,
+            "oxygen": 75
+          },
+          "before": {
+            "alive": true,
+            "battery": 88,
+            "depth": 200,
+            "elapsed": 13,
+            "hull": 96,
+            "lights_on": false,
+            "oxygen": 77
+          },
+          "effects": [
+            "oxygen: 77 -> 75",
+            "battery: 88 -> 85",
+            "hull: 96 -> 95",
+            "depth: 200 -> 250"
+          ],
+          "turn": 13
+        },
+        {
+          "action": "recuperer",
+          "after": {
+            "alive": true,
+            "battery": 84,
+            "depth": 250,
+            "elapsed": 15,
+            "hull": 95,
+            "lights_on": false,
+            "oxygen": 73
+          },
+          "before": {
+            "alive": true,
+            "battery": 85,
+            "depth": 250,
+            "elapsed": 14,
+            "hull": 95,
+            "lights_on": false,
+            "oxygen": 75
+          },
+          "effects": [
+            "oxygen: 75 -> 73",
+            "battery: 85 -> 84"
+          ],
+          "turn": 14
+        },
+        {
+          "action": "eteindre",
+          "after": {
+            "alive": true,
+            "battery": 86,
+            "depth": 250,
+            "elapsed": 16,
+            "hull": 95,
+            "lights_on": false,
+            "oxygen": 72
+          },
+          "before": {
+            "alive": true,
+            "battery": 84,
+            "depth": 250,
+            "elapsed": 15,
+            "hull": 95,
+            "lights_on": false,
+            "oxygen": 73
+          },
+          "effects": [
+            "oxygen: 73 -> 72",
+            "battery: 84 -> 86"
+          ],
+          "turn": 15
+        },
+        {
+          "action": "avancer",
+          "after": {
+            "alive": true,
+            "battery": 83,
+            "depth": 300,
+            "elapsed": 17,
+            "hull": 94,
+            "lights_on": false,
+            "oxygen": 70
+          },
+          "before": {
+            "alive": true,
+            "battery": 86,
+            "depth": 250,
+            "elapsed": 16,
+            "hull": 95,
+            "lights_on": false,
+            "oxygen": 72
+          },
+          "effects": [
+            "oxygen: 72 -> 70",
+            "battery: 86 -> 83",
+            "hull: 95 -> 94",
+            "depth: 250 -> 300"
+          ],
+          "turn": 16
+        },
+        {
+          "action": "recuperer",
+          "after": {
+            "alive": true,
+            "battery": 82,
+            "depth": 300,
+            "elapsed": 18,
+            "hull": 94,
+            "lights_on": false,
+            "oxygen": 68
+          },
+          "before": {
+            "alive": true,
+            "battery": 83,
+            "depth": 300,
+            "elapsed": 17,
+            "hull": 94,
+            "lights_on": false,
+            "oxygen": 70
+          },
+          "effects": [
+            "oxygen: 70 -> 68",
+            "battery: 83 -> 82"
+          ],
+          "turn": 17
+        },
+        {
+          "action": "eteindre",
+          "after": {
+            "alive": true,
+            "battery": 84,
+            "depth": 300,
+            "elapsed": 19,
+            "hull": 94,
+            "lights_on": false,
+            "oxygen": 67
+          },
+          "before": {
+            "alive": true,
+            "battery": 82,
+            "depth": 300,
+            "elapsed": 18,
+            "hull": 94,
+            "lights_on": false,
+            "oxygen": 68
+          },
+          "effects": [
+            "oxygen: 68 -> 67",
+            "battery: 82 -> 84"
+          ],
+          "turn": 18
+        },
+        {
+          "action": "avancer",
+          "after": {
+            "alive": true,
+            "battery": 81,
+            "depth": 350,
+            "elapsed": 20,
+            "hull": 93,
+            "lights_on": false,
+            "oxygen": 65
+          },
+          "before": {
+            "alive": true,
+            "battery": 84,
+            "depth": 300,
+            "elapsed": 19,
+            "hull": 94,
+            "lights_on": false,
+            "oxygen": 67
+          },
+          "effects": [
+            "oxygen: 67 -> 65",
+            "battery: 84 -> 81",
+            "hull: 94 -> 93",
+            "depth: 300 -> 350"
+          ],
+          "turn": 19
+        },
+        {
+          "action": "recuperer",
+          "after": {
+            "alive": true,
+            "battery": 80,
+            "depth": 350,
+            "elapsed": 21,
+            "hull": 93,
+            "lights_on": false,
+            "oxygen": 63
+          },
+          "before": {
+            "alive": true,
+            "battery": 81,
+            "depth": 350,
+            "elapsed": 20,
+            "hull": 93,
+            "lights_on": false,
+            "oxygen": 65
+          },
+          "effects": [
+            "oxygen: 65 -> 63",
+            "battery: 81 -> 80"
+          ],
+          "turn": 20
+        },
+        {
+          "action": "avancer",
+          "after": {
+            "alive": true,
+            "battery": 77,
+            "depth": 400,
+            "elapsed": 22,
+            "hull": 92,
+            "lights_on": false,
+            "oxygen": 61
+          },
+          "before": {
+            "alive": true,
+            "battery": 80,
+            "depth": 350,
+            "elapsed": 21,
+            "hull": 93,
+            "lights_on": false,
+            "oxygen": 63
+          },
+          "effects": [
+            "oxygen: 63 -> 61",
+            "battery: 80 -> 77",
+            "hull: 93 -> 92",
+            "depth: 350 -> 400"
+          ],
+          "turn": 21
+        },
+        {
+          "action": "avancer",
+          "after": {
+            "alive": true,
+            "battery": 74,
+            "depth": 450,
+            "elapsed": 23,
+            "hull": 91,
+            "lights_on": false,
+            "oxygen": 59
+          },
+          "before": {
+            "alive": true,
+            "battery": 77,
+            "depth": 400,
+            "elapsed": 22,
+            "hull": 92,
+            "lights_on": false,
+            "oxygen": 61
+          },
+          "effects": [
+            "oxygen: 61 -> 59",
+            "battery: 77 -> 74",
+            "hull: 92 -> 91",
+            "depth: 400 -> 450"
+          ],
+          "turn": 22
+        },
+        {
+          "action": "recuperer",
+          "after": {
+            "alive": true,
+            "battery": 73,
+            "depth": 450,
+            "elapsed": 24,
+            "hull": 91,
+            "lights_on": false,
+            "oxygen": 57
+          },
+          "before": {
+            "alive": true,
+            "battery": 74,
+            "depth": 450,
+            "elapsed": 23,
+            "hull": 91,
+            "lights_on": false,
+            "oxygen": 59
+          },
+          "effects": [
+            "oxygen: 59 -> 57",
+            "battery: 74 -> 73"
+          ],
+          "turn": 23
+        }
+      ],
+      "turns_played": 24
+    },
+    "prudent": {
+      "final": {
+        "alive": true,
+        "battery": 48,
+        "depth": 0,
+        "elapsed": 24,
+        "hull": 100,
+        "lights_on": true,
+        "oxygen": 47
+      },
+      "profile": "prudent",
+      "seed": 20260924,
+      "survived": true,
+      "systems_exercised": [
+        "battery",
+        "oxygen"
+      ],
+      "trace": [
+        {
+          "action": "reparer",
+          "after": {
+            "alive": true,
+            "battery": 98,
+            "depth": 0,
+            "elapsed": 1,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 97
+          },
+          "before": {
+            "alive": true,
+            "battery": 100,
+            "depth": 0,
+            "elapsed": 0,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 100
+          },
+          "effects": [
+            "oxygen: 100 -> 97",
+            "battery: 100 -> 98"
+          ],
+          "turn": 0
+        },
+        {
+          "action": "reculer",
+          "after": {
+            "alive": true,
+            "battery": 95,
+            "depth": 0,
+            "elapsed": 2,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 95
+          },
+          "before": {
+            "alive": true,
+            "battery": 98,
+            "depth": 0,
+            "elapsed": 1,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 97
+          },
+          "effects": [
+            "oxygen: 97 -> 95",
+            "battery: 98 -> 95"
+          ],
+          "turn": 1
+        },
+        {
+          "action": "reparer",
+          "after": {
+            "alive": true,
+            "battery": 93,
+            "depth": 0,
+            "elapsed": 3,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 92
+          },
+          "before": {
+            "alive": true,
+            "battery": 95,
+            "depth": 0,
+            "elapsed": 2,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 95
+          },
+          "effects": [
+            "oxygen: 95 -> 92",
+            "battery: 95 -> 93"
+          ],
+          "turn": 2
+        },
+        {
+          "action": "reparer",
+          "after": {
+            "alive": true,
+            "battery": 91,
+            "depth": 0,
+            "elapsed": 4,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 89
+          },
+          "before": {
+            "alive": true,
+            "battery": 93,
+            "depth": 0,
+            "elapsed": 3,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 92
+          },
+          "effects": [
+            "oxygen: 92 -> 89",
+            "battery: 93 -> 91"
+          ],
+          "turn": 3
+        },
+        {
+          "action": "reculer",
+          "after": {
+            "alive": true,
+            "battery": 88,
+            "depth": 0,
+            "elapsed": 5,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 87
+          },
+          "before": {
+            "alive": true,
+            "battery": 91,
+            "depth": 0,
+            "elapsed": 4,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 89
+          },
+          "effects": [
+            "oxygen: 89 -> 87",
+            "battery: 91 -> 88"
+          ],
+          "turn": 4
+        },
+        {
+          "action": "reparer",
+          "after": {
+            "alive": true,
+            "battery": 86,
+            "depth": 0,
+            "elapsed": 6,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 84
+          },
+          "before": {
+            "alive": true,
+            "battery": 88,
+            "depth": 0,
+            "elapsed": 5,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 87
+          },
+          "effects": [
+            "oxygen: 87 -> 84",
+            "battery: 88 -> 86"
+          ],
+          "turn": 5
+        },
+        {
+          "action": "observer",
+          "after": {
+            "alive": true,
+            "battery": 85,
+            "depth": 0,
+            "elapsed": 7,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 83
+          },
+          "before": {
+            "alive": true,
+            "battery": 86,
+            "depth": 0,
+            "elapsed": 6,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 84
+          },
+          "effects": [
+            "oxygen: 84 -> 83",
+            "battery: 86 -> 85"
+          ],
+          "turn": 6
+        },
+        {
+          "action": "reculer",
+          "after": {
+            "alive": true,
+            "battery": 82,
+            "depth": 0,
+            "elapsed": 8,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 81
+          },
+          "before": {
+            "alive": true,
+            "battery": 85,
+            "depth": 0,
+            "elapsed": 7,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 83
+          },
+          "effects": [
+            "oxygen: 83 -> 81",
+            "battery: 85 -> 82"
+          ],
+          "turn": 7
+        },
+        {
+          "action": "reparer",
+          "after": {
+            "alive": true,
+            "battery": 80,
+            "depth": 0,
+            "elapsed": 9,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 78
+          },
+          "before": {
+            "alive": true,
+            "battery": 82,
+            "depth": 0,
+            "elapsed": 8,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 81
+          },
+          "effects": [
+            "oxygen: 81 -> 78",
+            "battery: 82 -> 80"
+          ],
+          "turn": 8
+        },
+        {
+          "action": "observer",
+          "after": {
+            "alive": true,
+            "battery": 79,
+            "depth": 0,
+            "elapsed": 10,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 77
+          },
+          "before": {
+            "alive": true,
+            "battery": 80,
+            "depth": 0,
+            "elapsed": 9,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 78
+          },
+          "effects": [
+            "oxygen: 78 -> 77",
+            "battery: 80 -> 79"
+          ],
+          "turn": 9
+        },
+        {
+          "action": "reculer",
+          "after": {
+            "alive": true,
+            "battery": 76,
+            "depth": 0,
+            "elapsed": 11,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 75
+          },
+          "before": {
+            "alive": true,
+            "battery": 79,
+            "depth": 0,
+            "elapsed": 10,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 77
+          },
+          "effects": [
+            "oxygen: 77 -> 75",
+            "battery: 79 -> 76"
+          ],
+          "turn": 10
+        },
+        {
+          "action": "reparer",
+          "after": {
+            "alive": true,
+            "battery": 74,
+            "depth": 0,
+            "elapsed": 12,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 72
+          },
+          "before": {
+            "alive": true,
+            "battery": 76,
+            "depth": 0,
+            "elapsed": 11,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 75
+          },
+          "effects": [
+            "oxygen: 75 -> 72",
+            "battery: 76 -> 74"
+          ],
+          "turn": 11
+        },
+        {
+          "action": "observer",
+          "after": {
+            "alive": true,
+            "battery": 73,
+            "depth": 0,
+            "elapsed": 13,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 71
+          },
+          "before": {
+            "alive": true,
+            "battery": 74,
+            "depth": 0,
+            "elapsed": 12,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 72
+          },
+          "effects": [
+            "oxygen: 72 -> 71",
+            "battery: 74 -> 73"
+          ],
+          "turn": 12
+        },
+        {
+          "action": "reculer",
+          "after": {
+            "alive": true,
+            "battery": 70,
+            "depth": 0,
+            "elapsed": 14,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 69
+          },
+          "before": {
+            "alive": true,
+            "battery": 73,
+            "depth": 0,
+            "elapsed": 13,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 71
+          },
+          "effects": [
+            "oxygen: 71 -> 69",
+            "battery: 73 -> 70"
+          ],
+          "turn": 13
+        },
+        {
+          "action": "reparer",
+          "after": {
+            "alive": true,
+            "battery": 68,
+            "depth": 0,
+            "elapsed": 15,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 66
+          },
+          "before": {
+            "alive": true,
+            "battery": 70,
+            "depth": 0,
+            "elapsed": 14,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 69
+          },
+          "effects": [
+            "oxygen: 69 -> 66",
+            "battery: 70 -> 68"
+          ],
+          "turn": 14
+        },
+        {
+          "action": "observer",
+          "after": {
+            "alive": true,
+            "battery": 67,
+            "depth": 0,
+            "elapsed": 16,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 65
+          },
+          "before": {
+            "alive": true,
+            "battery": 68,
+            "depth": 0,
+            "elapsed": 15,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 66
+          },
+          "effects": [
+            "oxygen: 66 -> 65",
+            "battery: 68 -> 67"
+          ],
+          "turn": 15
+        },
+        {
+          "action": "reculer",
+          "after": {
+            "alive": true,
+            "battery": 64,
+            "depth": 0,
+            "elapsed": 17,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 63
+          },
+          "before": {
+            "alive": true,
+            "battery": 67,
+            "depth": 0,
+            "elapsed": 16,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 65
+          },
+          "effects": [
+            "oxygen: 65 -> 63",
+            "battery: 67 -> 64"
+          ],
+          "turn": 16
+        },
+        {
+          "action": "reparer",
+          "after": {
+            "alive": true,
+            "battery": 62,
+            "depth": 0,
+            "elapsed": 18,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 60
+          },
+          "before": {
+            "alive": true,
+            "battery": 64,
+            "depth": 0,
+            "elapsed": 17,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 63
+          },
+          "effects": [
+            "oxygen: 63 -> 60",
+            "battery: 64 -> 62"
+          ],
+          "turn": 17
+        },
+        {
+          "action": "observer",
+          "after": {
+            "alive": true,
+            "battery": 61,
+            "depth": 0,
+            "elapsed": 19,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 59
+          },
+          "before": {
+            "alive": true,
+            "battery": 62,
+            "depth": 0,
+            "elapsed": 18,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 60
+          },
+          "effects": [
+            "oxygen: 60 -> 59",
+            "battery: 62 -> 61"
+          ],
+          "turn": 18
+        },
+        {
+          "action": "reculer",
+          "after": {
+            "alive": true,
+            "battery": 58,
+            "depth": 0,
+            "elapsed": 20,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 57
+          },
+          "before": {
+            "alive": true,
+            "battery": 61,
+            "depth": 0,
+            "elapsed": 19,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 59
+          },
+          "effects": [
+            "oxygen: 59 -> 57",
+            "battery: 61 -> 58"
+          ],
+          "turn": 19
+        },
+        {
+          "action": "reparer",
+          "after": {
+            "alive": true,
+            "battery": 56,
+            "depth": 0,
+            "elapsed": 21,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 54
+          },
+          "before": {
+            "alive": true,
+            "battery": 58,
+            "depth": 0,
+            "elapsed": 20,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 57
+          },
+          "effects": [
+            "oxygen: 57 -> 54",
+            "battery: 58 -> 56"
+          ],
+          "turn": 20
+        },
+        {
+          "action": "reculer",
+          "after": {
+            "alive": true,
+            "battery": 53,
+            "depth": 0,
+            "elapsed": 22,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 52
+          },
+          "before": {
+            "alive": true,
+            "battery": 56,
+            "depth": 0,
+            "elapsed": 21,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 54
+          },
+          "effects": [
+            "oxygen: 54 -> 52",
+            "battery: 56 -> 53"
+          ],
+          "turn": 21
+        },
+        {
+          "action": "reculer",
+          "after": {
+            "alive": true,
+            "battery": 50,
+            "depth": 0,
+            "elapsed": 23,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 50
+          },
+          "before": {
+            "alive": true,
+            "battery": 53,
+            "depth": 0,
+            "elapsed": 22,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 52
+          },
+          "effects": [
+            "oxygen: 52 -> 50",
+            "battery: 53 -> 50"
+          ],
+          "turn": 22
+        },
+        {
+          "action": "reparer",
+          "after": {
+            "alive": true,
+            "battery": 48,
+            "depth": 0,
+            "elapsed": 24,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 47
+          },
+          "before": {
+            "alive": true,
+            "battery": 50,
+            "depth": 0,
+            "elapsed": 23,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 50
+          },
+          "effects": [
+            "oxygen: 50 -> 47",
+            "battery: 50 -> 48"
+          ],
+          "turn": 23
+        }
+      ],
+      "turns_played": 24
+    },
+    "specialiste_observation": {
+      "final": {
+        "alive": true,
+        "battery": 91,
+        "depth": 0,
+        "elapsed": 24,
+        "hull": 100,
+        "lights_on": false,
+        "oxygen": 76
+      },
+      "profile": "specialiste_observation",
+      "seed": 20260924,
+      "survived": true,
+      "systems_exercised": [
+        "battery",
+        "oxygen"
+      ],
+      "trace": [
+        {
+          "action": "observer",
+          "after": {
+            "alive": true,
+            "battery": 99,
+            "depth": 0,
+            "elapsed": 1,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 99
+          },
+          "before": {
+            "alive": true,
+            "battery": 100,
+            "depth": 0,
+            "elapsed": 0,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 100
+          },
+          "effects": [
+            "oxygen: 100 -> 99",
+            "battery: 100 -> 99"
+          ],
+          "turn": 0
+        },
+        {
+          "action": "observer",
+          "after": {
+            "alive": true,
+            "battery": 98,
+            "depth": 0,
+            "elapsed": 2,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 98
+          },
+          "before": {
+            "alive": true,
+            "battery": 99,
+            "depth": 0,
+            "elapsed": 1,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 99
+          },
+          "effects": [
+            "oxygen: 99 -> 98",
+            "battery: 99 -> 98"
+          ],
+          "turn": 1
+        },
+        {
+          "action": "observer",
+          "after": {
+            "alive": true,
+            "battery": 97,
+            "depth": 0,
+            "elapsed": 3,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 97
+          },
+          "before": {
+            "alive": true,
+            "battery": 98,
+            "depth": 0,
+            "elapsed": 2,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 98
+          },
+          "effects": [
+            "oxygen: 98 -> 97",
+            "battery: 98 -> 97"
+          ],
+          "turn": 2
+        },
+        {
+          "action": "observer",
+          "after": {
+            "alive": true,
+            "battery": 96,
+            "depth": 0,
+            "elapsed": 4,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 96
+          },
+          "before": {
+            "alive": true,
+            "battery": 97,
+            "depth": 0,
+            "elapsed": 3,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 97
+          },
+          "effects": [
+            "oxygen: 97 -> 96",
+            "battery: 97 -> 96"
+          ],
+          "turn": 3
+        },
+        {
+          "action": "observer",
+          "after": {
+            "alive": true,
+            "battery": 95,
+            "depth": 0,
+            "elapsed": 5,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 95
+          },
+          "before": {
+            "alive": true,
+            "battery": 96,
+            "depth": 0,
+            "elapsed": 4,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 96
+          },
+          "effects": [
+            "oxygen: 96 -> 95",
+            "battery: 96 -> 95"
+          ],
+          "turn": 4
+        },
+        {
+          "action": "observer",
+          "after": {
+            "alive": true,
+            "battery": 94,
+            "depth": 0,
+            "elapsed": 6,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 94
+          },
+          "before": {
+            "alive": true,
+            "battery": 95,
+            "depth": 0,
+            "elapsed": 5,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 95
+          },
+          "effects": [
+            "oxygen: 95 -> 94",
+            "battery: 95 -> 94"
+          ],
+          "turn": 5
+        },
+        {
+          "action": "eteindre",
+          "after": {
+            "alive": true,
+            "battery": 96,
+            "depth": 0,
+            "elapsed": 7,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 93
+          },
+          "before": {
+            "alive": true,
+            "battery": 94,
+            "depth": 0,
+            "elapsed": 6,
+            "hull": 100,
+            "lights_on": true,
+            "oxygen": 94
+          },
+          "effects": [
+            "oxygen: 94 -> 93",
+            "battery: 94 -> 96"
+          ],
+          "turn": 6
+        },
+        {
+          "action": "observer",
+          "after": {
+            "alive": true,
+            "battery": 95,
+            "depth": 0,
+            "elapsed": 8,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 92
+          },
+          "before": {
+            "alive": true,
+            "battery": 96,
+            "depth": 0,
+            "elapsed": 7,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 93
+          },
+          "effects": [
+            "oxygen: 93 -> 92",
+            "battery: 96 -> 95"
+          ],
+          "turn": 7
+        },
+        {
+          "action": "observer",
+          "after": {
+            "alive": true,
+            "battery": 94,
+            "depth": 0,
+            "elapsed": 9,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 91
+          },
+          "before": {
+            "alive": true,
+            "battery": 95,
+            "depth": 0,
+            "elapsed": 8,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 92
+          },
+          "effects": [
+            "oxygen: 92 -> 91",
+            "battery: 95 -> 94"
+          ],
+          "turn": 8
+        },
+        {
+          "action": "eteindre",
+          "after": {
+            "alive": true,
+            "battery": 96,
+            "depth": 0,
+            "elapsed": 10,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 90
+          },
+          "before": {
+            "alive": true,
+            "battery": 94,
+            "depth": 0,
+            "elapsed": 9,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 91
+          },
+          "effects": [
+            "oxygen: 91 -> 90",
+            "battery: 94 -> 96"
+          ],
+          "turn": 9
+        },
+        {
+          "action": "observer",
+          "after": {
+            "alive": true,
+            "battery": 95,
+            "depth": 0,
+            "elapsed": 11,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 89
+          },
+          "before": {
+            "alive": true,
+            "battery": 96,
+            "depth": 0,
+            "elapsed": 10,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 90
+          },
+          "effects": [
+            "oxygen: 90 -> 89",
+            "battery: 96 -> 95"
+          ],
+          "turn": 10
+        },
+        {
+          "action": "observer",
+          "after": {
+            "alive": true,
+            "battery": 94,
+            "depth": 0,
+            "elapsed": 12,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 88
+          },
+          "before": {
+            "alive": true,
+            "battery": 95,
+            "depth": 0,
+            "elapsed": 11,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 89
+          },
+          "effects": [
+            "oxygen: 89 -> 88",
+            "battery: 95 -> 94"
+          ],
+          "turn": 11
+        },
+        {
+          "action": "eteindre",
+          "after": {
+            "alive": true,
+            "battery": 96,
+            "depth": 0,
+            "elapsed": 13,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 87
+          },
+          "before": {
+            "alive": true,
+            "battery": 94,
+            "depth": 0,
+            "elapsed": 12,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 88
+          },
+          "effects": [
+            "oxygen: 88 -> 87",
+            "battery: 94 -> 96"
+          ],
+          "turn": 12
+        },
+        {
+          "action": "observer",
+          "after": {
+            "alive": true,
+            "battery": 95,
+            "depth": 0,
+            "elapsed": 14,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 86
+          },
+          "before": {
+            "alive": true,
+            "battery": 96,
+            "depth": 0,
+            "elapsed": 13,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 87
+          },
+          "effects": [
+            "oxygen: 87 -> 86",
+            "battery: 96 -> 95"
+          ],
+          "turn": 13
+        },
+        {
+          "action": "observer",
+          "after": {
+            "alive": true,
+            "battery": 94,
+            "depth": 0,
+            "elapsed": 15,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 85
+          },
+          "before": {
+            "alive": true,
+            "battery": 95,
+            "depth": 0,
+            "elapsed": 14,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 86
+          },
+          "effects": [
+            "oxygen: 86 -> 85",
+            "battery: 95 -> 94"
+          ],
+          "turn": 14
+        },
+        {
+          "action": "eteindre",
+          "after": {
+            "alive": true,
+            "battery": 96,
+            "depth": 0,
+            "elapsed": 16,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 84
+          },
+          "before": {
+            "alive": true,
+            "battery": 94,
+            "depth": 0,
+            "elapsed": 15,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 85
+          },
+          "effects": [
+            "oxygen: 85 -> 84",
+            "battery: 94 -> 96"
+          ],
+          "turn": 15
+        },
+        {
+          "action": "observer",
+          "after": {
+            "alive": true,
+            "battery": 95,
+            "depth": 0,
+            "elapsed": 17,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 83
+          },
+          "before": {
+            "alive": true,
+            "battery": 96,
+            "depth": 0,
+            "elapsed": 16,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 84
+          },
+          "effects": [
+            "oxygen: 84 -> 83",
+            "battery: 96 -> 95"
+          ],
+          "turn": 16
+        },
+        {
+          "action": "observer",
+          "after": {
+            "alive": true,
+            "battery": 94,
+            "depth": 0,
+            "elapsed": 18,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 82
+          },
+          "before": {
+            "alive": true,
+            "battery": 95,
+            "depth": 0,
+            "elapsed": 17,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 83
+          },
+          "effects": [
+            "oxygen: 83 -> 82",
+            "battery: 95 -> 94"
+          ],
+          "turn": 17
+        },
+        {
+          "action": "eteindre",
+          "after": {
+            "alive": true,
+            "battery": 96,
+            "depth": 0,
+            "elapsed": 19,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 81
+          },
+          "before": {
+            "alive": true,
+            "battery": 94,
+            "depth": 0,
+            "elapsed": 18,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 82
+          },
+          "effects": [
+            "oxygen: 82 -> 81",
+            "battery: 94 -> 96"
+          ],
+          "turn": 18
+        },
+        {
+          "action": "observer",
+          "after": {
+            "alive": true,
+            "battery": 95,
+            "depth": 0,
+            "elapsed": 20,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 80
+          },
+          "before": {
+            "alive": true,
+            "battery": 96,
+            "depth": 0,
+            "elapsed": 19,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 81
+          },
+          "effects": [
+            "oxygen: 81 -> 80",
+            "battery: 96 -> 95"
+          ],
+          "turn": 19
+        },
+        {
+          "action": "observer",
+          "after": {
+            "alive": true,
+            "battery": 94,
+            "depth": 0,
+            "elapsed": 21,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 79
+          },
+          "before": {
+            "alive": true,
+            "battery": 95,
+            "depth": 0,
+            "elapsed": 20,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 80
+          },
+          "effects": [
+            "oxygen: 80 -> 79",
+            "battery: 95 -> 94"
+          ],
+          "turn": 20
+        },
+        {
+          "action": "observer",
+          "after": {
+            "alive": true,
+            "battery": 93,
+            "depth": 0,
+            "elapsed": 22,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 78
+          },
+          "before": {
+            "alive": true,
+            "battery": 94,
+            "depth": 0,
+            "elapsed": 21,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 79
+          },
+          "effects": [
+            "oxygen: 79 -> 78",
+            "battery: 94 -> 93"
+          ],
+          "turn": 21
+        },
+        {
+          "action": "observer",
+          "after": {
+            "alive": true,
+            "battery": 92,
+            "depth": 0,
+            "elapsed": 23,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 77
+          },
+          "before": {
+            "alive": true,
+            "battery": 93,
+            "depth": 0,
+            "elapsed": 22,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 78
+          },
+          "effects": [
+            "oxygen: 78 -> 77",
+            "battery: 93 -> 92"
+          ],
+          "turn": 22
+        },
+        {
+          "action": "observer",
+          "after": {
+            "alive": true,
+            "battery": 91,
+            "depth": 0,
+            "elapsed": 24,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 76
+          },
+          "before": {
+            "alive": true,
+            "battery": 92,
+            "depth": 0,
+            "elapsed": 23,
+            "hull": 100,
+            "lights_on": false,
+            "oxygen": 77
+          },
+          "effects": [
+            "oxygen: 77 -> 76",
+            "battery: 92 -> 91"
+          ],
+          "turn": 23
+        }
+      ],
+      "turns_played": 24
+    }
+  },
+  "seed": 20260924,
+  "survivors": [
+    "econome",
+    "explorateur",
+    "ignore_les_signes",
+    "opposant",
+    "optimiseur",
+    "prudent",
+    "specialiste_observation"
+  ]
+}

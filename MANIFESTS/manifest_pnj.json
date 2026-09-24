@@ -1,0 +1,71 @@
+{
+  "count": 4,
+  "entries": [
+    {
+      "display_name": "Ilyan",
+      "forbidden_knowledge": [
+        "anomalie_*",
+        "trace_*"
+      ],
+      "function": "navigateur, qui refuse de regarder directement la vitre pendant les plongees",
+      "id": "equipage_ilyan",
+      "knows": [],
+      "note": "Un dialogue ne doit jamais reveler un fait que le PNJ ne connait pas.",
+      "routines": {
+        "reason": "Aucune routine horaire n'est specifiee dans le canon.",
+        "status": "TO_VALIDATE"
+      },
+      "status": "CANONICAL"
+    },
+    {
+      "display_name": "Mara",
+      "forbidden_knowledge": [
+        "anomalie_*",
+        "trace_*"
+      ],
+      "function": "ingenieure de bord, responsable des systemes du sous-marin",
+      "id": "equipage_mara",
+      "knows": [
+        "systeme_*"
+      ],
+      "note": "Un dialogue ne doit jamais reveler un fait que le PNJ ne connait pas.",
+      "routines": {
+        "reason": "Aucune routine horaire n'est specifiee dans le canon.",
+        "status": "TO_VALIDATE"
+      },
+      "status": "CANONICAL"
+    },
+    {
+      "display_name": "Pilote",
+      "forbidden_knowledge": [
+        "anomalie_*",
+        "trace_*"
+      ],
+      "function": "personnage joueur",
+      "id": "equipage_pilote",
+      "knows": [],
+      "note": "Un dialogue ne doit jamais reveler un fait que le PNJ ne connait pas.",
+      "routines": {
+        "reason": "Aucune routine horaire n'est specifiee dans le canon.",
+        "status": "TO_VALIDATE"
+      },
+      "status": "CANONICAL"
+    },
+    {
+      "display_name": "Sorel",
+      "forbidden_knowledge": [
+        "anomalie_*",
+        "trace_*"
+      ],
+      "function": "chercheur de terrain, fascine par les traces anciennes et jamais totalement serein",
+      "id": "equipage_sorel",
+      "knows": [],
+      "note": "Un dialogue ne doit jamais reveler un fait que le PNJ ne connait pas.",
+      "routines": {
+        "reason": "Aucune routine horaire n'est specifiee dans le canon.",
+        "status": "TO_VALIDATE"
+      },
+      "status": "CANONICAL"
+    }
+  ]
+}

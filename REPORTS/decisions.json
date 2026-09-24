@@ -1,0 +1,492 @@
+{
+  "by_status": {
+    "BLOCKED": [
+      "dec_chemin_blender"
+    ],
+    "CANONICAL": [
+      "dec_echelle_entiere",
+      "dec_moteur_cible",
+      "dec_sans_llm_runtime",
+      "dec_tuile_logique",
+      "dec_vue_unique"
+    ],
+    "DERIVED": [
+      "dec_artefacts_canoniques",
+      "dec_equipage_trois",
+      "dec_systemes_vitaux",
+      "dec_zones_canoniques"
+    ],
+    "PROPOSED": [
+      "dec_dimensions_asset",
+      "dec_graine_procedurale",
+      "dec_palette"
+    ],
+    "TO_VALIDATE": [
+      "dec_coherence_psy",
+      "dec_duree_plongee",
+      "dec_fin_de_boucle",
+      "dec_frequence_degats",
+      "dec_importance_maintenance",
+      "dec_nature_formes",
+      "dec_nb_anomalies",
+      "dec_nb_artefacts",
+      "dec_nb_evenements",
+      "dec_nb_zones_profondes",
+      "dec_procedural_fond"
+    ]
+  },
+  "decision_count": 24,
+  "decisions": [
+    {
+      "affects": [
+        "catalogue_artefacts",
+        "manifest_objets"
+      ],
+      "consequences": [
+        "Tout objet supplementaire est une proposition a valider."
+      ],
+      "depends_on": [],
+      "id": "dec_artefacts_canoniques",
+      "justification": "canon_initial.md enumere 5 objets sous 'Objets canoniques'.",
+      "owner": "PIPELINE",
+      "source": "INPUT/canon_initial.md",
+      "statement": "5 objets canoniques, aucun autre.",
+      "status": "DERIVED",
+      "value": 5
+    },
+    {
+      "affects": [
+        "blender_adapter",
+        "manifest_assets",
+        "ASSETS_BIN"
+      ],
+      "consequences": [
+        "Toute generation d'asset reelle est BLOCKED.",
+        "L'adaptateur est livre, teste a vide, mais ne produit aucun binaire."
+      ],
+      "depends_on": [],
+      "id": "dec_chemin_blender",
+      "justification": "Le chemin fourni est un emplacement temporaire explicitement marque 'A REMPLACER'. Il n'existe pas. INPUT/external_tools.md, qui devrait le declarer, est absent du bootstrapper. Aucun chemin n'est invente.",
+      "owner": "PIPELINE",
+      "source": "prompt utilisateur",
+      "statement": "Chemin local du framework Blender: 'C:\\\\CHEMIN\\\\A\\\\REMPLACER\\\\FRAMEWORK_BLENDER'.",
+      "status": "BLOCKED",
+      "value": null
+    },
+    {
+      "affects": [
+        "validators.narratif"
+      ],
+      "consequences": [
+        "Bloque le validateur narratif sur les anomalies."
+      ],
+      "depends_on": [
+        "dec_nature_formes"
+      ],
+      "id": "dec_coherence_psy",
+      "justification": "Ouvert dans open_decisions.md.",
+      "owner": "PROPRIETAIRE",
+      "source": "INPUT/open_decisions.md",
+      "statement": "Degre de coherence psychologique entre apparitions et indices.",
+      "status": "TO_VALIDATE",
+      "value": null
+    },
+    {
+      "affects": [
+        "manifest_assets",
+        "blender_adapter"
+      ],
+      "consequences": [
+        "Le validateur d'asset compare les dimensions reelles a ces valeurs."
+      ],
+      "depends_on": [
+        "dec_tuile_logique",
+        "dec_vue_unique"
+      ],
+      "id": "dec_dimensions_asset",
+      "justification": "Derive de la tuile 16x16 (tous multiples de 16) et de la vue unique. Valeurs techniques par defaut, surchargeables par manifest.",
+      "owner": "PIPELINE",
+      "source": "pipeline",
+      "statement": "Dimensions par defaut: cadran 32x32, silhouette d'anomalie 96x96, plaque de cockpit 160x64, tuile de fond 16x16.",
+      "status": "PROPOSED",
+      "value": null
+    },
+    {
+      "affects": [
+        "validators.temporel",
+        "simulate"
+      ],
+      "consequences": [
+        "Bloque le validateur economique et temporel."
+      ],
+      "depends_on": [
+        "dec_systemes_vitaux"
+      ],
+      "id": "dec_duree_plongee",
+      "justification": "Ouvert dans open_decisions.md. Impacte directement l'equilibrage oxygene/batterie.",
+      "owner": "PROPRIETAIRE",
+      "source": "INPUT/open_decisions.md",
+      "statement": "Duree d'une plongee.",
+      "status": "TO_VALIDATE",
+      "value": null
+    },
+    {
+      "affects": [
+        "validators.assets",
+        "assets_bin"
+      ],
+      "consequences": [
+        "Aucun asset ne doit etre redimensionne apres livraison."
+      ],
+      "depends_on": [
+        "dec_tuile_logique"
+      ],
+      "id": "dec_echelle_entiere",
+      "justification": "Enonce explicitement dans constraints.md.",
+      "owner": "PIPELINE",
+      "source": "INPUT/constraints.md",
+      "statement": "Rendu pixel art a mise a l'echelle entiere.",
+      "status": "CANONICAL",
+      "value": true
+    },
+    {
+      "affects": [
+        "catalogue_equipage",
+        "schema_dialogue"
+      ],
+      "consequences": [
+        "Le catalogue PNJ est ferme a 3 entrees + le Pilote."
+      ],
+      "depends_on": [],
+      "id": "dec_equipage_trois",
+      "justification": "canon_initial.md nomme Mara, Ilyan et Sorel et personne d'autre. Aucun quatrieme membre ne peut etre ajoute sans decision du proprietaire.",
+      "owner": "PIPELINE",
+      "source": "INPUT/canon_initial.md",
+      "statement": "L'equipage non-joueur compte exactement 3 membres.",
+      "status": "DERIVED",
+      "value": 3
+    },
+    {
+      "affects": [
+        "catalogue_evenements"
+      ],
+      "consequences": [
+        "Bloque le catalogue d'evenements terminaux."
+      ],
+      "depends_on": [],
+      "id": "dec_fin_de_boucle",
+      "justification": "Ouvert dans open_decisions.md; lie au 'vrai but de la plongee finale' declare ouvert dans le canon.",
+      "owner": "PROPRIETAIRE",
+      "source": "INPUT/open_decisions.md",
+      "statement": "Presence ou non d'elements narratifs de fin de boucle.",
+      "status": "TO_VALIDATE",
+      "value": null
+    },
+    {
+      "affects": [
+        "validators.economique",
+        "simulate"
+      ],
+      "consequences": [
+        "Bloque l'equilibrage de la tension."
+      ],
+      "depends_on": [
+        "dec_duree_plongee"
+      ],
+      "id": "dec_frequence_degats",
+      "justification": "Ouvert dans open_decisions.md.",
+      "owner": "PROPRIETAIRE",
+      "source": "INPUT/open_decisions.md",
+      "statement": "Frequence des degats de coque et de perte d'oxygene.",
+      "status": "TO_VALIDATE",
+      "value": null
+    },
+    {
+      "affects": [
+        "reproducibility",
+        "manifest_maps"
+      ],
+      "consequences": [
+        "Deux executions a graine identique produisent des sorties identiques."
+      ],
+      "depends_on": [],
+      "id": "dec_graine_procedurale",
+      "justification": "Necessaire a la reproductibilite exigee par le contrat. Valeur arbitraire mais fixee et versionnee.",
+      "owner": "PIPELINE",
+      "source": "pipeline",
+      "statement": "Graine procedurale par defaut = 20260924.",
+      "status": "PROPOSED",
+      "value": 20260924
+    },
+    {
+      "affects": [
+        "catalogue_ressources"
+      ],
+      "consequences": [
+        "Bloque le dimensionnement des ressources."
+      ],
+      "depends_on": [
+        "dec_systemes_vitaux"
+      ],
+      "id": "dec_importance_maintenance",
+      "justification": "Ouvert dans open_decisions.md.",
+      "owner": "PROPRIETAIRE",
+      "source": "INPUT/open_decisions.md",
+      "statement": "Importance des ressources de maintenance.",
+      "status": "TO_VALIDATE",
+      "value": null
+    },
+    {
+      "affects": [
+        "compile_runtime",
+        "schema_asset",
+        "RUNTIME/"
+      ],
+      "consequences": [
+        "Le compilateur runtime emet du JSON chargeable par Godot 4."
+      ],
+      "depends_on": [],
+      "id": "dec_moteur_cible",
+      "justification": "Enonce explicitement dans constraints.md, section Technique.",
+      "owner": "PIPELINE",
+      "source": "INPUT/constraints.md",
+      "statement": "Le moteur cible est Godot 4.",
+      "status": "CANONICAL",
+      "value": "godot4"
+    },
+    {
+      "affects": [
+        "catalogue_anomalies",
+        "prompts.famille_anomalie"
+      ],
+      "consequences": [
+        "Bloque anomalies, animations de presence, et la plongee finale."
+      ],
+      "depends_on": [],
+      "id": "dec_nature_formes",
+      "justification": "Declare ouvert sous 'Elements ouverts' dans canon_initial.md. C'est le coeur creatif du jeu: la pipeline ne le tranche pas.",
+      "owner": "PROPRIETAIRE",
+      "source": "INPUT/canon_initial.md",
+      "statement": "Nature exacte des formes terrifiantes.",
+      "status": "TO_VALIDATE",
+      "value": null
+    },
+    {
+      "affects": [
+        "catalogue_anomalies",
+        "manifest_assets",
+        "manifest_animations"
+      ],
+      "consequences": [
+        "Le catalogue d'anomalies reste vide; seule une fixture de test existe."
+      ],
+      "depends_on": [
+        "dec_nature_formes"
+      ],
+      "id": "dec_nb_anomalies",
+      "justification": "Ouvert dans open_decisions.md et canon_initial.md. La nature meme des formes est declaree ouverte: en deduire un nombre reviendrait a inventer du canon.",
+      "owner": "PROPRIETAIRE",
+      "source": "INPUT/open_decisions.md",
+      "statement": "Nombre exact d'anomalies visibles depuis la vitre.",
+      "status": "TO_VALIDATE",
+      "value": null
+    },
+    {
+      "affects": [
+        "catalogue_artefacts"
+      ],
+      "consequences": [
+        "Le manifest d'objets s'arrete aux 5 canoniques."
+      ],
+      "depends_on": [
+        "dec_artefacts_canoniques"
+      ],
+      "id": "dec_nb_artefacts",
+      "justification": "Ouvert dans open_decisions.md.",
+      "owner": "PROPRIETAIRE",
+      "source": "INPUT/open_decisions.md",
+      "statement": "Nombre exact d'artefacts recuperables au-dela des 5 canoniques.",
+      "status": "TO_VALIDATE",
+      "value": {
+        "plancher_canonique": 5,
+        "retenu": null
+      }
+    },
+    {
+      "affects": [
+        "catalogue_evenements"
+      ],
+      "consequences": [
+        "Le catalogue d'evenements reste vide hors fixture."
+      ],
+      "depends_on": [
+        "dec_nb_anomalies"
+      ],
+      "id": "dec_nb_evenements",
+      "justification": "Ouvert dans open_decisions.md.",
+      "owner": "PROPRIETAIRE",
+      "source": "INPUT/open_decisions.md",
+      "statement": "Nombre exact d'evenements de tension ou de fuite.",
+      "status": "TO_VALIDATE",
+      "value": null
+    },
+    {
+      "affects": [
+        "catalogue_zones",
+        "manifest_maps"
+      ],
+      "consequences": [
+        "Bloque le dimensionnement du manifest de maps au-dela des 4 zones canoniques."
+      ],
+      "depends_on": [
+        "dec_zones_canoniques"
+      ],
+      "id": "dec_nb_zones_profondes",
+      "justification": "Liste explicitement comme ouverte dans open_decisions.md ET canon_initial.md. La pipeline propose 3 (les zones canoniques) comme plancher, sans le figer.",
+      "owner": "PROPRIETAIRE",
+      "source": "INPUT/open_decisions.md",
+      "statement": "Nombre exact de zones abyssales.",
+      "status": "TO_VALIDATE",
+      "value": {
+        "plancher_canonique": 4,
+        "retenu": null
+      }
+    },
+    {
+      "affects": [
+        "binary_check",
+        "manifest_assets",
+        "prompts"
+      ],
+      "consequences": [
+        "Les PNG indexes livres sont rejetes si leur PLTE sort de cette palette."
+      ],
+      "depends_on": [
+        "dec_echelle_entiere"
+      ],
+      "id": "dec_palette",
+      "justification": "Aucune palette n'est specifiee dans les entrees. constraints.md impose 'sombre, oppressant'. Valeur technique par defaut, modulaire: modifiable dans CANON/palette.json sans toucher au canon narratif.",
+      "owner": "PIPELINE",
+      "source": "pipeline",
+      "statement": "Palette de production imposee: 16 teintes abyssales.",
+      "status": "PROPOSED",
+      "value": "CANON/palette.json"
+    },
+    {
+      "affects": [
+        "manifest_maps",
+        "reproducibility"
+      ],
+      "consequences": [
+        "Determine si les maps sont fixes ou generees."
+      ],
+      "depends_on": [
+        "dec_graine_procedurale"
+      ],
+      "id": "dec_procedural_fond",
+      "justification": "Ouvert dans open_decisions.md.",
+      "owner": "PROPRIETAIRE",
+      "source": "INPUT/open_decisions.md",
+      "statement": "Niveau de generation procedurale du fond marin.",
+      "status": "TO_VALIDATE",
+      "value": null
+    },
+    {
+      "affects": [
+        "compile_runtime",
+        "validators.runtime"
+      ],
+      "consequences": [
+        "Les dialogues essentiels sont compiles en donnees conditionnelles."
+      ],
+      "depends_on": [],
+      "id": "dec_sans_llm_runtime",
+      "justification": "Enonce dans constraints.md section IA et dans le contrat.",
+      "owner": "PIPELINE",
+      "source": "INPUT/constraints.md",
+      "statement": "Le jeu final ne depend pas d'un LLM a l'execution.",
+      "status": "CANONICAL",
+      "value": true
+    },
+    {
+      "affects": [
+        "catalogue_systemes",
+        "manifest_animations",
+        "graphe"
+      ],
+      "consequences": [
+        "Chaque systeme genere des etats, donc des animations de cadran et d'alarme.",
+        "Chaque systeme definit une condition d'echec de plongee."
+      ],
+      "depends_on": [
+        "dec_vue_unique"
+      ],
+      "id": "dec_systemes_vitaux",
+      "justification": "game_brief.md enumere explicitement 'oxygene, puissance, energie et stabilite' puis 'oxygene, batterie, pression, carburant' et 'batterie / puissance / eclairage'. Les 5 systemes sont l'union de ces enumerations, sans ajout.",
+      "owner": "PIPELINE",
+      "source": "INPUT/game_brief.md",
+      "statement": "Le sous-marin expose 5 systemes vitaux: oxygene, batterie, coque/pression, propulsion/carburant, projecteur/eclairage.",
+      "status": "DERIVED",
+      "value": [
+        "systeme_oxygene",
+        "systeme_batterie",
+        "systeme_coque",
+        "systeme_propulsion",
+        "systeme_projecteur"
+      ]
+    },
+    {
+      "affects": [
+        "manifest_assets",
+        "validators.assets",
+        "blender_adapter"
+      ],
+      "consequences": [
+        "Toute dimension d'asset doit etre un multiple de 16."
+      ],
+      "depends_on": [],
+      "id": "dec_tuile_logique",
+      "justification": "Enonce explicitement dans constraints.md ('Tuiles logiques : 16 x 16 pixels').",
+      "owner": "PIPELINE",
+      "source": "INPUT/constraints.md",
+      "statement": "La tuile logique mesure 16x16 pixels.",
+      "status": "CANONICAL",
+      "value": 16
+    },
+    {
+      "affects": [
+        "schema_map",
+        "manifest_maps",
+        "placement"
+      ],
+      "consequences": [
+        "Les 'maps' ne sont pas des tilemaps parcourables mais des fenetres de profondeur; le schema de map est adapte en consequence."
+      ],
+      "depends_on": [],
+      "id": "dec_vue_unique",
+      "justification": "Enonce dans constraints.md et confirme par game_brief.md (perspective).",
+      "owner": "PIPELINE",
+      "source": "INPUT/constraints.md",
+      "statement": "L'ecran montre seulement la vitre, le cockpit et l'abysse devant.",
+      "status": "CANONICAL",
+      "value": "fenetre_de_profondeur"
+    },
+    {
+      "affects": [
+        "catalogue_zones",
+        "manifest_maps"
+      ],
+      "consequences": [
+        "Le catalogue de zones est initialise a ces 4 entrees uniquement."
+      ],
+      "depends_on": [],
+      "id": "dec_zones_canoniques",
+      "justification": "canon_initial.md liste 4 lieux connus. Le Vitrail Noire est decrit comme 'sous-marin de depart', donc base et non zone d'exploration.",
+      "owner": "PIPELINE",
+      "source": "INPUT/canon_initial.md",
+      "statement": "3 zones d'exploration canoniques + 1 zone de base (le Vitrail Noire).",
+      "status": "DERIVED",
+      "value": 4
+    }
+  ]
+}

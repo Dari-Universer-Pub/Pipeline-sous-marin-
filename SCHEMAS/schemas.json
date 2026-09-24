@@ -1,0 +1,976 @@
+{
+  "not_applicable": [
+    "crop",
+    "machine",
+    "recipe",
+    "quest",
+    "creature",
+    "boss"
+  ],
+  "schema_version": "5.0.0",
+  "schemas": {
+    "animation": {
+      "assets": {
+        "min": 1,
+        "of": {
+          "kind": "asset",
+          "required": true,
+          "type": "ref"
+        },
+        "required": true,
+        "type": "list"
+      },
+      "direction": {
+        "required": true,
+        "type": "enum",
+        "values": [
+          "none",
+          "front",
+          "left",
+          "right"
+        ]
+      },
+      "entity_id": {
+        "required": true,
+        "type": "id"
+      },
+      "fps": {
+        "max": 60,
+        "min": 1,
+        "required": true,
+        "type": "int"
+      },
+      "frames": {
+        "max": 64,
+        "min": 1,
+        "required": true,
+        "type": "int"
+      },
+      "id": {
+        "required": true,
+        "type": "id"
+      },
+      "impact_frame": {
+        "min": 0,
+        "required": false,
+        "type": "int"
+      },
+      "logical_effect": {
+        "required": true,
+        "type": "dict"
+      },
+      "loop": {
+        "required": true,
+        "type": "bool"
+      },
+      "state_or_action": {
+        "required": true,
+        "type": "id"
+      },
+      "status": {
+        "required": true,
+        "type": "enum",
+        "values": [
+          "PLANNED",
+          "GENERATED",
+          "IMPORTED",
+          "VALIDATED",
+          "RUNTIME_TESTED",
+          "ART_GREEN",
+          "BLOCKED"
+        ]
+      },
+      "tests": {
+        "min": 1,
+        "of": {
+          "required": true,
+          "type": "str"
+        },
+        "required": true,
+        "type": "list"
+      },
+      "transitions": {
+        "of": {
+          "required": true,
+          "type": "id"
+        },
+        "required": true,
+        "type": "list"
+      }
+    },
+    "asset": {
+      "animations": {
+        "of": {
+          "kind": "animation",
+          "required": true,
+          "type": "ref"
+        },
+        "required": true,
+        "type": "list"
+      },
+      "asset_type": {
+        "required": true,
+        "type": "enum",
+        "values": [
+          "tile",
+          "sprite",
+          "silhouette",
+          "readout",
+          "panel",
+          "overlay",
+          "frame"
+        ]
+      },
+      "directions": {
+        "of": {
+          "required": true,
+          "type": "enum",
+          "values": [
+            "none",
+            "front",
+            "left",
+            "right"
+          ]
+        },
+        "required": true,
+        "type": "list"
+      },
+      "entity_id": {
+        "required": true,
+        "type": "id"
+      },
+      "family": {
+        "required": true,
+        "type": "id"
+      },
+      "file": {
+        "required": false,
+        "type": "str"
+      },
+      "file_sha256": {
+        "pattern": "^[0-9a-f]{64}$",
+        "required": false,
+        "type": "str"
+      },
+      "format": {
+        "required": true,
+        "type": "enum",
+        "values": [
+          "png",
+          "jpeg"
+        ]
+      },
+      "height": {
+        "max": 4096,
+        "min": 16,
+        "multiple_of": 16,
+        "required": true,
+        "type": "int"
+      },
+      "id": {
+        "required": true,
+        "type": "id"
+      },
+      "output_rules": {
+        "required": true,
+        "type": "dict"
+      },
+      "palette": {
+        "min": 1,
+        "of": {
+          "required": true,
+          "type": "list"
+        },
+        "required": true,
+        "type": "list"
+      },
+      "resolution": {
+        "required": true,
+        "type": "str"
+      },
+      "status": {
+        "required": true,
+        "type": "enum",
+        "values": [
+          "PLANNED",
+          "GENERATED",
+          "IMPORTED",
+          "VALIDATED",
+          "RUNTIME_TESTED",
+          "ART_GREEN",
+          "BLOCKED"
+        ]
+      },
+      "style": {
+        "required": true,
+        "type": "str"
+      },
+      "validations": {
+        "min": 1,
+        "of": {
+          "required": true,
+          "type": "str"
+        },
+        "required": true,
+        "type": "list"
+      },
+      "variants": {
+        "of": {
+          "required": true,
+          "type": "id"
+        },
+        "required": true,
+        "type": "list"
+      },
+      "width": {
+        "max": 4096,
+        "min": 16,
+        "multiple_of": 16,
+        "required": true,
+        "type": "int"
+      }
+    },
+    "condition": {
+      "op": {
+        "required": true,
+        "type": "enum",
+        "values": [
+          "lt",
+          "lte",
+          "eq",
+          "gte",
+          "gt",
+          "has",
+          "not_has",
+          "in"
+        ]
+      },
+      "subject": {
+        "required": true,
+        "type": "str"
+      },
+      "value": {
+        "required": true,
+        "type": "any"
+      }
+    },
+    "dialogue": {
+      "compiled": {
+        "required": true,
+        "type": "bool"
+      },
+      "forbidden_knowledge": {
+        "of": {
+          "kind": null,
+          "required": true,
+          "type": "ref"
+        },
+        "required": true,
+        "type": "list"
+      },
+      "id": {
+        "required": true,
+        "type": "id"
+      },
+      "lines": {
+        "min": 1,
+        "of": {
+          "required": true,
+          "type": "str"
+        },
+        "required": true,
+        "type": "list"
+      },
+      "location": {
+        "kind": "zone",
+        "required": true,
+        "type": "ref"
+      },
+      "relation_min": {
+        "max": 100,
+        "min": -100,
+        "required": true,
+        "type": "int"
+      },
+      "requires_knowledge": {
+        "of": {
+          "kind": null,
+          "required": true,
+          "type": "ref"
+        },
+        "required": true,
+        "type": "list"
+      },
+      "requires_world_state": {
+        "of": {
+          "required": true,
+          "type": "dict"
+        },
+        "required": true,
+        "type": "list"
+      },
+      "speaker": {
+        "kind": "crew",
+        "required": true,
+        "type": "ref"
+      },
+      "time_band": {
+        "required": true,
+        "type": "str"
+      }
+    },
+    "effect": {
+      "durable": {
+        "required": false,
+        "type": "bool"
+      },
+      "op": {
+        "required": true,
+        "type": "enum",
+        "values": [
+          "set",
+          "add",
+          "sub",
+          "unlock",
+          "reveal",
+          "damage"
+        ]
+      },
+      "target": {
+        "required": true,
+        "type": "str"
+      },
+      "value": {
+        "required": true,
+        "type": "any"
+      }
+    },
+    "entity": {
+      "display_name": {
+        "max": 80,
+        "min": 1,
+        "required": true,
+        "type": "str"
+      },
+      "id": {
+        "kind": null,
+        "required": true,
+        "type": "id"
+      },
+      "kind": {
+        "required": true,
+        "type": "enum",
+        "values": [
+          "action",
+          "animation",
+          "anomaly",
+          "artifact",
+          "asset",
+          "crew",
+          "event",
+          "family",
+          "placement",
+          "resource",
+          "state",
+          "system",
+          "trace",
+          "zone"
+        ]
+      },
+      "maturity": {
+        "required": false,
+        "type": "enum",
+        "values": [
+          "SPECIFIED",
+          "SCHEMA_VALIDATED",
+          "IMPORTED",
+          "CATALOGED",
+          "GRAPH_CONNECTED",
+          "COMPILED",
+          "RUNTIME_TESTED",
+          "PRODUCTION_READY"
+        ]
+      },
+      "source": {
+        "required": true,
+        "type": "str"
+      },
+      "source_line": {
+        "required": false,
+        "type": "int"
+      },
+      "status": {
+        "required": true,
+        "type": "enum",
+        "values": [
+          "CANONICAL",
+          "DERIVED",
+          "PROPOSED",
+          "TO_VALIDATE"
+        ]
+      }
+    },
+    "event": {
+      "choices": {
+        "of": {
+          "required": true,
+          "type": "dict"
+        },
+        "required": true,
+        "type": "list"
+      },
+      "consequences": {
+        "min": 1,
+        "of": {
+          "required": true,
+          "type": "dict"
+        },
+        "required": true,
+        "type": "list"
+      },
+      "discovery_method": {
+        "required": true,
+        "type": "str"
+      },
+      "effects": {
+        "min": 1,
+        "of": {
+          "required": true,
+          "type": "dict"
+        },
+        "required": true,
+        "type": "list"
+      },
+      "failure_conditions": {
+        "of": {
+          "required": true,
+          "type": "dict"
+        },
+        "required": true,
+        "type": "list"
+      },
+      "fallback": {
+        "required": true,
+        "type": "dict"
+      },
+      "id": {
+        "required": true,
+        "type": "id"
+      },
+      "location": {
+        "kind": "zone",
+        "required": true,
+        "type": "ref"
+      },
+      "missable": {
+        "required": true,
+        "type": "bool"
+      },
+      "participants": {
+        "of": {
+          "kind": null,
+          "required": true,
+          "type": "ref"
+        },
+        "required": true,
+        "type": "list"
+      },
+      "preconditions": {
+        "of": {
+          "required": true,
+          "type": "dict"
+        },
+        "required": true,
+        "type": "list"
+      },
+      "reachability_tests": {
+        "min": 1,
+        "of": {
+          "required": true,
+          "type": "str"
+        },
+        "required": true,
+        "type": "list"
+      },
+      "steps": {
+        "min": 1,
+        "of": {
+          "required": true,
+          "type": "dict"
+        },
+        "required": true,
+        "type": "list"
+      },
+      "temporality": {
+        "required": true,
+        "type": "dict"
+      },
+      "trigger": {
+        "required": true,
+        "type": "dict"
+      }
+    },
+    "external_tool": {
+      "builders": {
+        "of": {
+          "required": true,
+          "type": "str"
+        },
+        "required": true,
+        "type": "list"
+      },
+      "entry_scripts": {
+        "of": {
+          "required": true,
+          "type": "str"
+        },
+        "required": true,
+        "type": "list"
+      },
+      "id": {
+        "required": true,
+        "type": "id"
+      },
+      "input_formats": {
+        "of": {
+          "required": true,
+          "type": "str"
+        },
+        "required": true,
+        "type": "list"
+      },
+      "name": {
+        "required": true,
+        "type": "str"
+      },
+      "output_formats": {
+        "of": {
+          "required": true,
+          "type": "str"
+        },
+        "required": true,
+        "type": "list"
+      },
+      "output_paths": {
+        "of": {
+          "required": true,
+          "type": "str"
+        },
+        "required": true,
+        "type": "list"
+      },
+      "path": {
+        "required": true,
+        "type": "str"
+      },
+      "path_exists": {
+        "required": true,
+        "type": "bool"
+      },
+      "role": {
+        "required": true,
+        "type": "str"
+      },
+      "runtime_required": {
+        "required": true,
+        "type": "bool"
+      },
+      "status": {
+        "required": true,
+        "type": "enum",
+        "values": [
+          "AVAILABLE",
+          "BLOCKED",
+          "UNDECLARED"
+        ]
+      }
+    },
+    "map": {
+      "collisions": {
+        "of": {
+          "required": true,
+          "type": "dict"
+        },
+        "required": true,
+        "type": "list"
+      },
+      "depth_band": {
+        "required": true,
+        "type": "dict"
+      },
+      "display_name": {
+        "required": true,
+        "type": "str"
+      },
+      "entries": {
+        "of": {
+          "kind": "zone",
+          "required": true,
+          "type": "ref"
+        },
+        "required": true,
+        "type": "list"
+      },
+      "exits": {
+        "of": {
+          "kind": "zone",
+          "required": true,
+          "type": "ref"
+        },
+        "required": true,
+        "type": "list"
+      },
+      "height_levels": {
+        "min": 1,
+        "of": {
+          "required": true,
+          "type": "int"
+        },
+        "required": true,
+        "type": "list"
+      },
+      "id": {
+        "required": true,
+        "type": "id"
+      },
+      "layers": {
+        "min": 1,
+        "of": {
+          "required": true,
+          "type": "dict"
+        },
+        "required": true,
+        "type": "list"
+      },
+      "navigation_rules": {
+        "required": true,
+        "type": "dict"
+      },
+      "placement_rules": {
+        "min": 1,
+        "of": {
+          "required": true,
+          "type": "id"
+        },
+        "required": true,
+        "type": "list"
+      },
+      "points_of_interest": {
+        "of": {
+          "required": true,
+          "type": "dict"
+        },
+        "required": true,
+        "type": "list"
+      },
+      "regions": {
+        "of": {
+          "required": true,
+          "type": "dict"
+        },
+        "required": true,
+        "type": "list"
+      },
+      "relations": {
+        "of": {
+          "required": true,
+          "type": "dict"
+        },
+        "required": true,
+        "type": "list"
+      },
+      "resources": {
+        "of": {
+          "kind": "resource",
+          "required": true,
+          "type": "ref"
+        },
+        "required": true,
+        "type": "list"
+      },
+      "seasonal_conditions": {
+        "required": true,
+        "type": "dict"
+      },
+      "secret_zones": {
+        "of": {
+          "required": true,
+          "type": "dict"
+        },
+        "required": true,
+        "type": "list"
+      },
+      "seed": {
+        "min": 0,
+        "required": true,
+        "type": "int"
+      },
+      "size": {
+        "required": true,
+        "type": "dict"
+      },
+      "spawn_rules": {
+        "of": {
+          "required": true,
+          "type": "dict"
+        },
+        "required": true,
+        "type": "list"
+      },
+      "structures": {
+        "of": {
+          "required": true,
+          "type": "dict"
+        },
+        "required": true,
+        "type": "list"
+      },
+      "terrains": {
+        "of": {
+          "required": true,
+          "type": "id"
+        },
+        "required": true,
+        "type": "list"
+      },
+      "transitions": {
+        "of": {
+          "required": true,
+          "type": "dict"
+        },
+        "required": true,
+        "type": "list"
+      }
+    },
+    "object": {
+      "animations": {
+        "of": {
+          "kind": "animation",
+          "required": true,
+          "type": "ref"
+        },
+        "required": true,
+        "type": "list"
+      },
+      "assets": {
+        "of": {
+          "kind": "asset",
+          "required": true,
+          "type": "ref"
+        },
+        "required": true,
+        "type": "list"
+      },
+      "category": {
+        "required": true,
+        "type": "str"
+      },
+      "display_name": {
+        "required": true,
+        "type": "str"
+      },
+      "function": {
+        "required": true,
+        "type": "str"
+      },
+      "gameplay_verb": {
+        "required": true,
+        "type": "id"
+      },
+      "id": {
+        "required": true,
+        "type": "id"
+      },
+      "loop_position": {
+        "required": true,
+        "type": "str"
+      },
+      "obtained_by": {
+        "min": 1,
+        "of": {
+          "required": true,
+          "type": "str"
+        },
+        "required": true,
+        "type": "list"
+      },
+      "progression": {
+        "required": true,
+        "type": "str"
+      },
+      "status": {
+        "required": true,
+        "type": "enum",
+        "values": [
+          "CANONICAL",
+          "DERIVED",
+          "PROPOSED",
+          "TO_VALIDATE"
+        ]
+      },
+      "tests": {
+        "min": 1,
+        "of": {
+          "required": true,
+          "type": "str"
+        },
+        "required": true,
+        "type": "list"
+      },
+      "transformations": {
+        "of": {
+          "required": true,
+          "type": "dict"
+        },
+        "required": false,
+        "type": "list"
+      },
+      "used_by": {
+        "of": {
+          "kind": null,
+          "required": true,
+          "type": "ref"
+        },
+        "required": true,
+        "type": "list"
+      }
+    },
+    "placement_rule": {
+      "accessibility": {
+        "required": true,
+        "type": "str"
+      },
+      "allowed_terrain": {
+        "min": 1,
+        "of": {
+          "required": true,
+          "type": "id"
+        },
+        "required": true,
+        "type": "list"
+      },
+      "applies_to": {
+        "required": true,
+        "type": "id_glob"
+      },
+      "clustering": {
+        "required": true,
+        "type": "dict"
+      },
+      "density": {
+        "required": true,
+        "type": "dict"
+      },
+      "discovery_conditions": {
+        "of": {
+          "required": true,
+          "type": "dict"
+        },
+        "required": true,
+        "type": "list"
+      },
+      "forbidden_terrain": {
+        "of": {
+          "required": true,
+          "type": "id"
+        },
+        "required": true,
+        "type": "list"
+      },
+      "id": {
+        "required": true,
+        "type": "id"
+      },
+      "min_distance": {
+        "min": 0,
+        "required": true,
+        "type": "int"
+      },
+      "poi_relations": {
+        "of": {
+          "required": true,
+          "type": "dict"
+        },
+        "required": true,
+        "type": "list"
+      },
+      "season": {
+        "required": true,
+        "type": "str"
+      },
+      "weather": {
+        "required": true,
+        "type": "str"
+      }
+    },
+    "relation": {
+      "from": {
+        "required": true,
+        "type": "id"
+      },
+      "status": {
+        "required": false,
+        "type": "enum",
+        "values": [
+          "CANONICAL",
+          "DERIVED",
+          "PROPOSED",
+          "TO_VALIDATE"
+        ]
+      },
+      "to": {
+        "required": true,
+        "type": "id"
+      },
+      "type": {
+        "required": true,
+        "type": "str"
+      }
+    },
+    "world_state": {
+      "battery_pct": {
+        "max": 100,
+        "min": 0,
+        "required": true,
+        "type": "int"
+      },
+      "current_zone": {
+        "kind": "zone",
+        "required": true,
+        "type": "ref"
+      },
+      "depth_m": {
+        "max": 12000,
+        "min": 0,
+        "required": true,
+        "type": "int"
+      },
+      "elapsed_s": {
+        "min": 0,
+        "required": true,
+        "type": "int"
+      },
+      "hull_integrity_pct": {
+        "max": 100,
+        "min": 0,
+        "required": true,
+        "type": "int"
+      },
+      "id": {
+        "required": true,
+        "type": "id"
+      },
+      "lights_on": {
+        "required": true,
+        "type": "bool"
+      },
+      "oxygen_pct": {
+        "max": 100,
+        "min": 0,
+        "required": true,
+        "type": "int"
+      }
+    }
+  },
+  "tile_size": 16
+}

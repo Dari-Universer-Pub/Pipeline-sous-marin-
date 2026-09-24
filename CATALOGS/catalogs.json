@@ -1,0 +1,422 @@
+{
+  "actions": {
+    "count": 8,
+    "entries": [
+      {
+        "affects": "systeme_propulsion",
+        "display_name": "Avancer",
+        "id": "action_avancer",
+        "loop": "boucle 1",
+        "source": "INPUT/game_brief.md",
+        "status": "DERIVED"
+      },
+      {
+        "affects": "systeme_propulsion",
+        "display_name": "Reculer",
+        "id": "action_reculer",
+        "loop": "boucle 5",
+        "source": "INPUT/game_brief.md",
+        "status": "DERIVED"
+      },
+      {
+        "affects": null,
+        "display_name": "Observer",
+        "id": "action_observer",
+        "loop": "boucle 2",
+        "source": "INPUT/game_brief.md",
+        "status": "DERIVED"
+      },
+      {
+        "affects": "systeme_projecteur",
+        "display_name": "Eteindre les lumières",
+        "id": "action_eteindre_les_lumieres",
+        "loop": "boucle 5",
+        "source": "INPUT/game_brief.md",
+        "status": "DERIVED"
+      },
+      {
+        "affects": "systeme_propulsion",
+        "display_name": "Fuir",
+        "id": "action_fuir",
+        "loop": "boucle 5",
+        "source": "INPUT/game_brief.md",
+        "status": "DERIVED"
+      },
+      {
+        "affects": "systeme_coque",
+        "display_name": "Réparer",
+        "id": "action_reparer",
+        "loop": "boucle 5",
+        "source": "INPUT/game_brief.md",
+        "status": "DERIVED"
+      },
+      {
+        "affects": null,
+        "display_name": "Récupérer",
+        "id": "action_recuperer",
+        "loop": "boucle 4",
+        "source": "INPUT/game_brief.md",
+        "status": "DERIVED"
+      },
+      {
+        "affects": null,
+        "display_name": "Interpréter",
+        "id": "action_interpreter",
+        "loop": "boucle 6",
+        "source": "INPUT/game_brief.md",
+        "status": "DERIVED"
+      }
+    ],
+    "status": "DERIVED"
+  },
+  "anomalies": {
+    "blocking_decision": "dec_nature_formes",
+    "count": 0,
+    "entries": [],
+    "reason": "La nature exacte des formes terrifiantes et les anomalies observables sont declarees OUVERTES dans canon_initial.md et open_decisions.md. Les remplir serait inventer le coeur creatif.",
+    "status": "BLOCKED_OPEN_DECISION"
+  },
+  "artefacts": {
+    "count": 5,
+    "entries": [
+      {
+        "acts_on": null,
+        "category": "information",
+        "display_name": "Carte des profondeurs",
+        "function": "Situer les zones et leurs liaisons.",
+        "gameplay_verb": "action_interpreter",
+        "id": "artefact_carte_des_profondeurs",
+        "justification": "Objet canonique enumere dans canon_initial.md.",
+        "loop_position": "boucle 1",
+        "source": "INPUT/canon_initial.md",
+        "source_line": 28,
+        "status": "CANONICAL"
+      },
+      {
+        "acts_on": "systeme_oxygene",
+        "category": "consommable",
+        "display_name": "Flasque d'oxygène",
+        "function": "Prolonger la plongee.",
+        "gameplay_verb": "action_recuperer",
+        "id": "artefact_flasque_d_oxygene",
+        "justification": "Objet canonique enumere dans canon_initial.md.",
+        "loop_position": "boucle 3",
+        "source": "INPUT/canon_initial.md",
+        "source_line": 29,
+        "status": "CANONICAL"
+      },
+      {
+        "acts_on": null,
+        "category": "preuve",
+        "display_name": "Fragment d'archive abyssale",
+        "function": "Porter une trace de l'intelligence ancienne (canon).",
+        "gameplay_verb": "action_interpreter",
+        "id": "artefact_fragment_d_archive_abyssale",
+        "justification": "Objet canonique enumere dans canon_initial.md.",
+        "loop_position": "boucle 6",
+        "source": "INPUT/canon_initial.md",
+        "source_line": 30,
+        "status": "CANONICAL"
+      },
+      {
+        "acts_on": "systeme_projecteur",
+        "category": "outil",
+        "display_name": "Lampe de secours",
+        "function": "Eclairer sans consommer la batterie principale.",
+        "gameplay_verb": "action_observer",
+        "id": "artefact_lampe_de_secours",
+        "justification": "Objet canonique enumere dans canon_initial.md.",
+        "loop_position": "boucle 2",
+        "source": "INPUT/canon_initial.md",
+        "source_line": 27,
+        "status": "CANONICAL"
+      },
+      {
+        "acts_on": "systeme_coque",
+        "category": "outil",
+        "display_name": "Outil de réparation de coque",
+        "function": "Restaurer l'integrite de la coque.",
+        "gameplay_verb": "action_reparer",
+        "id": "artefact_outil_de_reparation_de_coque",
+        "justification": "Objet canonique enumere dans canon_initial.md.",
+        "loop_position": "boucle 5",
+        "source": "INPUT/canon_initial.md",
+        "source_line": 31,
+        "status": "CANONICAL"
+      }
+    ],
+    "status": "CANONICAL"
+  },
+  "catalog_version": "1.0.0",
+  "equipage": {
+    "count": 4,
+    "entries": [
+      {
+        "display_name": "Ilyan",
+        "function": "navigateur, qui refuse de regarder directement la vitre pendant les plongees",
+        "id": "equipage_ilyan",
+        "source": "INPUT/canon_initial.md",
+        "source_line": 22,
+        "status": "CANONICAL"
+      },
+      {
+        "display_name": "Mara",
+        "function": "ingenieure de bord, responsable des systemes du sous-marin",
+        "id": "equipage_mara",
+        "source": "INPUT/canon_initial.md",
+        "source_line": 21,
+        "status": "CANONICAL"
+      },
+      {
+        "display_name": "Pilote",
+        "function": "personnage joueur",
+        "id": "equipage_pilote",
+        "source": "INPUT/canon_initial.md",
+        "source_line": 6,
+        "status": "CANONICAL"
+      },
+      {
+        "display_name": "Sorel",
+        "function": "chercheur de terrain, fascine par les traces anciennes et jamais totalement serein",
+        "id": "equipage_sorel",
+        "source": "INPUT/canon_initial.md",
+        "source_line": 23,
+        "status": "CANONICAL"
+      }
+    ],
+    "status": "CANONICAL"
+  },
+  "evenements": {
+    "blocking_decision": "dec_nb_evenements",
+    "count": 0,
+    "entries": [],
+    "reason": "Le nombre d'evenements de tension et la presence d'elements de fin de boucle sont declares OUVERTS.",
+    "status": "BLOCKED_OPEN_DECISION"
+  },
+  "non_applicables": {
+    "boss": {
+      "contradiction": "contra_vocabulaire_agricole",
+      "reason": "Le canon exclut explicitement le combat de style heroique.",
+      "status": "NOT_APPLICABLE"
+    },
+    "creature": {
+      "contradiction": "contra_vocabulaire_agricole",
+      "reason": "La nature des formes est declaree OUVERTE dans le canon. Les modeliser serait inventer le coeur creatif du jeu.",
+      "status": "NOT_APPLICABLE"
+    },
+    "crop": {
+      "contradiction": "contra_vocabulaire_agricole",
+      "reason": "Abyssal Glass n'a ni agriculture ni saison de culture. Aucune mention dans le brief ni le canon.",
+      "status": "NOT_APPLICABLE"
+    },
+    "machine": {
+      "contradiction": "contra_vocabulaire_agricole",
+      "reason": "Aucune machine de production/transformation dans le canon. Les systemes du sous-marin sont modelises par 'vessel_system'.",
+      "status": "NOT_APPLICABLE"
+    },
+    "quest": {
+      "contradiction": "contra_vocabulaire_agricole",
+      "reason": "Aucun donneur de quete dans le canon. Les objectifs emergent des evenements et des traces; modelises par 'event' et 'trace'.",
+      "status": "NOT_APPLICABLE"
+    },
+    "recipe": {
+      "contradiction": "contra_vocabulaire_agricole",
+      "reason": "Aucun artisanat ni transformation d'ingredients dans le brief. La 'reparation' est modelisee comme action sur un vessel_system.",
+      "status": "NOT_APPLICABLE"
+    }
+  },
+  "ressources": {
+    "blocking_decision": "dec_importance_maintenance",
+    "count": 0,
+    "entries": [],
+    "reason": "L'importance des ressources de maintenance est declaree OUVERTE dans open_decisions.md.",
+    "status": "BLOCKED_OPEN_DECISION"
+  },
+  "systemes_vitaux": {
+    "count": 5,
+    "entries": [
+      {
+        "consequence": "asphyxie = fin de plongee",
+        "consumed_by": "duree de plongee, avaries de coque",
+        "consumes": [
+          "temps",
+          "effort"
+        ],
+        "covering_tests": [
+          "test_oxygene_decroit",
+          "test_asphyxie_termine_plongee"
+        ],
+        "decision": "dec_systemes_vitaux",
+        "display_name": "Oxygène",
+        "failure_state": "etat_asphyxie",
+        "id": "systeme_oxygene",
+        "obtained_by": "reserve initiale + Flasque d'oxygène (artefact canonique)",
+        "required_animations": [
+          "aiguille",
+          "clignotement d'alerte"
+        ],
+        "required_assets": [
+          "readout cadran 32x32",
+          "overlay d'alarme"
+        ],
+        "status": "DERIVED",
+        "used_by_system": "boucle 3 (gestion du systeme vital)",
+        "why_it_exists": "game_brief.md: 'gerer l'oxygene'. Condition de survie primaire."
+      },
+      {
+        "consequence": "noir total, perte de controle",
+        "consumed_by": "projecteur, propulsion",
+        "consumes": [
+          "eclairage",
+          "propulsion"
+        ],
+        "covering_tests": [
+          "test_batterie_decroit",
+          "test_extinction_reduit_conso"
+        ],
+        "decision": "dec_systemes_vitaux",
+        "display_name": "Batterie",
+        "failure_state": "etat_panne_seche",
+        "id": "systeme_batterie",
+        "obtained_by": "charge initiale",
+        "required_animations": [
+          "aiguille",
+          "chute de tension"
+        ],
+        "required_assets": [
+          "readout cadran 32x32"
+        ],
+        "status": "DERIVED",
+        "used_by_system": "boucle 3 et boucle 5 (eteindre les lumieres)",
+        "why_it_exists": "game_brief.md: 'batterie / puissance / eclairage'."
+      },
+      {
+        "consequence": "breche = perte d'oxygene acceleree",
+        "consumed_by": "pression de profondeur, impacts",
+        "consumes": [],
+        "covering_tests": [
+          "test_pression_endommage_coque",
+          "test_breche_accelere_perte_oxygene"
+        ],
+        "decision": "dec_systemes_vitaux",
+        "display_name": "Coque",
+        "failure_state": "etat_breche",
+        "id": "systeme_coque",
+        "obtained_by": "integrite initiale",
+        "required_animations": [
+          "fissure progressive",
+          "alarme de breche"
+        ],
+        "required_assets": [
+          "readout cadran 32x32",
+          "overlay de fissure"
+        ],
+        "status": "DERIVED",
+        "used_by_system": "boucle 1 et boucle 5",
+        "why_it_exists": "game_brief.md: 'gerer la pression'; constraints.md: zones sous pression."
+      },
+      {
+        "consequence": "derive: le Pilote ne peut plus fuir",
+        "consumed_by": "deplacement, fuite",
+        "consumes": [
+          "batterie"
+        ],
+        "covering_tests": [
+          "test_fuite_requiert_propulsion"
+        ],
+        "decision": "dec_systemes_vitaux",
+        "display_name": "Propulsion",
+        "failure_state": "etat_derive",
+        "id": "systeme_propulsion",
+        "obtained_by": "carburant initial",
+        "required_animations": [
+          "poussee",
+          "cale"
+        ],
+        "required_assets": [
+          "readout cadran 32x32"
+        ],
+        "status": "DERIVED",
+        "used_by_system": "boucle 1 et boucle 5 (fuir)",
+        "why_it_exists": "game_brief.md: 'piloter le sous-marin', 'quand avancer, quand reculer'."
+      },
+      {
+        "consequence": "obscurite: les anomalies changent de comportement",
+        "consumed_by": "batterie",
+        "consumes": [
+          "batterie"
+        ],
+        "covering_tests": [
+          "test_extinction_modifie_visibilite"
+        ],
+        "decision": "dec_systemes_vitaux",
+        "display_name": "Projecteur",
+        "failure_state": "etat_obscurite",
+        "id": "systeme_projecteur",
+        "obtained_by": "equipement de bord + Lampe de secours (artefact canonique)",
+        "required_animations": [
+          "allumage",
+          "extinction",
+          "vacillement"
+        ],
+        "required_assets": [
+          "overlay de faisceau",
+          "readout 32x32"
+        ],
+        "status": "DERIVED",
+        "used_by_system": "boucle 2 (observer) et boucle 5",
+        "why_it_exists": "game_brief.md: 'quand eteindre les lumieres' — verbe de gameplay central."
+      }
+    ],
+    "status": "DERIVED"
+  },
+  "traces": {
+    "blocking_decision": "dec_nb_artefacts",
+    "count": 0,
+    "entries": [],
+    "reason": "Les messages et archives retrouves dans les ruines sont declares OUVERTS dans canon_initial.md.",
+    "status": "BLOCKED_OPEN_DECISION"
+  },
+  "zones": {
+    "count": 4,
+    "entries": [
+      {
+        "display_name": "La Faille des Échos",
+        "id": "zone_la_faille_des_echos",
+        "justification": "Canon: 'sombre et instable'.",
+        "role": "exploration",
+        "source": "INPUT/canon_initial.md",
+        "source_line": 15,
+        "status": "CANONICAL"
+      },
+      {
+        "display_name": "Le Corridor des Yeux",
+        "id": "zone_le_corridor_des_yeux",
+        "justification": "Canon: 'l'ombre parait vivante'.",
+        "role": "exploration",
+        "source": "INPUT/canon_initial.md",
+        "source_line": 16,
+        "status": "CANONICAL"
+      },
+      {
+        "display_name": "Le Vitrail Noire",
+        "id": "zone_le_vitrail_noire",
+        "justification": "Point d'observation et de depart. N'est pas une zone d'exploration (canon: 'sous-marin de depart').",
+        "role": "base",
+        "source": "INPUT/canon_initial.md",
+        "source_line": 7,
+        "status": "CANONICAL"
+      },
+      {
+        "display_name": "Les Ruines du Son",
+        "id": "zone_les_ruines_du_son",
+        "justification": "Canon: 'vestiges de structures anciennes et de materiel perdu'.",
+        "role": "exploration",
+        "source": "INPUT/canon_initial.md",
+        "source_line": 17,
+        "status": "CANONICAL"
+      }
+    ],
+    "status": "CANONICAL"
+  }
+}

@@ -1,0 +1,293 @@
+{
+  "count": 3,
+  "entries": [
+    {
+      "collisions": [
+        {
+          "blocks_propulsion": true,
+          "kind": "relief",
+          "layer": "proche"
+        }
+      ],
+      "depth_band": {
+        "max_m": 1200,
+        "min_m": 400,
+        "status": "PROPOSED"
+      },
+      "display_name": "La Faille des Échos",
+      "entries": [
+        "zone_le_vitrail_noire"
+      ],
+      "exits": [
+        "zone_le_vitrail_noire"
+      ],
+      "height_levels": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "id": "map_la_faille_des_echos",
+      "layers": [
+        {
+          "name": "vitre",
+          "z": 0
+        },
+        {
+          "name": "proche",
+          "z": 1
+        },
+        {
+          "name": "moyen",
+          "z": 2
+        },
+        {
+          "name": "lointain",
+          "z": 3
+        }
+      ],
+      "navigation_rules": {
+        "blocked_by_collision": true,
+        "justification": "vue unique fixe (dec_vue_unique)",
+        "mode": "avance_recule_seulement"
+      },
+      "placement_rules": [
+        "placement_relief_proche",
+        "placement_artefact"
+      ],
+      "points_of_interest": [],
+      "relations": [
+        {
+          "bidirectional": true,
+          "connects_to": "zone_le_vitrail_noire"
+        }
+      ],
+      "resources": [],
+      "seasonal_conditions": {
+        "reason": "Aucune saison dans un abysse sans lumiere.",
+        "status": "NOT_APPLICABLE"
+      },
+      "secret_zones": [],
+      "seed": 20260924,
+      "size": {
+        "tile": 16,
+        "unit": "px",
+        "window_h": 192,
+        "window_w": 320
+      },
+      "source_zone": "zone_la_faille_des_echos",
+      "spawn_rules": [
+        {
+          "blocked_by": "dec_nature_formes",
+          "status": "BLOCKED",
+          "what": "anomalie_*"
+        }
+      ],
+      "status": "PLANNED",
+      "structures": [],
+      "terrains": [
+        "terrain_vase",
+        "terrain_roche"
+      ],
+      "transitions": [
+        {
+          "from": "terrain_vase",
+          "rule": "bord dithered 16px",
+          "to": "terrain_roche"
+        }
+      ]
+    },
+    {
+      "collisions": [
+        {
+          "blocks_propulsion": true,
+          "kind": "relief",
+          "layer": "proche"
+        }
+      ],
+      "depth_band": {
+        "max_m": 1200,
+        "min_m": 400,
+        "status": "PROPOSED"
+      },
+      "display_name": "Le Corridor des Yeux",
+      "entries": [
+        "zone_le_vitrail_noire"
+      ],
+      "exits": [
+        "zone_le_vitrail_noire"
+      ],
+      "height_levels": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "id": "map_le_corridor_des_yeux",
+      "layers": [
+        {
+          "name": "vitre",
+          "z": 0
+        },
+        {
+          "name": "proche",
+          "z": 1
+        },
+        {
+          "name": "moyen",
+          "z": 2
+        },
+        {
+          "name": "lointain",
+          "z": 3
+        }
+      ],
+      "navigation_rules": {
+        "blocked_by_collision": true,
+        "justification": "vue unique fixe (dec_vue_unique)",
+        "mode": "avance_recule_seulement"
+      },
+      "placement_rules": [
+        "placement_relief_proche",
+        "placement_artefact"
+      ],
+      "points_of_interest": [],
+      "relations": [
+        {
+          "bidirectional": true,
+          "connects_to": "zone_le_vitrail_noire"
+        }
+      ],
+      "resources": [],
+      "seasonal_conditions": {
+        "reason": "Aucune saison dans un abysse sans lumiere.",
+        "status": "NOT_APPLICABLE"
+      },
+      "secret_zones": [],
+      "seed": 20260924,
+      "size": {
+        "tile": 16,
+        "unit": "px",
+        "window_h": 192,
+        "window_w": 320
+      },
+      "source_zone": "zone_le_corridor_des_yeux",
+      "spawn_rules": [
+        {
+          "blocked_by": "dec_nature_formes",
+          "status": "BLOCKED",
+          "what": "anomalie_*"
+        }
+      ],
+      "status": "PLANNED",
+      "structures": [],
+      "terrains": [
+        "terrain_vase",
+        "terrain_roche"
+      ],
+      "transitions": [
+        {
+          "from": "terrain_vase",
+          "rule": "bord dithered 16px",
+          "to": "terrain_roche"
+        }
+      ]
+    },
+    {
+      "collisions": [
+        {
+          "blocks_propulsion": true,
+          "kind": "relief",
+          "layer": "proche"
+        }
+      ],
+      "depth_band": {
+        "max_m": 1200,
+        "min_m": 400,
+        "status": "PROPOSED"
+      },
+      "display_name": "Les Ruines du Son",
+      "entries": [
+        "zone_le_vitrail_noire"
+      ],
+      "exits": [
+        "zone_le_vitrail_noire"
+      ],
+      "height_levels": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "id": "map_les_ruines_du_son",
+      "layers": [
+        {
+          "name": "vitre",
+          "z": 0
+        },
+        {
+          "name": "proche",
+          "z": 1
+        },
+        {
+          "name": "moyen",
+          "z": 2
+        },
+        {
+          "name": "lointain",
+          "z": 3
+        }
+      ],
+      "navigation_rules": {
+        "blocked_by_collision": true,
+        "justification": "vue unique fixe (dec_vue_unique)",
+        "mode": "avance_recule_seulement"
+      },
+      "placement_rules": [
+        "placement_relief_proche",
+        "placement_artefact"
+      ],
+      "points_of_interest": [],
+      "relations": [
+        {
+          "bidirectional": true,
+          "connects_to": "zone_le_vitrail_noire"
+        }
+      ],
+      "resources": [],
+      "seasonal_conditions": {
+        "reason": "Aucune saison dans un abysse sans lumiere.",
+        "status": "NOT_APPLICABLE"
+      },
+      "secret_zones": [],
+      "seed": 20260924,
+      "size": {
+        "tile": 16,
+        "unit": "px",
+        "window_h": 192,
+        "window_w": 320
+      },
+      "source_zone": "zone_les_ruines_du_son",
+      "spawn_rules": [
+        {
+          "blocked_by": "dec_nature_formes",
+          "status": "BLOCKED",
+          "what": "anomalie_*"
+        }
+      ],
+      "status": "PLANNED",
+      "structures": [],
+      "terrains": [
+        "terrain_vase",
+        "terrain_roche"
+      ],
+      "transitions": [
+        {
+          "from": "terrain_vase",
+          "rule": "bord dithered 16px",
+          "to": "terrain_roche"
+        }
+      ]
+    }
+  ]
+}

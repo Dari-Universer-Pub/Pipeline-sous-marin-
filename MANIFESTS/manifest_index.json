@@ -1,0 +1,79 @@
+{
+  "blocked_families": {
+    "famille_anomalies": {
+      "blocked_by": "dec_nature_formes",
+      "reason": "La nature des formes terrifiantes est declaree OUVERTE dans canon_initial.md. Aucun asset d'anomalie ne peut etre specifie sans inventer le coeur creatif du jeu.",
+      "status": "BLOCKED",
+      "unblocks_when": "le proprietaire tranche dec_nature_formes et dec_nb_anomalies",
+      "would_require": [
+        "silhouette 96x96 par anomalie",
+        "sequence animee de presence par anomalie",
+        "prompt PAR FAMILLE (les anomalies sont visuellement interdependantes: meme grammaire d'ombre)"
+      ]
+    },
+    "famille_traces": {
+      "blocked_by": "dec_nb_artefacts",
+      "reason": "Les messages et archives des ruines sont declares OUVERTS.",
+      "status": "BLOCKED",
+      "unblocks_when": "le proprietaire definit le contenu des archives",
+      "would_require": [
+        "panel 160x64 par trace lisible"
+      ]
+    }
+  },
+  "counts": {
+    "animations": 10,
+    "assets": 13,
+    "effets_particules": 0,
+    "evenements": 0,
+    "maps": 3,
+    "objets": 5,
+    "placement": 2,
+    "pnj": 4,
+    "ressources": 0,
+    "transitions_terrain": 2
+  },
+  "effets_particules": {
+    "blocked_by": "dec_nature_formes",
+    "count": 0,
+    "entries": [],
+    "reason": "Les effets de presence dependent de la nature des formes, declaree OUVERTE.",
+    "status": "BLOCKED"
+  },
+  "evenements": {
+    "blocked_by": "dec_nb_evenements",
+    "count": 0,
+    "entries": [],
+    "status": "BLOCKED"
+  },
+  "manifest_version": "1.0.0",
+  "non_applicables": {
+    "creatures": {
+      "contradiction": "contra_vocabulaire_agricole",
+      "status": "NOT_APPLICABLE"
+    },
+    "cultures": {
+      "contradiction": "contra_vocabulaire_agricole",
+      "status": "NOT_APPLICABLE"
+    },
+    "machines": {
+      "contradiction": "contra_vocabulaire_agricole",
+      "status": "NOT_APPLICABLE"
+    },
+    "quetes": {
+      "contradiction": "contra_vocabulaire_agricole",
+      "status": "NOT_APPLICABLE"
+    },
+    "recettes": {
+      "contradiction": "contra_vocabulaire_agricole",
+      "status": "NOT_APPLICABLE"
+    }
+  },
+  "ressources": {
+    "blocked_by": "dec_importance_maintenance",
+    "count": 0,
+    "entries": [],
+    "status": "BLOCKED"
+  },
+  "seed": 20260924
+}

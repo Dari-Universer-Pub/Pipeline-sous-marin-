@@ -1,0 +1,1610 @@
+{
+  "count": 13,
+  "entries": [
+    {
+      "animations": [],
+      "asset_type": "sprite",
+      "blocked_by": null,
+      "directions": [
+        "none"
+      ],
+      "entity_id": "artefact_carte_des_profondeurs",
+      "family": "famille_artefacts",
+      "format": "png",
+      "height": 32,
+      "id": "asset_artefact_carte_des_profondeurs_icone",
+      "output_rules": {
+        "dir": "ASSETS_IN/famille_artefacts",
+        "filename": "asset_artefact_carte_des_profondeurs_icone.png",
+        "indexed": true,
+        "max_bytes": 8388608,
+        "must_declare": [
+          "file",
+          "file_sha256"
+        ],
+        "no_resize_after_delivery": true
+      },
+      "palette": [
+        [
+          3,
+          5,
+          8
+        ],
+        [
+          8,
+          12,
+          18
+        ],
+        [
+          14,
+          22,
+          30
+        ],
+        [
+          20,
+          34,
+          44
+        ],
+        [
+          28,
+          50,
+          60
+        ],
+        [
+          38,
+          70,
+          78
+        ],
+        [
+          52,
+          94,
+          98
+        ],
+        [
+          72,
+          120,
+          118
+        ],
+        [
+          98,
+          148,
+          140
+        ],
+        [
+          140,
+          180,
+          172
+        ],
+        [
+          186,
+          210,
+          200
+        ],
+        [
+          232,
+          238,
+          230
+        ],
+        [
+          86,
+          28,
+          32
+        ],
+        [
+          140,
+          52,
+          44
+        ],
+        [
+          196,
+          126,
+          58
+        ],
+        [
+          58,
+          24,
+          66
+        ]
+      ],
+      "producer": "framework_blender",
+      "resolution": "32x32@1x",
+      "status": "PLANNED",
+      "style": "pixel art 2D, mise a l'echelle entiere, sombre / oppressant / atmospherique, vue unique depuis l'interieur du sous-marin",
+      "validations": [
+        "binaire: octets magiques PNG + IHDR",
+        "binaire: CRC valide sur chaque chunk",
+        "binaire: SHA-256 reel == SHA-256 declare",
+        "binaire: dimensions reelles == 32x32",
+        "binaire: PLTE inclus dans palette_abysse_16",
+        "binaire: taille <= 8 Mio",
+        "reference: entity_id present dans le graphe"
+      ],
+      "variants": [],
+      "width": 32
+    },
+    {
+      "animations": [],
+      "asset_type": "sprite",
+      "blocked_by": null,
+      "directions": [
+        "none"
+      ],
+      "entity_id": "artefact_flasque_d_oxygene",
+      "family": "famille_artefacts",
+      "format": "png",
+      "height": 32,
+      "id": "asset_artefact_flasque_d_oxygene_icone",
+      "output_rules": {
+        "dir": "ASSETS_IN/famille_artefacts",
+        "filename": "asset_artefact_flasque_d_oxygene_icone.png",
+        "indexed": true,
+        "max_bytes": 8388608,
+        "must_declare": [
+          "file",
+          "file_sha256"
+        ],
+        "no_resize_after_delivery": true
+      },
+      "palette": [
+        [
+          3,
+          5,
+          8
+        ],
+        [
+          8,
+          12,
+          18
+        ],
+        [
+          14,
+          22,
+          30
+        ],
+        [
+          20,
+          34,
+          44
+        ],
+        [
+          28,
+          50,
+          60
+        ],
+        [
+          38,
+          70,
+          78
+        ],
+        [
+          52,
+          94,
+          98
+        ],
+        [
+          72,
+          120,
+          118
+        ],
+        [
+          98,
+          148,
+          140
+        ],
+        [
+          140,
+          180,
+          172
+        ],
+        [
+          186,
+          210,
+          200
+        ],
+        [
+          232,
+          238,
+          230
+        ],
+        [
+          86,
+          28,
+          32
+        ],
+        [
+          140,
+          52,
+          44
+        ],
+        [
+          196,
+          126,
+          58
+        ],
+        [
+          58,
+          24,
+          66
+        ]
+      ],
+      "producer": "framework_blender",
+      "resolution": "32x32@1x",
+      "status": "PLANNED",
+      "style": "pixel art 2D, mise a l'echelle entiere, sombre / oppressant / atmospherique, vue unique depuis l'interieur du sous-marin",
+      "validations": [
+        "binaire: octets magiques PNG + IHDR",
+        "binaire: CRC valide sur chaque chunk",
+        "binaire: SHA-256 reel == SHA-256 declare",
+        "binaire: dimensions reelles == 32x32",
+        "binaire: PLTE inclus dans palette_abysse_16",
+        "binaire: taille <= 8 Mio",
+        "reference: entity_id present dans le graphe"
+      ],
+      "variants": [],
+      "width": 32
+    },
+    {
+      "animations": [],
+      "asset_type": "sprite",
+      "blocked_by": null,
+      "directions": [
+        "none"
+      ],
+      "entity_id": "artefact_fragment_d_archive_abyssale",
+      "family": "famille_artefacts",
+      "format": "png",
+      "height": 32,
+      "id": "asset_artefact_fragment_d_archive_abyssale_icone",
+      "output_rules": {
+        "dir": "ASSETS_IN/famille_artefacts",
+        "filename": "asset_artefact_fragment_d_archive_abyssale_icone.png",
+        "indexed": true,
+        "max_bytes": 8388608,
+        "must_declare": [
+          "file",
+          "file_sha256"
+        ],
+        "no_resize_after_delivery": true
+      },
+      "palette": [
+        [
+          3,
+          5,
+          8
+        ],
+        [
+          8,
+          12,
+          18
+        ],
+        [
+          14,
+          22,
+          30
+        ],
+        [
+          20,
+          34,
+          44
+        ],
+        [
+          28,
+          50,
+          60
+        ],
+        [
+          38,
+          70,
+          78
+        ],
+        [
+          52,
+          94,
+          98
+        ],
+        [
+          72,
+          120,
+          118
+        ],
+        [
+          98,
+          148,
+          140
+        ],
+        [
+          140,
+          180,
+          172
+        ],
+        [
+          186,
+          210,
+          200
+        ],
+        [
+          232,
+          238,
+          230
+        ],
+        [
+          86,
+          28,
+          32
+        ],
+        [
+          140,
+          52,
+          44
+        ],
+        [
+          196,
+          126,
+          58
+        ],
+        [
+          58,
+          24,
+          66
+        ]
+      ],
+      "producer": "framework_blender",
+      "resolution": "32x32@1x",
+      "status": "PLANNED",
+      "style": "pixel art 2D, mise a l'echelle entiere, sombre / oppressant / atmospherique, vue unique depuis l'interieur du sous-marin",
+      "validations": [
+        "binaire: octets magiques PNG + IHDR",
+        "binaire: CRC valide sur chaque chunk",
+        "binaire: SHA-256 reel == SHA-256 declare",
+        "binaire: dimensions reelles == 32x32",
+        "binaire: PLTE inclus dans palette_abysse_16",
+        "binaire: taille <= 8 Mio",
+        "reference: entity_id present dans le graphe"
+      ],
+      "variants": [],
+      "width": 32
+    },
+    {
+      "animations": [],
+      "asset_type": "sprite",
+      "blocked_by": null,
+      "directions": [
+        "none"
+      ],
+      "entity_id": "artefact_lampe_de_secours",
+      "family": "famille_artefacts",
+      "format": "png",
+      "height": 32,
+      "id": "asset_artefact_lampe_de_secours_icone",
+      "output_rules": {
+        "dir": "ASSETS_IN/famille_artefacts",
+        "filename": "asset_artefact_lampe_de_secours_icone.png",
+        "indexed": true,
+        "max_bytes": 8388608,
+        "must_declare": [
+          "file",
+          "file_sha256"
+        ],
+        "no_resize_after_delivery": true
+      },
+      "palette": [
+        [
+          3,
+          5,
+          8
+        ],
+        [
+          8,
+          12,
+          18
+        ],
+        [
+          14,
+          22,
+          30
+        ],
+        [
+          20,
+          34,
+          44
+        ],
+        [
+          28,
+          50,
+          60
+        ],
+        [
+          38,
+          70,
+          78
+        ],
+        [
+          52,
+          94,
+          98
+        ],
+        [
+          72,
+          120,
+          118
+        ],
+        [
+          98,
+          148,
+          140
+        ],
+        [
+          140,
+          180,
+          172
+        ],
+        [
+          186,
+          210,
+          200
+        ],
+        [
+          232,
+          238,
+          230
+        ],
+        [
+          86,
+          28,
+          32
+        ],
+        [
+          140,
+          52,
+          44
+        ],
+        [
+          196,
+          126,
+          58
+        ],
+        [
+          58,
+          24,
+          66
+        ]
+      ],
+      "producer": "framework_blender",
+      "resolution": "32x32@1x",
+      "status": "PLANNED",
+      "style": "pixel art 2D, mise a l'echelle entiere, sombre / oppressant / atmospherique, vue unique depuis l'interieur du sous-marin",
+      "validations": [
+        "binaire: octets magiques PNG + IHDR",
+        "binaire: CRC valide sur chaque chunk",
+        "binaire: SHA-256 reel == SHA-256 declare",
+        "binaire: dimensions reelles == 32x32",
+        "binaire: PLTE inclus dans palette_abysse_16",
+        "binaire: taille <= 8 Mio",
+        "reference: entity_id present dans le graphe"
+      ],
+      "variants": [],
+      "width": 32
+    },
+    {
+      "animations": [],
+      "asset_type": "sprite",
+      "blocked_by": null,
+      "directions": [
+        "none"
+      ],
+      "entity_id": "artefact_outil_de_reparation_de_coque",
+      "family": "famille_artefacts",
+      "format": "png",
+      "height": 32,
+      "id": "asset_artefact_outil_de_reparation_de_coque_icone",
+      "output_rules": {
+        "dir": "ASSETS_IN/famille_artefacts",
+        "filename": "asset_artefact_outil_de_reparation_de_coque_icone.png",
+        "indexed": true,
+        "max_bytes": 8388608,
+        "must_declare": [
+          "file",
+          "file_sha256"
+        ],
+        "no_resize_after_delivery": true
+      },
+      "palette": [
+        [
+          3,
+          5,
+          8
+        ],
+        [
+          8,
+          12,
+          18
+        ],
+        [
+          14,
+          22,
+          30
+        ],
+        [
+          20,
+          34,
+          44
+        ],
+        [
+          28,
+          50,
+          60
+        ],
+        [
+          38,
+          70,
+          78
+        ],
+        [
+          52,
+          94,
+          98
+        ],
+        [
+          72,
+          120,
+          118
+        ],
+        [
+          98,
+          148,
+          140
+        ],
+        [
+          140,
+          180,
+          172
+        ],
+        [
+          186,
+          210,
+          200
+        ],
+        [
+          232,
+          238,
+          230
+        ],
+        [
+          86,
+          28,
+          32
+        ],
+        [
+          140,
+          52,
+          44
+        ],
+        [
+          196,
+          126,
+          58
+        ],
+        [
+          58,
+          24,
+          66
+        ]
+      ],
+      "producer": "framework_blender",
+      "resolution": "32x32@1x",
+      "status": "PLANNED",
+      "style": "pixel art 2D, mise a l'echelle entiere, sombre / oppressant / atmospherique, vue unique depuis l'interieur du sous-marin",
+      "validations": [
+        "binaire: octets magiques PNG + IHDR",
+        "binaire: CRC valide sur chaque chunk",
+        "binaire: SHA-256 reel == SHA-256 declare",
+        "binaire: dimensions reelles == 32x32",
+        "binaire: PLTE inclus dans palette_abysse_16",
+        "binaire: taille <= 8 Mio",
+        "reference: entity_id present dans le graphe"
+      ],
+      "variants": [],
+      "width": 32
+    },
+    {
+      "animations": [],
+      "asset_type": "readout",
+      "blocked_by": null,
+      "directions": [
+        "none"
+      ],
+      "entity_id": "systeme_batterie",
+      "family": "famille_cockpit",
+      "format": "png",
+      "height": 32,
+      "id": "asset_systeme_batterie_cadran",
+      "output_rules": {
+        "dir": "ASSETS_IN/famille_cockpit",
+        "filename": "asset_systeme_batterie_cadran.png",
+        "indexed": true,
+        "max_bytes": 8388608,
+        "must_declare": [
+          "file",
+          "file_sha256"
+        ],
+        "no_resize_after_delivery": true
+      },
+      "palette": [
+        [
+          3,
+          5,
+          8
+        ],
+        [
+          8,
+          12,
+          18
+        ],
+        [
+          14,
+          22,
+          30
+        ],
+        [
+          20,
+          34,
+          44
+        ],
+        [
+          28,
+          50,
+          60
+        ],
+        [
+          38,
+          70,
+          78
+        ],
+        [
+          52,
+          94,
+          98
+        ],
+        [
+          72,
+          120,
+          118
+        ],
+        [
+          98,
+          148,
+          140
+        ],
+        [
+          140,
+          180,
+          172
+        ],
+        [
+          186,
+          210,
+          200
+        ],
+        [
+          232,
+          238,
+          230
+        ],
+        [
+          86,
+          28,
+          32
+        ],
+        [
+          140,
+          52,
+          44
+        ],
+        [
+          196,
+          126,
+          58
+        ],
+        [
+          58,
+          24,
+          66
+        ]
+      ],
+      "producer": "framework_blender",
+      "resolution": "32x32@1x",
+      "status": "PLANNED",
+      "style": "pixel art 2D, mise a l'echelle entiere, sombre / oppressant / atmospherique, vue unique depuis l'interieur du sous-marin",
+      "validations": [
+        "binaire: octets magiques PNG + IHDR",
+        "binaire: CRC valide sur chaque chunk",
+        "binaire: SHA-256 reel == SHA-256 declare",
+        "binaire: dimensions reelles == 32x32",
+        "binaire: PLTE inclus dans palette_abysse_16",
+        "binaire: taille <= 8 Mio",
+        "reference: entity_id present dans le graphe"
+      ],
+      "variants": [
+        "nominal",
+        "alerte",
+        "critique"
+      ],
+      "width": 32
+    },
+    {
+      "animations": [],
+      "asset_type": "readout",
+      "blocked_by": null,
+      "directions": [
+        "none"
+      ],
+      "entity_id": "systeme_coque",
+      "family": "famille_cockpit",
+      "format": "png",
+      "height": 32,
+      "id": "asset_systeme_coque_cadran",
+      "output_rules": {
+        "dir": "ASSETS_IN/famille_cockpit",
+        "filename": "asset_systeme_coque_cadran.png",
+        "indexed": true,
+        "max_bytes": 8388608,
+        "must_declare": [
+          "file",
+          "file_sha256"
+        ],
+        "no_resize_after_delivery": true
+      },
+      "palette": [
+        [
+          3,
+          5,
+          8
+        ],
+        [
+          8,
+          12,
+          18
+        ],
+        [
+          14,
+          22,
+          30
+        ],
+        [
+          20,
+          34,
+          44
+        ],
+        [
+          28,
+          50,
+          60
+        ],
+        [
+          38,
+          70,
+          78
+        ],
+        [
+          52,
+          94,
+          98
+        ],
+        [
+          72,
+          120,
+          118
+        ],
+        [
+          98,
+          148,
+          140
+        ],
+        [
+          140,
+          180,
+          172
+        ],
+        [
+          186,
+          210,
+          200
+        ],
+        [
+          232,
+          238,
+          230
+        ],
+        [
+          86,
+          28,
+          32
+        ],
+        [
+          140,
+          52,
+          44
+        ],
+        [
+          196,
+          126,
+          58
+        ],
+        [
+          58,
+          24,
+          66
+        ]
+      ],
+      "producer": "framework_blender",
+      "resolution": "32x32@1x",
+      "status": "PLANNED",
+      "style": "pixel art 2D, mise a l'echelle entiere, sombre / oppressant / atmospherique, vue unique depuis l'interieur du sous-marin",
+      "validations": [
+        "binaire: octets magiques PNG + IHDR",
+        "binaire: CRC valide sur chaque chunk",
+        "binaire: SHA-256 reel == SHA-256 declare",
+        "binaire: dimensions reelles == 32x32",
+        "binaire: PLTE inclus dans palette_abysse_16",
+        "binaire: taille <= 8 Mio",
+        "reference: entity_id present dans le graphe"
+      ],
+      "variants": [
+        "nominal",
+        "alerte",
+        "critique"
+      ],
+      "width": 32
+    },
+    {
+      "animations": [],
+      "asset_type": "readout",
+      "blocked_by": null,
+      "directions": [
+        "none"
+      ],
+      "entity_id": "systeme_oxygene",
+      "family": "famille_cockpit",
+      "format": "png",
+      "height": 32,
+      "id": "asset_systeme_oxygene_cadran",
+      "output_rules": {
+        "dir": "ASSETS_IN/famille_cockpit",
+        "filename": "asset_systeme_oxygene_cadran.png",
+        "indexed": true,
+        "max_bytes": 8388608,
+        "must_declare": [
+          "file",
+          "file_sha256"
+        ],
+        "no_resize_after_delivery": true
+      },
+      "palette": [
+        [
+          3,
+          5,
+          8
+        ],
+        [
+          8,
+          12,
+          18
+        ],
+        [
+          14,
+          22,
+          30
+        ],
+        [
+          20,
+          34,
+          44
+        ],
+        [
+          28,
+          50,
+          60
+        ],
+        [
+          38,
+          70,
+          78
+        ],
+        [
+          52,
+          94,
+          98
+        ],
+        [
+          72,
+          120,
+          118
+        ],
+        [
+          98,
+          148,
+          140
+        ],
+        [
+          140,
+          180,
+          172
+        ],
+        [
+          186,
+          210,
+          200
+        ],
+        [
+          232,
+          238,
+          230
+        ],
+        [
+          86,
+          28,
+          32
+        ],
+        [
+          140,
+          52,
+          44
+        ],
+        [
+          196,
+          126,
+          58
+        ],
+        [
+          58,
+          24,
+          66
+        ]
+      ],
+      "producer": "framework_blender",
+      "resolution": "32x32@1x",
+      "status": "PLANNED",
+      "style": "pixel art 2D, mise a l'echelle entiere, sombre / oppressant / atmospherique, vue unique depuis l'interieur du sous-marin",
+      "validations": [
+        "binaire: octets magiques PNG + IHDR",
+        "binaire: CRC valide sur chaque chunk",
+        "binaire: SHA-256 reel == SHA-256 declare",
+        "binaire: dimensions reelles == 32x32",
+        "binaire: PLTE inclus dans palette_abysse_16",
+        "binaire: taille <= 8 Mio",
+        "reference: entity_id present dans le graphe"
+      ],
+      "variants": [
+        "nominal",
+        "alerte",
+        "critique"
+      ],
+      "width": 32
+    },
+    {
+      "animations": [],
+      "asset_type": "readout",
+      "blocked_by": null,
+      "directions": [
+        "none"
+      ],
+      "entity_id": "systeme_projecteur",
+      "family": "famille_cockpit",
+      "format": "png",
+      "height": 32,
+      "id": "asset_systeme_projecteur_cadran",
+      "output_rules": {
+        "dir": "ASSETS_IN/famille_cockpit",
+        "filename": "asset_systeme_projecteur_cadran.png",
+        "indexed": true,
+        "max_bytes": 8388608,
+        "must_declare": [
+          "file",
+          "file_sha256"
+        ],
+        "no_resize_after_delivery": true
+      },
+      "palette": [
+        [
+          3,
+          5,
+          8
+        ],
+        [
+          8,
+          12,
+          18
+        ],
+        [
+          14,
+          22,
+          30
+        ],
+        [
+          20,
+          34,
+          44
+        ],
+        [
+          28,
+          50,
+          60
+        ],
+        [
+          38,
+          70,
+          78
+        ],
+        [
+          52,
+          94,
+          98
+        ],
+        [
+          72,
+          120,
+          118
+        ],
+        [
+          98,
+          148,
+          140
+        ],
+        [
+          140,
+          180,
+          172
+        ],
+        [
+          186,
+          210,
+          200
+        ],
+        [
+          232,
+          238,
+          230
+        ],
+        [
+          86,
+          28,
+          32
+        ],
+        [
+          140,
+          52,
+          44
+        ],
+        [
+          196,
+          126,
+          58
+        ],
+        [
+          58,
+          24,
+          66
+        ]
+      ],
+      "producer": "framework_blender",
+      "resolution": "32x32@1x",
+      "status": "PLANNED",
+      "style": "pixel art 2D, mise a l'echelle entiere, sombre / oppressant / atmospherique, vue unique depuis l'interieur du sous-marin",
+      "validations": [
+        "binaire: octets magiques PNG + IHDR",
+        "binaire: CRC valide sur chaque chunk",
+        "binaire: SHA-256 reel == SHA-256 declare",
+        "binaire: dimensions reelles == 32x32",
+        "binaire: PLTE inclus dans palette_abysse_16",
+        "binaire: taille <= 8 Mio",
+        "reference: entity_id present dans le graphe"
+      ],
+      "variants": [
+        "nominal",
+        "alerte",
+        "critique"
+      ],
+      "width": 32
+    },
+    {
+      "animations": [],
+      "asset_type": "readout",
+      "blocked_by": null,
+      "directions": [
+        "none"
+      ],
+      "entity_id": "systeme_propulsion",
+      "family": "famille_cockpit",
+      "format": "png",
+      "height": 32,
+      "id": "asset_systeme_propulsion_cadran",
+      "output_rules": {
+        "dir": "ASSETS_IN/famille_cockpit",
+        "filename": "asset_systeme_propulsion_cadran.png",
+        "indexed": true,
+        "max_bytes": 8388608,
+        "must_declare": [
+          "file",
+          "file_sha256"
+        ],
+        "no_resize_after_delivery": true
+      },
+      "palette": [
+        [
+          3,
+          5,
+          8
+        ],
+        [
+          8,
+          12,
+          18
+        ],
+        [
+          14,
+          22,
+          30
+        ],
+        [
+          20,
+          34,
+          44
+        ],
+        [
+          28,
+          50,
+          60
+        ],
+        [
+          38,
+          70,
+          78
+        ],
+        [
+          52,
+          94,
+          98
+        ],
+        [
+          72,
+          120,
+          118
+        ],
+        [
+          98,
+          148,
+          140
+        ],
+        [
+          140,
+          180,
+          172
+        ],
+        [
+          186,
+          210,
+          200
+        ],
+        [
+          232,
+          238,
+          230
+        ],
+        [
+          86,
+          28,
+          32
+        ],
+        [
+          140,
+          52,
+          44
+        ],
+        [
+          196,
+          126,
+          58
+        ],
+        [
+          58,
+          24,
+          66
+        ]
+      ],
+      "producer": "framework_blender",
+      "resolution": "32x32@1x",
+      "status": "PLANNED",
+      "style": "pixel art 2D, mise a l'echelle entiere, sombre / oppressant / atmospherique, vue unique depuis l'interieur du sous-marin",
+      "validations": [
+        "binaire: octets magiques PNG + IHDR",
+        "binaire: CRC valide sur chaque chunk",
+        "binaire: SHA-256 reel == SHA-256 declare",
+        "binaire: dimensions reelles == 32x32",
+        "binaire: PLTE inclus dans palette_abysse_16",
+        "binaire: taille <= 8 Mio",
+        "reference: entity_id present dans le graphe"
+      ],
+      "variants": [
+        "nominal",
+        "alerte",
+        "critique"
+      ],
+      "width": 32
+    },
+    {
+      "animations": [],
+      "asset_type": "tile",
+      "blocked_by": null,
+      "directions": [
+        "none"
+      ],
+      "entity_id": "zone_la_faille_des_echos",
+      "family": "famille_fond_abyssal",
+      "format": "png",
+      "height": 16,
+      "id": "asset_zone_la_faille_des_echos_fond",
+      "output_rules": {
+        "dir": "ASSETS_IN/famille_fond_abyssal",
+        "filename": "asset_zone_la_faille_des_echos_fond.png",
+        "indexed": true,
+        "max_bytes": 8388608,
+        "must_declare": [
+          "file",
+          "file_sha256"
+        ],
+        "no_resize_after_delivery": true
+      },
+      "palette": [
+        [
+          3,
+          5,
+          8
+        ],
+        [
+          8,
+          12,
+          18
+        ],
+        [
+          14,
+          22,
+          30
+        ],
+        [
+          20,
+          34,
+          44
+        ],
+        [
+          28,
+          50,
+          60
+        ],
+        [
+          38,
+          70,
+          78
+        ],
+        [
+          52,
+          94,
+          98
+        ],
+        [
+          72,
+          120,
+          118
+        ],
+        [
+          98,
+          148,
+          140
+        ],
+        [
+          140,
+          180,
+          172
+        ],
+        [
+          186,
+          210,
+          200
+        ],
+        [
+          232,
+          238,
+          230
+        ],
+        [
+          86,
+          28,
+          32
+        ],
+        [
+          140,
+          52,
+          44
+        ],
+        [
+          196,
+          126,
+          58
+        ],
+        [
+          58,
+          24,
+          66
+        ]
+      ],
+      "producer": "framework_blender",
+      "resolution": "16x16@1x",
+      "status": "PLANNED",
+      "style": "pixel art 2D, mise a l'echelle entiere, sombre / oppressant / atmospherique, vue unique depuis l'interieur du sous-marin",
+      "validations": [
+        "binaire: octets magiques PNG + IHDR",
+        "binaire: CRC valide sur chaque chunk",
+        "binaire: SHA-256 reel == SHA-256 declare",
+        "binaire: dimensions reelles == 16x16",
+        "binaire: PLTE inclus dans palette_abysse_16",
+        "binaire: taille <= 8 Mio",
+        "reference: entity_id present dans le graphe"
+      ],
+      "variants": [
+        "proche",
+        "moyen",
+        "lointain"
+      ],
+      "width": 16
+    },
+    {
+      "animations": [],
+      "asset_type": "tile",
+      "blocked_by": null,
+      "directions": [
+        "none"
+      ],
+      "entity_id": "zone_le_corridor_des_yeux",
+      "family": "famille_fond_abyssal",
+      "format": "png",
+      "height": 16,
+      "id": "asset_zone_le_corridor_des_yeux_fond",
+      "output_rules": {
+        "dir": "ASSETS_IN/famille_fond_abyssal",
+        "filename": "asset_zone_le_corridor_des_yeux_fond.png",
+        "indexed": true,
+        "max_bytes": 8388608,
+        "must_declare": [
+          "file",
+          "file_sha256"
+        ],
+        "no_resize_after_delivery": true
+      },
+      "palette": [
+        [
+          3,
+          5,
+          8
+        ],
+        [
+          8,
+          12,
+          18
+        ],
+        [
+          14,
+          22,
+          30
+        ],
+        [
+          20,
+          34,
+          44
+        ],
+        [
+          28,
+          50,
+          60
+        ],
+        [
+          38,
+          70,
+          78
+        ],
+        [
+          52,
+          94,
+          98
+        ],
+        [
+          72,
+          120,
+          118
+        ],
+        [
+          98,
+          148,
+          140
+        ],
+        [
+          140,
+          180,
+          172
+        ],
+        [
+          186,
+          210,
+          200
+        ],
+        [
+          232,
+          238,
+          230
+        ],
+        [
+          86,
+          28,
+          32
+        ],
+        [
+          140,
+          52,
+          44
+        ],
+        [
+          196,
+          126,
+          58
+        ],
+        [
+          58,
+          24,
+          66
+        ]
+      ],
+      "producer": "framework_blender",
+      "resolution": "16x16@1x",
+      "status": "PLANNED",
+      "style": "pixel art 2D, mise a l'echelle entiere, sombre / oppressant / atmospherique, vue unique depuis l'interieur du sous-marin",
+      "validations": [
+        "binaire: octets magiques PNG + IHDR",
+        "binaire: CRC valide sur chaque chunk",
+        "binaire: SHA-256 reel == SHA-256 declare",
+        "binaire: dimensions reelles == 16x16",
+        "binaire: PLTE inclus dans palette_abysse_16",
+        "binaire: taille <= 8 Mio",
+        "reference: entity_id present dans le graphe"
+      ],
+      "variants": [
+        "proche",
+        "moyen",
+        "lointain"
+      ],
+      "width": 16
+    },
+    {
+      "animations": [],
+      "asset_type": "tile",
+      "blocked_by": null,
+      "directions": [
+        "none"
+      ],
+      "entity_id": "zone_les_ruines_du_son",
+      "family": "famille_fond_abyssal",
+      "format": "png",
+      "height": 16,
+      "id": "asset_zone_les_ruines_du_son_fond",
+      "output_rules": {
+        "dir": "ASSETS_IN/famille_fond_abyssal",
+        "filename": "asset_zone_les_ruines_du_son_fond.png",
+        "indexed": true,
+        "max_bytes": 8388608,
+        "must_declare": [
+          "file",
+          "file_sha256"
+        ],
+        "no_resize_after_delivery": true
+      },
+      "palette": [
+        [
+          3,
+          5,
+          8
+        ],
+        [
+          8,
+          12,
+          18
+        ],
+        [
+          14,
+          22,
+          30
+        ],
+        [
+          20,
+          34,
+          44
+        ],
+        [
+          28,
+          50,
+          60
+        ],
+        [
+          38,
+          70,
+          78
+        ],
+        [
+          52,
+          94,
+          98
+        ],
+        [
+          72,
+          120,
+          118
+        ],
+        [
+          98,
+          148,
+          140
+        ],
+        [
+          140,
+          180,
+          172
+        ],
+        [
+          186,
+          210,
+          200
+        ],
+        [
+          232,
+          238,
+          230
+        ],
+        [
+          86,
+          28,
+          32
+        ],
+        [
+          140,
+          52,
+          44
+        ],
+        [
+          196,
+          126,
+          58
+        ],
+        [
+          58,
+          24,
+          66
+        ]
+      ],
+      "producer": "framework_blender",
+      "resolution": "16x16@1x",
+      "status": "PLANNED",
+      "style": "pixel art 2D, mise a l'echelle entiere, sombre / oppressant / atmospherique, vue unique depuis l'interieur du sous-marin",
+      "validations": [
+        "binaire: octets magiques PNG + IHDR",
+        "binaire: CRC valide sur chaque chunk",
+        "binaire: SHA-256 reel == SHA-256 declare",
+        "binaire: dimensions reelles == 16x16",
+        "binaire: PLTE inclus dans palette_abysse_16",
+        "binaire: taille <= 8 Mio",
+        "reference: entity_id present dans le graphe"
+      ],
+      "variants": [
+        "proche",
+        "moyen",
+        "lointain"
+      ],
+      "width": 16
+    }
+  ]
+}

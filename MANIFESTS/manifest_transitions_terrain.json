@@ -1,0 +1,21 @@
+{
+  "count": 2,
+  "entries": [
+    {
+      "family": "famille_fond_abyssal",
+      "from": "terrain_vase",
+      "id": "transition_vase_roche",
+      "status": "PLANNED",
+      "tiles_required": 4,
+      "to": "terrain_roche"
+    },
+    {
+      "family": "famille_fond_abyssal",
+      "from": "terrain_roche",
+      "id": "transition_roche_vide",
+      "status": "PLANNED",
+      "tiles_required": 4,
+      "to": "terrain_vide"
+    }
+  ]
+}

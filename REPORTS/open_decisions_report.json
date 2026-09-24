@@ -1,0 +1,247 @@
+{
+  "blocked": [
+    "dec_chemin_blender"
+  ],
+  "owner_decisions": [
+    "dec_coherence_psy",
+    "dec_duree_plongee",
+    "dec_fin_de_boucle",
+    "dec_frequence_degats",
+    "dec_importance_maintenance",
+    "dec_nature_formes",
+    "dec_nb_anomalies",
+    "dec_nb_artefacts",
+    "dec_nb_evenements",
+    "dec_nb_zones_profondes",
+    "dec_procedural_fond"
+  ],
+  "rows": [
+    {
+      "affects": [
+        "blender_adapter",
+        "manifest_assets",
+        "ASSETS_BIN"
+      ],
+      "consequences": [
+        "Toute generation d'asset reelle est BLOCKED.",
+        "L'adaptateur est livre, teste a vide, mais ne produit aucun binaire."
+      ],
+      "depends_on": [],
+      "id": "dec_chemin_blender",
+      "justification": "Le chemin fourni est un emplacement temporaire explicitement marque 'A REMPLACER'. Il n'existe pas. INPUT/external_tools.md, qui devrait le declarer, est absent du bootstrapper. Aucun chemin n'est invente.",
+      "owner": "PIPELINE",
+      "source": "prompt utilisateur",
+      "statement": "Chemin local du framework Blender: 'C:\\\\CHEMIN\\\\A\\\\REMPLACER\\\\FRAMEWORK_BLENDER'.",
+      "status": "BLOCKED",
+      "value": null
+    },
+    {
+      "affects": [
+        "validators.narratif"
+      ],
+      "consequences": [
+        "Bloque le validateur narratif sur les anomalies."
+      ],
+      "depends_on": [
+        "dec_nature_formes"
+      ],
+      "id": "dec_coherence_psy",
+      "justification": "Ouvert dans open_decisions.md.",
+      "owner": "PROPRIETAIRE",
+      "source": "INPUT/open_decisions.md",
+      "statement": "Degre de coherence psychologique entre apparitions et indices.",
+      "status": "TO_VALIDATE",
+      "value": null
+    },
+    {
+      "affects": [
+        "validators.temporel",
+        "simulate"
+      ],
+      "consequences": [
+        "Bloque le validateur economique et temporel."
+      ],
+      "depends_on": [
+        "dec_systemes_vitaux"
+      ],
+      "id": "dec_duree_plongee",
+      "justification": "Ouvert dans open_decisions.md. Impacte directement l'equilibrage oxygene/batterie.",
+      "owner": "PROPRIETAIRE",
+      "source": "INPUT/open_decisions.md",
+      "statement": "Duree d'une plongee.",
+      "status": "TO_VALIDATE",
+      "value": null
+    },
+    {
+      "affects": [
+        "catalogue_evenements"
+      ],
+      "consequences": [
+        "Bloque le catalogue d'evenements terminaux."
+      ],
+      "depends_on": [],
+      "id": "dec_fin_de_boucle",
+      "justification": "Ouvert dans open_decisions.md; lie au 'vrai but de la plongee finale' declare ouvert dans le canon.",
+      "owner": "PROPRIETAIRE",
+      "source": "INPUT/open_decisions.md",
+      "statement": "Presence ou non d'elements narratifs de fin de boucle.",
+      "status": "TO_VALIDATE",
+      "value": null
+    },
+    {
+      "affects": [
+        "validators.economique",
+        "simulate"
+      ],
+      "consequences": [
+        "Bloque l'equilibrage de la tension."
+      ],
+      "depends_on": [
+        "dec_duree_plongee"
+      ],
+      "id": "dec_frequence_degats",
+      "justification": "Ouvert dans open_decisions.md.",
+      "owner": "PROPRIETAIRE",
+      "source": "INPUT/open_decisions.md",
+      "statement": "Frequence des degats de coque et de perte d'oxygene.",
+      "status": "TO_VALIDATE",
+      "value": null
+    },
+    {
+      "affects": [
+        "catalogue_ressources"
+      ],
+      "consequences": [
+        "Bloque le dimensionnement des ressources."
+      ],
+      "depends_on": [
+        "dec_systemes_vitaux"
+      ],
+      "id": "dec_importance_maintenance",
+      "justification": "Ouvert dans open_decisions.md.",
+      "owner": "PROPRIETAIRE",
+      "source": "INPUT/open_decisions.md",
+      "statement": "Importance des ressources de maintenance.",
+      "status": "TO_VALIDATE",
+      "value": null
+    },
+    {
+      "affects": [
+        "catalogue_anomalies",
+        "prompts.famille_anomalie"
+      ],
+      "consequences": [
+        "Bloque anomalies, animations de presence, et la plongee finale."
+      ],
+      "depends_on": [],
+      "id": "dec_nature_formes",
+      "justification": "Declare ouvert sous 'Elements ouverts' dans canon_initial.md. C'est le coeur creatif du jeu: la pipeline ne le tranche pas.",
+      "owner": "PROPRIETAIRE",
+      "source": "INPUT/canon_initial.md",
+      "statement": "Nature exacte des formes terrifiantes.",
+      "status": "TO_VALIDATE",
+      "value": null
+    },
+    {
+      "affects": [
+        "catalogue_anomalies",
+        "manifest_assets",
+        "manifest_animations"
+      ],
+      "consequences": [
+        "Le catalogue d'anomalies reste vide; seule une fixture de test existe."
+      ],
+      "depends_on": [
+        "dec_nature_formes"
+      ],
+      "id": "dec_nb_anomalies",
+      "justification": "Ouvert dans open_decisions.md et canon_initial.md. La nature meme des formes est declaree ouverte: en deduire un nombre reviendrait a inventer du canon.",
+      "owner": "PROPRIETAIRE",
+      "source": "INPUT/open_decisions.md",
+      "statement": "Nombre exact d'anomalies visibles depuis la vitre.",
+      "status": "TO_VALIDATE",
+      "value": null
+    },
+    {
+      "affects": [
+        "catalogue_artefacts"
+      ],
+      "consequences": [
+        "Le manifest d'objets s'arrete aux 5 canoniques."
+      ],
+      "depends_on": [
+        "dec_artefacts_canoniques"
+      ],
+      "id": "dec_nb_artefacts",
+      "justification": "Ouvert dans open_decisions.md.",
+      "owner": "PROPRIETAIRE",
+      "source": "INPUT/open_decisions.md",
+      "statement": "Nombre exact d'artefacts recuperables au-dela des 5 canoniques.",
+      "status": "TO_VALIDATE",
+      "value": {
+        "plancher_canonique": 5,
+        "retenu": null
+      }
+    },
+    {
+      "affects": [
+        "catalogue_evenements"
+      ],
+      "consequences": [
+        "Le catalogue d'evenements reste vide hors fixture."
+      ],
+      "depends_on": [
+        "dec_nb_anomalies"
+      ],
+      "id": "dec_nb_evenements",
+      "justification": "Ouvert dans open_decisions.md.",
+      "owner": "PROPRIETAIRE",
+      "source": "INPUT/open_decisions.md",
+      "statement": "Nombre exact d'evenements de tension ou de fuite.",
+      "status": "TO_VALIDATE",
+      "value": null
+    },
+    {
+      "affects": [
+        "catalogue_zones",
+        "manifest_maps"
+      ],
+      "consequences": [
+        "Bloque le dimensionnement du manifest de maps au-dela des 4 zones canoniques."
+      ],
+      "depends_on": [
+        "dec_zones_canoniques"
+      ],
+      "id": "dec_nb_zones_profondes",
+      "justification": "Liste explicitement comme ouverte dans open_decisions.md ET canon_initial.md. La pipeline propose 3 (les zones canoniques) comme plancher, sans le figer.",
+      "owner": "PROPRIETAIRE",
+      "source": "INPUT/open_decisions.md",
+      "statement": "Nombre exact de zones abyssales.",
+      "status": "TO_VALIDATE",
+      "value": {
+        "plancher_canonique": 4,
+        "retenu": null
+      }
+    },
+    {
+      "affects": [
+        "manifest_maps",
+        "reproducibility"
+      ],
+      "consequences": [
+        "Determine si les maps sont fixes ou generees."
+      ],
+      "depends_on": [
+        "dec_graine_procedurale"
+      ],
+      "id": "dec_procedural_fond",
+      "justification": "Ouvert dans open_decisions.md.",
+      "owner": "PROPRIETAIRE",
+      "source": "INPUT/open_decisions.md",
+      "statement": "Niveau de generation procedurale du fond marin.",
+      "status": "TO_VALIDATE",
+      "value": null
+    }
+  ],
+  "total": 12
+}

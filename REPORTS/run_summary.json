@@ -1,0 +1,18 @@
+{
+  "blocked": [
+    "BLENDER"
+  ],
+  "failed": [],
+  "steps": {
+    "BINAIRES": 0,
+    "BLENDER": 2,
+    "CANON": 0,
+    "COMPILATION": 0,
+    "MANIFESTS": 0,
+    "PROMPTS": 0,
+    "RAPPORTS": 0,
+    "SIMULATION": 0,
+    "VALIDATION": 0
+  },
+  "version": "5.0.0"
+}

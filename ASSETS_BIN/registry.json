@@ -1,0 +1,31 @@
+{
+  "entries": {
+    "asset_artefact_carte_des_profondeurs_icone": {
+      "asset_id": "asset_artefact_carte_des_profondeurs_icone",
+      "family": "famille_artefacts",
+      "format": "png",
+      "height": 32,
+      "indexed": true,
+      "palette_size": 16,
+      "path": "ASSETS_BIN/famille_artefacts/asset_artefact_carte_des_profondeurs_icone.png",
+      "sha256": "27d517f629b8952b14d2dcee5223b5c85f76d9f3c5ecbee05c086a2d3a1df9cf",
+      "size_bytes": 183,
+      "source_delivery": "/home/user/Pipeline-sous-marin-/ASSETS_IN/famille_artefacts/asset_artefact_carte_des_profondeurs_icone.png",
+      "width": 32
+    },
+    "asset_systeme_batterie_cadran": {
+      "asset_id": "asset_systeme_batterie_cadran",
+      "family": "famille_cockpit",
+      "format": "png",
+      "height": 32,
+      "indexed": true,
+      "palette_size": 16,
+      "path": "ASSETS_BIN/famille_cockpit/asset_systeme_batterie_cadran.png",
+      "sha256": "27d517f629b8952b14d2dcee5223b5c85f76d9f3c5ecbee05c086a2d3a1df9cf",
+      "size_bytes": 183,
+      "source_delivery": "/home/user/Pipeline-sous-marin-/ASSETS_IN/famille_cockpit/asset_systeme_batterie_cadran.png",
+      "width": 32
+    }
+  },
+  "version": 1
+}

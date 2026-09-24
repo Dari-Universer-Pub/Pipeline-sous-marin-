@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+# ASSETS_IN est la boite de reception des livraisons: son contenu est transitoire
+# (livraisons en cours, sous-produits des tests de rejet). Le stockage de
+# reference des binaires ACCEPTES est ASSETS_BIN, qui lui est versionne.
+ASSETS_IN/*
+!ASSETS_IN/.gitkeep

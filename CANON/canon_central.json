@@ -1,0 +1,202 @@
+{
+  "canon_version": "1.0.0",
+  "declared_open": [
+    {
+      "source": "INPUT/canon_initial.md",
+      "source_line": 39,
+      "status": "TO_VALIDATE",
+      "text": "La nature exacte des formes terrifiantes."
+    },
+    {
+      "source": "INPUT/canon_initial.md",
+      "source_line": 40,
+      "status": "TO_VALIDATE",
+      "text": "Le nombre exact des zones profondes."
+    },
+    {
+      "source": "INPUT/canon_initial.md",
+      "source_line": 41,
+      "status": "TO_VALIDATE",
+      "text": "Les anomalies observables depuis la vitre."
+    },
+    {
+      "source": "INPUT/canon_initial.md",
+      "source_line": 42,
+      "status": "TO_VALIDATE",
+      "text": "Les messages ou archives retrouves dans les ruines."
+    },
+    {
+      "source": "INPUT/canon_initial.md",
+      "source_line": 43,
+      "status": "TO_VALIDATE",
+      "text": "Le vrai but de la plongee finale."
+    }
+  ],
+  "entries": [
+    {
+      "display_name": "Carte des profondeurs",
+      "id": "artefact_carte_des_profondeurs",
+      "kind": "artifact",
+      "role": "objet canonique",
+      "source": "INPUT/canon_initial.md",
+      "source_line": 28,
+      "status": "CANONICAL"
+    },
+    {
+      "display_name": "Flasque d'oxygène",
+      "id": "artefact_flasque_d_oxygene",
+      "kind": "artifact",
+      "role": "objet canonique",
+      "source": "INPUT/canon_initial.md",
+      "source_line": 29,
+      "status": "CANONICAL"
+    },
+    {
+      "display_name": "Fragment d'archive abyssale",
+      "id": "artefact_fragment_d_archive_abyssale",
+      "kind": "artifact",
+      "role": "objet canonique",
+      "source": "INPUT/canon_initial.md",
+      "source_line": 30,
+      "status": "CANONICAL"
+    },
+    {
+      "display_name": "Lampe de secours",
+      "id": "artefact_lampe_de_secours",
+      "kind": "artifact",
+      "role": "objet canonique",
+      "source": "INPUT/canon_initial.md",
+      "source_line": 27,
+      "status": "CANONICAL"
+    },
+    {
+      "display_name": "Outil de réparation de coque",
+      "id": "artefact_outil_de_reparation_de_coque",
+      "kind": "artifact",
+      "role": "objet canonique",
+      "source": "INPUT/canon_initial.md",
+      "source_line": 31,
+      "status": "CANONICAL"
+    },
+    {
+      "display_name": "Ilyan",
+      "id": "equipage_ilyan",
+      "kind": "crew",
+      "role": "navigateur, qui refuse de regarder directement la vitre pendant les plongees",
+      "source": "INPUT/canon_initial.md",
+      "source_line": 22,
+      "status": "CANONICAL"
+    },
+    {
+      "display_name": "Mara",
+      "id": "equipage_mara",
+      "kind": "crew",
+      "role": "ingenieure de bord, responsable des systemes du sous-marin",
+      "source": "INPUT/canon_initial.md",
+      "source_line": 21,
+      "status": "CANONICAL"
+    },
+    {
+      "display_name": "Pilote",
+      "id": "equipage_pilote",
+      "kind": "crew",
+      "role": "personnage joueur",
+      "source": "INPUT/canon_initial.md",
+      "source_line": 6,
+      "status": "CANONICAL"
+    },
+    {
+      "display_name": "Sorel",
+      "id": "equipage_sorel",
+      "kind": "crew",
+      "role": "chercheur de terrain, fascine par les traces anciennes et jamais totalement serein",
+      "source": "INPUT/canon_initial.md",
+      "source_line": 23,
+      "status": "CANONICAL"
+    },
+    {
+      "display_name": "Abysse de Veyr",
+      "id": "zone_abysse_de_veyr",
+      "kind": "zone",
+      "role": "monde",
+      "source": "INPUT/canon_initial.md",
+      "source_line": 5,
+      "status": "CANONICAL"
+    },
+    {
+      "display_name": "La Faille des Échos",
+      "id": "zone_la_faille_des_echos",
+      "kind": "zone",
+      "role": "zone d'exploration sombre et instable",
+      "source": "INPUT/canon_initial.md",
+      "source_line": 15,
+      "status": "CANONICAL"
+    },
+    {
+      "display_name": "Le Corridor des Yeux",
+      "id": "zone_le_corridor_des_yeux",
+      "kind": "zone",
+      "role": "couloir profond ou l'ombre parait vivante",
+      "source": "INPUT/canon_initial.md",
+      "source_line": 16,
+      "status": "CANONICAL"
+    },
+    {
+      "display_name": "Le Vitrail Noire",
+      "id": "zone_le_vitrail_noire",
+      "kind": "zone",
+      "role": "sous-marin de depart et point d'observation principal",
+      "source": "INPUT/canon_initial.md",
+      "source_line": 7,
+      "status": "CANONICAL"
+    },
+    {
+      "display_name": "Les Ruines du Son",
+      "id": "zone_les_ruines_du_son",
+      "kind": "zone",
+      "role": "vestiges de structures anciennes et de materiel perdu",
+      "source": "INPUT/canon_initial.md",
+      "source_line": 17,
+      "status": "CANONICAL"
+    }
+  ],
+  "forbidden": [
+    "combat heroique comme boucle centrale",
+    "lexique high fantasy / noms ornes",
+    "surnaturel explicite sans mystere",
+    "objet abyssal presente comme entierement rassurant"
+  ],
+  "game": "Abyssal Glass",
+  "immutable_rules": [
+    {
+      "source": "INPUT/canon_initial.md",
+      "source_line": 8,
+      "status": "CANONICAL",
+      "text": "La profondeur contient des traces d'une intelligence ancienne."
+    },
+    {
+      "source": "INPUT/canon_initial.md",
+      "source_line": 9,
+      "status": "CANONICAL",
+      "text": "Les objets trouves dans les abysses ne sont jamais entierement rassurants."
+    },
+    {
+      "source": "INPUT/canon_initial.md",
+      "source_line": 10,
+      "status": "CANONICAL",
+      "text": "Le jeu repose sur la survie, l'observation et la peur, pas sur un combat de style heroique."
+    }
+  ],
+  "locked": true,
+  "naming_rule": {
+    "source": "INPUT/canon_initial.md",
+    "status": "CANONICAL",
+    "text": "Les noms doivent etre simples, claquants, sinistres, precis. Eviter toute surenchere fantasy, toute langue trop ornate, et toute reference trop explicite au surnaturel sans mystere."
+  },
+  "player_name": "le Pilote",
+  "source_files": {
+    "INPUT/canon_initial.md": "c4d4565543aa5b2694614bf4ee16a3950d643ba26ad8ec7380212987d7b39951"
+  },
+  "vessel_name": "le Vitrail Noire",
+  "world_name": "l'Abysse de Veyr"
+}

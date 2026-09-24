@@ -1,0 +1,290 @@
+{
+  "count": 10,
+  "entries": [
+    {
+      "assets": [
+        "asset_systeme_batterie_cadran"
+      ],
+      "blocked_by": null,
+      "direction": "none",
+      "entity_id": "systeme_batterie",
+      "fps": 6,
+      "frames": 4,
+      "id": "anim_systeme_batterie_etat_alerte",
+      "impact_frame": 0,
+      "logical_effect": {
+        "op": "set",
+        "target": "systeme_batterie.alarm",
+        "value": true
+      },
+      "loop": true,
+      "producer": "framework_blender",
+      "state_or_action": "etat_alerte",
+      "status": "PLANNED",
+      "tests": [
+        "test_anim_systeme_batterie_etat_alerte_synchro_etat",
+        "test_anim_systeme_batterie_etat_alerte_effet_logique_applique"
+      ],
+      "transitions": [
+        "etat_nominal",
+        "etat_critique"
+      ]
+    },
+    {
+      "assets": [
+        "asset_systeme_batterie_cadran"
+      ],
+      "blocked_by": null,
+      "direction": "none",
+      "entity_id": "systeme_batterie",
+      "fps": 10,
+      "frames": 6,
+      "id": "anim_systeme_batterie_etat_critique",
+      "impact_frame": 0,
+      "logical_effect": {
+        "op": "set",
+        "target": "etat_panne_seche",
+        "value": true
+      },
+      "loop": true,
+      "producer": "framework_blender",
+      "state_or_action": "etat_critique",
+      "status": "PLANNED",
+      "tests": [
+        "test_anim_systeme_batterie_etat_critique_synchro_etat",
+        "test_anim_systeme_batterie_etat_critique_effet_logique_applique"
+      ],
+      "transitions": [
+        "etat_alerte"
+      ]
+    },
+    {
+      "assets": [
+        "asset_systeme_coque_cadran"
+      ],
+      "blocked_by": null,
+      "direction": "none",
+      "entity_id": "systeme_coque",
+      "fps": 6,
+      "frames": 4,
+      "id": "anim_systeme_coque_etat_alerte",
+      "impact_frame": 0,
+      "logical_effect": {
+        "op": "set",
+        "target": "systeme_coque.alarm",
+        "value": true
+      },
+      "loop": true,
+      "producer": "framework_blender",
+      "state_or_action": "etat_alerte",
+      "status": "PLANNED",
+      "tests": [
+        "test_anim_systeme_coque_etat_alerte_synchro_etat",
+        "test_anim_systeme_coque_etat_alerte_effet_logique_applique"
+      ],
+      "transitions": [
+        "etat_nominal",
+        "etat_critique"
+      ]
+    },
+    {
+      "assets": [
+        "asset_systeme_coque_cadran"
+      ],
+      "blocked_by": null,
+      "direction": "none",
+      "entity_id": "systeme_coque",
+      "fps": 10,
+      "frames": 6,
+      "id": "anim_systeme_coque_etat_critique",
+      "impact_frame": 0,
+      "logical_effect": {
+        "op": "set",
+        "target": "etat_breche",
+        "value": true
+      },
+      "loop": true,
+      "producer": "framework_blender",
+      "state_or_action": "etat_critique",
+      "status": "PLANNED",
+      "tests": [
+        "test_anim_systeme_coque_etat_critique_synchro_etat",
+        "test_anim_systeme_coque_etat_critique_effet_logique_applique"
+      ],
+      "transitions": [
+        "etat_alerte"
+      ]
+    },
+    {
+      "assets": [
+        "asset_systeme_oxygene_cadran"
+      ],
+      "blocked_by": null,
+      "direction": "none",
+      "entity_id": "systeme_oxygene",
+      "fps": 6,
+      "frames": 4,
+      "id": "anim_systeme_oxygene_etat_alerte",
+      "impact_frame": 0,
+      "logical_effect": {
+        "op": "set",
+        "target": "systeme_oxygene.alarm",
+        "value": true
+      },
+      "loop": true,
+      "producer": "framework_blender",
+      "state_or_action": "etat_alerte",
+      "status": "PLANNED",
+      "tests": [
+        "test_anim_systeme_oxygene_etat_alerte_synchro_etat",
+        "test_anim_systeme_oxygene_etat_alerte_effet_logique_applique"
+      ],
+      "transitions": [
+        "etat_nominal",
+        "etat_critique"
+      ]
+    },
+    {
+      "assets": [
+        "asset_systeme_oxygene_cadran"
+      ],
+      "blocked_by": null,
+      "direction": "none",
+      "entity_id": "systeme_oxygene",
+      "fps": 10,
+      "frames": 6,
+      "id": "anim_systeme_oxygene_etat_critique",
+      "impact_frame": 0,
+      "logical_effect": {
+        "op": "set",
+        "target": "etat_asphyxie",
+        "value": true
+      },
+      "loop": true,
+      "producer": "framework_blender",
+      "state_or_action": "etat_critique",
+      "status": "PLANNED",
+      "tests": [
+        "test_anim_systeme_oxygene_etat_critique_synchro_etat",
+        "test_anim_systeme_oxygene_etat_critique_effet_logique_applique"
+      ],
+      "transitions": [
+        "etat_alerte"
+      ]
+    },
+    {
+      "assets": [
+        "asset_systeme_projecteur_cadran"
+      ],
+      "blocked_by": null,
+      "direction": "none",
+      "entity_id": "systeme_projecteur",
+      "fps": 6,
+      "frames": 4,
+      "id": "anim_systeme_projecteur_etat_alerte",
+      "impact_frame": 0,
+      "logical_effect": {
+        "op": "set",
+        "target": "systeme_projecteur.alarm",
+        "value": true
+      },
+      "loop": true,
+      "producer": "framework_blender",
+      "state_or_action": "etat_alerte",
+      "status": "PLANNED",
+      "tests": [
+        "test_anim_systeme_projecteur_etat_alerte_synchro_etat",
+        "test_anim_systeme_projecteur_etat_alerte_effet_logique_applique"
+      ],
+      "transitions": [
+        "etat_nominal",
+        "etat_critique"
+      ]
+    },
+    {
+      "assets": [
+        "asset_systeme_projecteur_cadran"
+      ],
+      "blocked_by": null,
+      "direction": "none",
+      "entity_id": "systeme_projecteur",
+      "fps": 10,
+      "frames": 6,
+      "id": "anim_systeme_projecteur_etat_critique",
+      "impact_frame": 0,
+      "logical_effect": {
+        "op": "set",
+        "target": "etat_obscurite",
+        "value": true
+      },
+      "loop": true,
+      "producer": "framework_blender",
+      "state_or_action": "etat_critique",
+      "status": "PLANNED",
+      "tests": [
+        "test_anim_systeme_projecteur_etat_critique_synchro_etat",
+        "test_anim_systeme_projecteur_etat_critique_effet_logique_applique"
+      ],
+      "transitions": [
+        "etat_alerte"
+      ]
+    },
+    {
+      "assets": [
+        "asset_systeme_propulsion_cadran"
+      ],
+      "blocked_by": null,
+      "direction": "none",
+      "entity_id": "systeme_propulsion",
+      "fps": 6,
+      "frames": 4,
+      "id": "anim_systeme_propulsion_etat_alerte",
+      "impact_frame": 0,
+      "logical_effect": {
+        "op": "set",
+        "target": "systeme_propulsion.alarm",
+        "value": true
+      },
+      "loop": true,
+      "producer": "framework_blender",
+      "state_or_action": "etat_alerte",
+      "status": "PLANNED",
+      "tests": [
+        "test_anim_systeme_propulsion_etat_alerte_synchro_etat",
+        "test_anim_systeme_propulsion_etat_alerte_effet_logique_applique"
+      ],
+      "transitions": [
+        "etat_nominal",
+        "etat_critique"
+      ]
+    },
+    {
+      "assets": [
+        "asset_systeme_propulsion_cadran"
+      ],
+      "blocked_by": null,
+      "direction": "none",
+      "entity_id": "systeme_propulsion",
+      "fps": 10,
+      "frames": 6,
+      "id": "anim_systeme_propulsion_etat_critique",
+      "impact_frame": 0,
+      "logical_effect": {
+        "op": "set",
+        "target": "etat_derive",
+        "value": true
+      },
+      "loop": true,
+      "producer": "framework_blender",
+      "state_or_action": "etat_critique",
+      "status": "PLANNED",
+      "tests": [
+        "test_anim_systeme_propulsion_etat_critique_synchro_etat",
+        "test_anim_systeme_propulsion_etat_critique_effet_logique_applique"
+      ],
+      "transitions": [
+        "etat_alerte"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "component_count": 1,
+  "connected": true,
+  "note": "Une relation technique unique ne suffit pas a declarer une entite utile: 'weakly_useful' liste les entites a renforcer.",
+  "orphans": [],
+  "sinks": [
+    "action_interpreter",
+    "action_observer",
+    "action_recuperer",
+    "systeme_batterie",
+    "systeme_coque",
+    "systeme_oxygene"
+  ],
+  "sources": [
+    "action_avancer",
+    "action_eteindre_les_lumieres",
+    "action_fuir",
+    "action_reculer",
+    "artefact_carte_des_profondeurs",
+    "artefact_flasque_d_oxygene",
+    "artefact_fragment_d_archive_abyssale",
+    "artefact_lampe_de_secours",
+    "artefact_outil_de_reparation_de_coque",
+    "equipage_ilyan",
+    "equipage_mara",
+    "equipage_pilote",
+    "equipage_sorel"
+  ],
+  "weakly_useful": [
+    "action_avancer",
+    "action_eteindre_les_lumieres",
+    "action_fuir",
+    "action_interpreter",
+    "action_observer",
+    "action_reculer",
+    "action_recuperer",
+    "equipage_ilyan",
+    "equipage_pilote",
+    "equipage_sorel"
+  ]
+}

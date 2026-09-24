@@ -1,0 +1,371 @@
+{
+  "edge_count": 38,
+  "edges": [
+    {
+      "from": "action_avancer",
+      "status": "DERIVED",
+      "to": "systeme_propulsion",
+      "type": "requires"
+    },
+    {
+      "from": "action_eteindre_les_lumieres",
+      "status": "DERIVED",
+      "to": "systeme_projecteur",
+      "type": "requires"
+    },
+    {
+      "from": "action_fuir",
+      "status": "DERIVED",
+      "to": "systeme_propulsion",
+      "type": "requires"
+    },
+    {
+      "from": "action_reculer",
+      "status": "DERIVED",
+      "to": "systeme_propulsion",
+      "type": "requires"
+    },
+    {
+      "from": "action_reparer",
+      "status": "DERIVED",
+      "to": "systeme_coque",
+      "type": "requires"
+    },
+    {
+      "from": "artefact_carte_des_profondeurs",
+      "status": "DERIVED",
+      "to": "zone_le_vitrail_noire",
+      "type": "located_in"
+    },
+    {
+      "from": "artefact_carte_des_profondeurs",
+      "status": "DERIVED",
+      "to": "action_interpreter",
+      "type": "requires"
+    },
+    {
+      "from": "artefact_flasque_d_oxygene",
+      "status": "DERIVED",
+      "to": "zone_le_vitrail_noire",
+      "type": "located_in"
+    },
+    {
+      "from": "artefact_flasque_d_oxygene",
+      "status": "CANONICAL",
+      "to": "systeme_oxygene",
+      "type": "repairs"
+    },
+    {
+      "from": "artefact_flasque_d_oxygene",
+      "status": "DERIVED",
+      "to": "action_recuperer",
+      "type": "requires"
+    },
+    {
+      "from": "artefact_fragment_d_archive_abyssale",
+      "status": "DERIVED",
+      "to": "zone_le_vitrail_noire",
+      "type": "located_in"
+    },
+    {
+      "from": "artefact_fragment_d_archive_abyssale",
+      "status": "DERIVED",
+      "to": "action_interpreter",
+      "type": "requires"
+    },
+    {
+      "from": "artefact_lampe_de_secours",
+      "status": "DERIVED",
+      "to": "zone_le_vitrail_noire",
+      "type": "located_in"
+    },
+    {
+      "from": "artefact_lampe_de_secours",
+      "status": "CANONICAL",
+      "to": "systeme_projecteur",
+      "type": "repairs"
+    },
+    {
+      "from": "artefact_lampe_de_secours",
+      "status": "DERIVED",
+      "to": "action_observer",
+      "type": "requires"
+    },
+    {
+      "from": "artefact_outil_de_reparation_de_coque",
+      "status": "DERIVED",
+      "to": "zone_le_vitrail_noire",
+      "type": "located_in"
+    },
+    {
+      "from": "artefact_outil_de_reparation_de_coque",
+      "status": "CANONICAL",
+      "to": "systeme_coque",
+      "type": "repairs"
+    },
+    {
+      "from": "artefact_outil_de_reparation_de_coque",
+      "status": "DERIVED",
+      "to": "action_reparer",
+      "type": "requires"
+    },
+    {
+      "from": "equipage_ilyan",
+      "status": "CANONICAL",
+      "to": "zone_le_vitrail_noire",
+      "type": "located_in"
+    },
+    {
+      "from": "equipage_mara",
+      "status": "CANONICAL",
+      "to": "systeme_batterie",
+      "type": "knows"
+    },
+    {
+      "from": "equipage_mara",
+      "status": "CANONICAL",
+      "to": "systeme_coque",
+      "type": "knows"
+    },
+    {
+      "from": "equipage_mara",
+      "status": "CANONICAL",
+      "to": "systeme_oxygene",
+      "type": "knows"
+    },
+    {
+      "from": "equipage_mara",
+      "status": "CANONICAL",
+      "to": "systeme_projecteur",
+      "type": "knows"
+    },
+    {
+      "from": "equipage_mara",
+      "status": "CANONICAL",
+      "to": "systeme_propulsion",
+      "type": "knows"
+    },
+    {
+      "from": "equipage_mara",
+      "status": "CANONICAL",
+      "to": "zone_le_vitrail_noire",
+      "type": "located_in"
+    },
+    {
+      "from": "equipage_pilote",
+      "status": "CANONICAL",
+      "to": "zone_le_vitrail_noire",
+      "type": "located_in"
+    },
+    {
+      "from": "equipage_sorel",
+      "status": "CANONICAL",
+      "to": "zone_le_vitrail_noire",
+      "type": "located_in"
+    },
+    {
+      "from": "systeme_projecteur",
+      "status": "DERIVED",
+      "to": "systeme_batterie",
+      "type": "consumes"
+    },
+    {
+      "from": "systeme_propulsion",
+      "status": "DERIVED",
+      "to": "systeme_batterie",
+      "type": "consumes"
+    },
+    {
+      "from": "zone_la_faille_des_echos",
+      "status": "DERIVED",
+      "to": "zone_le_vitrail_noire",
+      "type": "connects_to"
+    },
+    {
+      "from": "zone_la_faille_des_echos",
+      "status": "DERIVED",
+      "to": "systeme_coque",
+      "type": "damages"
+    },
+    {
+      "from": "zone_le_corridor_des_yeux",
+      "status": "DERIVED",
+      "to": "zone_le_vitrail_noire",
+      "type": "connects_to"
+    },
+    {
+      "from": "zone_le_corridor_des_yeux",
+      "status": "DERIVED",
+      "to": "systeme_coque",
+      "type": "damages"
+    },
+    {
+      "from": "zone_le_vitrail_noire",
+      "status": "DERIVED",
+      "to": "zone_la_faille_des_echos",
+      "type": "connects_to"
+    },
+    {
+      "from": "zone_le_vitrail_noire",
+      "status": "DERIVED",
+      "to": "zone_le_corridor_des_yeux",
+      "type": "connects_to"
+    },
+    {
+      "from": "zone_le_vitrail_noire",
+      "status": "DERIVED",
+      "to": "zone_les_ruines_du_son",
+      "type": "connects_to"
+    },
+    {
+      "from": "zone_les_ruines_du_son",
+      "status": "DERIVED",
+      "to": "zone_le_vitrail_noire",
+      "type": "connects_to"
+    },
+    {
+      "from": "zone_les_ruines_du_son",
+      "status": "DERIVED",
+      "to": "systeme_coque",
+      "type": "damages"
+    }
+  ],
+  "graph_version": "1.0.0",
+  "node_count": 26,
+  "nodes": {
+    "action_avancer": {
+      "id": "action_avancer",
+      "kind": "action",
+      "status": "DERIVED"
+    },
+    "action_eteindre_les_lumieres": {
+      "id": "action_eteindre_les_lumieres",
+      "kind": "action",
+      "status": "DERIVED"
+    },
+    "action_fuir": {
+      "id": "action_fuir",
+      "kind": "action",
+      "status": "DERIVED"
+    },
+    "action_interpreter": {
+      "id": "action_interpreter",
+      "kind": "action",
+      "status": "DERIVED"
+    },
+    "action_observer": {
+      "id": "action_observer",
+      "kind": "action",
+      "status": "DERIVED"
+    },
+    "action_reculer": {
+      "id": "action_reculer",
+      "kind": "action",
+      "status": "DERIVED"
+    },
+    "action_recuperer": {
+      "id": "action_recuperer",
+      "kind": "action",
+      "status": "DERIVED"
+    },
+    "action_reparer": {
+      "id": "action_reparer",
+      "kind": "action",
+      "status": "DERIVED"
+    },
+    "artefact_carte_des_profondeurs": {
+      "id": "artefact_carte_des_profondeurs",
+      "kind": "artifact",
+      "status": "CANONICAL"
+    },
+    "artefact_flasque_d_oxygene": {
+      "id": "artefact_flasque_d_oxygene",
+      "kind": "artifact",
+      "status": "CANONICAL"
+    },
+    "artefact_fragment_d_archive_abyssale": {
+      "id": "artefact_fragment_d_archive_abyssale",
+      "kind": "artifact",
+      "status": "CANONICAL"
+    },
+    "artefact_lampe_de_secours": {
+      "id": "artefact_lampe_de_secours",
+      "kind": "artifact",
+      "status": "CANONICAL"
+    },
+    "artefact_outil_de_reparation_de_coque": {
+      "id": "artefact_outil_de_reparation_de_coque",
+      "kind": "artifact",
+      "status": "CANONICAL"
+    },
+    "equipage_ilyan": {
+      "id": "equipage_ilyan",
+      "kind": "crew",
+      "status": "CANONICAL"
+    },
+    "equipage_mara": {
+      "id": "equipage_mara",
+      "kind": "crew",
+      "status": "CANONICAL"
+    },
+    "equipage_pilote": {
+      "id": "equipage_pilote",
+      "kind": "crew",
+      "status": "CANONICAL"
+    },
+    "equipage_sorel": {
+      "id": "equipage_sorel",
+      "kind": "crew",
+      "status": "CANONICAL"
+    },
+    "systeme_batterie": {
+      "id": "systeme_batterie",
+      "kind": "vessel_system",
+      "status": "DERIVED"
+    },
+    "systeme_coque": {
+      "id": "systeme_coque",
+      "kind": "vessel_system",
+      "status": "DERIVED"
+    },
+    "systeme_oxygene": {
+      "id": "systeme_oxygene",
+      "kind": "vessel_system",
+      "status": "DERIVED"
+    },
+    "systeme_projecteur": {
+      "id": "systeme_projecteur",
+      "kind": "vessel_system",
+      "status": "DERIVED"
+    },
+    "systeme_propulsion": {
+      "id": "systeme_propulsion",
+      "kind": "vessel_system",
+      "status": "DERIVED"
+    },
+    "zone_la_faille_des_echos": {
+      "id": "zone_la_faille_des_echos",
+      "kind": "zone",
+      "role": "exploration",
+      "status": "CANONICAL"
+    },
+    "zone_le_corridor_des_yeux": {
+      "id": "zone_le_corridor_des_yeux",
+      "kind": "zone",
+      "role": "exploration",
+      "status": "CANONICAL"
+    },
+    "zone_le_vitrail_noire": {
+      "id": "zone_le_vitrail_noire",
+      "kind": "zone",
+      "role": "base",
+      "status": "CANONICAL"
+    },
+    "zone_les_ruines_du_son": {
+      "id": "zone_les_ruines_du_son",
+      "kind": "zone",
+      "role": "exploration",
+      "status": "CANONICAL"
+    }
+  }
+}

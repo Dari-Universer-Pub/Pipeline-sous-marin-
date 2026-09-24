@@ -1,0 +1,107 @@
+{
+  "items": [
+    {
+      "blocked_by": "dec_nature_formes",
+      "count": 0,
+      "reason": "La nature exacte des formes terrifiantes et les anomalies observables sont declarees OUVERTES dans canon_initial.md et open_decisions.md. Les remplir serait inventer le coeur creatif.",
+      "what": "catalogue anomalies"
+    },
+    {
+      "blocked_by": "dec_nb_artefacts",
+      "count": 0,
+      "reason": "Les messages et archives retrouves dans les ruines sont declares OUVERTS dans canon_initial.md.",
+      "what": "catalogue traces"
+    },
+    {
+      "blocked_by": "dec_nb_evenements",
+      "count": 0,
+      "reason": "Le nombre d'evenements de tension et la presence d'elements de fin de boucle sont declares OUVERTS.",
+      "what": "catalogue evenements"
+    },
+    {
+      "blocked_by": "dec_importance_maintenance",
+      "count": 0,
+      "reason": "L'importance des ressources de maintenance est declaree OUVERTE dans open_decisions.md.",
+      "what": "catalogue ressources"
+    },
+    {
+      "blocked_by": "dec_nature_formes",
+      "count": 0,
+      "reason": "La nature des formes terrifiantes est declaree OUVERTE dans canon_initial.md. Aucun asset d'anomalie ne peut etre specifie sans inventer le coeur creatif du jeu.",
+      "what": "famille d'assets famille_anomalies"
+    },
+    {
+      "blocked_by": "dec_nb_artefacts",
+      "count": 0,
+      "reason": "Les messages et archives des ruines sont declares OUVERTS.",
+      "what": "famille d'assets famille_traces"
+    },
+    {
+      "blocked_by": "dec_chemin_blender",
+      "count": 0,
+      "reason": "aucun binaire livre: le framework Blender est introuvable; aucun placeholder n'est dessine",
+      "what": "binaire de asset_artefact_flasque_d_oxygene_icone"
+    },
+    {
+      "blocked_by": "dec_chemin_blender",
+      "count": 0,
+      "reason": "aucun binaire livre: le framework Blender est introuvable; aucun placeholder n'est dessine",
+      "what": "binaire de asset_artefact_fragment_d_archive_abyssale_icone"
+    },
+    {
+      "blocked_by": "dec_chemin_blender",
+      "count": 0,
+      "reason": "aucun binaire livre: le framework Blender est introuvable; aucun placeholder n'est dessine",
+      "what": "binaire de asset_artefact_lampe_de_secours_icone"
+    },
+    {
+      "blocked_by": "dec_chemin_blender",
+      "count": 0,
+      "reason": "aucun binaire livre: le framework Blender est introuvable; aucun placeholder n'est dessine",
+      "what": "binaire de asset_artefact_outil_de_reparation_de_coque_icone"
+    },
+    {
+      "blocked_by": "dec_chemin_blender",
+      "count": 0,
+      "reason": "aucun binaire livre: le framework Blender est introuvable; aucun placeholder n'est dessine",
+      "what": "binaire de asset_systeme_coque_cadran"
+    },
+    {
+      "blocked_by": "dec_chemin_blender",
+      "count": 0,
+      "reason": "aucun binaire livre: le framework Blender est introuvable; aucun placeholder n'est dessine",
+      "what": "binaire de asset_systeme_oxygene_cadran"
+    },
+    {
+      "blocked_by": "dec_chemin_blender",
+      "count": 0,
+      "reason": "aucun binaire livre: le framework Blender est introuvable; aucun placeholder n'est dessine",
+      "what": "binaire de asset_systeme_projecteur_cadran"
+    },
+    {
+      "blocked_by": "dec_chemin_blender",
+      "count": 0,
+      "reason": "aucun binaire livre: le framework Blender est introuvable; aucun placeholder n'est dessine",
+      "what": "binaire de asset_systeme_propulsion_cadran"
+    },
+    {
+      "blocked_by": "dec_chemin_blender",
+      "count": 0,
+      "reason": "aucun binaire livre: le framework Blender est introuvable; aucun placeholder n'est dessine",
+      "what": "binaire de asset_zone_la_faille_des_echos_fond"
+    },
+    {
+      "blocked_by": "dec_chemin_blender",
+      "count": 0,
+      "reason": "aucun binaire livre: le framework Blender est introuvable; aucun placeholder n'est dessine",
+      "what": "binaire de asset_zone_le_corridor_des_yeux_fond"
+    },
+    {
+      "blocked_by": "dec_chemin_blender",
+      "count": 0,
+      "reason": "aucun binaire livre: le framework Blender est introuvable; aucun placeholder n'est dessine",
+      "what": "binaire de asset_zone_les_ruines_du_son_fond"
+    }
+  ],
+  "total": 17
+}

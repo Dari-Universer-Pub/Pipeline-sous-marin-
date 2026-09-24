@@ -1,0 +1,35 @@
+{
+  "binary_fields": {
+    "file": "chemin du binaire livre, OBLIGATOIREMENT sous ASSETS_IN/<famille>/",
+    "file_sha256": "empreinte SHA-256 reelle du binaire livre (64 hex minuscules)"
+  },
+  "binary_rule": "Sans 'file' et 'file_sha256', la reponse reste une SPECIFICATION valide (binaire attendu plus tard). Avec ces champs, toute non-conformite binaire entraine le REJET.",
+  "error_codes": [
+    "asset.file_missing",
+    "asset.file_corrupt",
+    "asset.file_hash",
+    "asset.file_dimensions",
+    "asset.file_palette",
+    "asset.file_too_large",
+    "asset.file_format"
+  ],
+  "forbidden": [
+    "inventer un fait narratif",
+    "inventer un nom hors canon",
+    "redimensionner apres rendu",
+    "livrer hors palette imposee",
+    "presenter un placeholder comme contenu final"
+  ],
+  "format": "JSON strict, UTF-8, une seule racine objet",
+  "on_missing_information": "Retourner {\"status\": \"BLOCKED\", \"missing\": [...]} et NE RIEN INVENTER.",
+  "required_fields": [
+    "asset_id",
+    "entity_id",
+    "status",
+    "width",
+    "height",
+    "format",
+    "variants",
+    "directions"
+  ]
+}

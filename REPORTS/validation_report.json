@@ -1,0 +1,182 @@
+{
+  "blocking_families": [
+    "sorties_blender"
+  ],
+  "error_total": 1,
+  "families": [
+    {
+      "errors": [],
+      "family": "animations",
+      "ok": true,
+      "warnings": []
+    },
+    {
+      "errors": [],
+      "family": "assets",
+      "ok": true,
+      "warnings": [
+        "asset_artefact_carte_des_profondeurs_icone: PLANNED — incomplet tant que ART_GREEN n'est pas atteint",
+        "asset_artefact_flasque_d_oxygene_icone: PLANNED — incomplet tant que ART_GREEN n'est pas atteint",
+        "asset_artefact_fragment_d_archive_abyssale_icone: PLANNED — incomplet tant que ART_GREEN n'est pas atteint",
+        "asset_artefact_lampe_de_secours_icone: PLANNED — incomplet tant que ART_GREEN n'est pas atteint",
+        "asset_artefact_outil_de_reparation_de_coque_icone: PLANNED — incomplet tant que ART_GREEN n'est pas atteint",
+        "asset_systeme_batterie_cadran: PLANNED — incomplet tant que ART_GREEN n'est pas atteint",
+        "asset_systeme_coque_cadran: PLANNED — incomplet tant que ART_GREEN n'est pas atteint",
+        "asset_systeme_oxygene_cadran: PLANNED — incomplet tant que ART_GREEN n'est pas atteint",
+        "asset_systeme_projecteur_cadran: PLANNED — incomplet tant que ART_GREEN n'est pas atteint",
+        "asset_systeme_propulsion_cadran: PLANNED — incomplet tant que ART_GREEN n'est pas atteint",
+        "asset_zone_la_faille_des_echos_fond: PLANNED — incomplet tant que ART_GREEN n'est pas atteint",
+        "asset_zone_le_corridor_des_yeux_fond: PLANNED — incomplet tant que ART_GREEN n'est pas atteint",
+        "asset_zone_les_ruines_du_son_fond: PLANNED — incomplet tant que ART_GREEN n'est pas atteint"
+      ]
+    },
+    {
+      "errors": [],
+      "family": "assets_inutilises",
+      "ok": true,
+      "warnings": [
+        "asset non reference par une animation ni un objet: asset_zone_la_faille_des_echos_fond",
+        "asset non reference par une animation ni un objet: asset_zone_le_corridor_des_yeux_fond",
+        "asset non reference par une animation ni un objet: asset_zone_les_ruines_du_son_fond"
+      ]
+    },
+    {
+      "checked": 2,
+      "errors": [],
+      "family": "binaires_stockes",
+      "ok": true,
+      "warnings": []
+    },
+    {
+      "errors": [],
+      "family": "canonique",
+      "ok": true,
+      "warnings": [
+        "le nom du vaisseau n'apparait pas dans les catalogues"
+      ]
+    },
+    {
+      "errors": [],
+      "family": "collisions",
+      "ok": true,
+      "warnings": []
+    },
+    {
+      "errors": [],
+      "family": "economique",
+      "ok": true,
+      "warnings": [
+        "equilibrage non calculable: dec_duree_plongee et dec_frequence_degats sont des decisions ouvertes du proprietaire"
+      ]
+    },
+    {
+      "errors": [],
+      "family": "logique",
+      "ok": true,
+      "warnings": [
+        "puits (aucune relation sortante): action_interpreter",
+        "puits (aucune relation sortante): action_observer",
+        "puits (aucune relation sortante): action_recuperer",
+        "puits (aucune relation sortante): systeme_batterie",
+        "puits (aucune relation sortante): systeme_coque",
+        "puits (aucune relation sortante): systeme_oxygene"
+      ]
+    },
+    {
+      "checked": 3,
+      "errors": [],
+      "family": "maps",
+      "ok": true,
+      "warnings": []
+    },
+    {
+      "errors": [],
+      "family": "narratif",
+      "ok": true,
+      "warnings": [
+        "equipage_ilyan: routines non definies (decision proprietaire)",
+        "equipage_mara: routines non definies (decision proprietaire)",
+        "equipage_pilote: routines non definies (decision proprietaire)",
+        "equipage_sorel: routines non definies (decision proprietaire)",
+        "element narratif OUVERT non tranche: La nature exacte des formes terrifiantes.",
+        "element narratif OUVERT non tranche: Le nombre exact des zones profondes.",
+        "element narratif OUVERT non tranche: Les anomalies observables depuis la vitre.",
+        "element narratif OUVERT non tranche: Les messages ou archives retrouves dans les ruines.",
+        "element narratif OUVERT non tranche: Le vrai but de la plongee finale."
+      ]
+    },
+    {
+      "errors": [],
+      "family": "navigation",
+      "ok": true,
+      "warnings": []
+    },
+    {
+      "errors": [],
+      "family": "nommage",
+      "ok": true,
+      "warnings": []
+    },
+    {
+      "errors": [],
+      "family": "placement",
+      "ok": true,
+      "warnings": []
+    },
+    {
+      "errors": [],
+      "family": "progression",
+      "ok": true,
+      "reachable_zones": [
+        "zone_la_faille_des_echos",
+        "zone_le_corridor_des_yeux",
+        "zone_le_vitrail_noire",
+        "zone_les_ruines_du_son"
+      ],
+      "warnings": []
+    },
+    {
+      "errors": [],
+      "family": "references",
+      "ok": true,
+      "warnings": []
+    },
+    {
+      "errors": [],
+      "family": "schemas",
+      "ok": true,
+      "warnings": []
+    },
+    {
+      "errors": [
+        {
+          "code": "tool.path_missing",
+          "detail": "(aucun chemin declare)"
+        }
+      ],
+      "family": "sorties_blender",
+      "ok": false,
+      "verdict": "BLOCKED",
+      "warnings": []
+    },
+    {
+      "checked": 23,
+      "errors": [],
+      "family": "structurel",
+      "ok": true,
+      "warnings": []
+    },
+    {
+      "errors": [],
+      "family": "temporel",
+      "ok": true,
+      "warnings": [
+        "duree de plongee non fixee (dec_duree_plongee, TO_VALIDATE)",
+        "aucune saison: NOT_APPLICABLE justifie (abysse sans lumiere)"
+      ]
+    }
+  ],
+  "family_count": 19,
+  "ok": true,
+  "warning_total": 35
+}

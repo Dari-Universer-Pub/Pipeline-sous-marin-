@@ -1,0 +1,160 @@
+{
+  "actions": [
+    {
+      "affects": "systeme_propulsion",
+      "id": "action_avancer",
+      "name": "Avancer"
+    },
+    {
+      "affects": "systeme_propulsion",
+      "id": "action_reculer",
+      "name": "Reculer"
+    },
+    {
+      "affects": null,
+      "id": "action_observer",
+      "name": "Observer"
+    },
+    {
+      "affects": "systeme_projecteur",
+      "id": "action_eteindre_les_lumieres",
+      "name": "Eteindre les lumières"
+    },
+    {
+      "affects": "systeme_propulsion",
+      "id": "action_fuir",
+      "name": "Fuir"
+    },
+    {
+      "affects": "systeme_coque",
+      "id": "action_reparer",
+      "name": "Réparer"
+    },
+    {
+      "affects": null,
+      "id": "action_recuperer",
+      "name": "Récupérer"
+    },
+    {
+      "affects": null,
+      "id": "action_interpreter",
+      "name": "Interpréter"
+    }
+  ],
+  "asset_bindings": [
+    {
+      "asset_id": "asset_artefact_carte_des_profondeurs_icone",
+      "height": 32,
+      "path": "ASSETS_BIN/famille_artefacts/asset_artefact_carte_des_profondeurs_icone.png",
+      "sha256": "27d517f629b8952b14d2dcee5223b5c85f76d9f3c5ecbee05c086a2d3a1df9cf",
+      "width": 32
+    },
+    {
+      "asset_id": "asset_systeme_batterie_cadran",
+      "height": 32,
+      "path": "ASSETS_BIN/famille_cockpit/asset_systeme_batterie_cadran.png",
+      "sha256": "27d517f629b8952b14d2dcee5223b5c85f76d9f3c5ecbee05c086a2d3a1df9cf",
+      "width": 32
+    }
+  ],
+  "asset_bindings_count": 2,
+  "canon": {
+    "player": "le Pilote",
+    "vessel": "le Vitrail Noire",
+    "world": "l'Abysse de Veyr"
+  },
+  "dialogues": {
+    "compiled": true,
+    "count": 0,
+    "note": "Les dialogues essentiels seront compiles en donnees conditionnelles. Aucun n'est ecrit: le contenu des echanges depend de decisions ouvertes."
+  },
+  "engine": "godot4",
+  "navigation": {
+    "deterministic": true,
+    "mode": "avance_recule_seulement"
+  },
+  "objects": [
+    {
+      "id": "artefact_carte_des_profondeurs",
+      "name": "Carte des profondeurs",
+      "verb": "action_interpreter"
+    },
+    {
+      "id": "artefact_flasque_d_oxygene",
+      "name": "Flasque d'oxygène",
+      "verb": "action_recuperer"
+    },
+    {
+      "id": "artefact_fragment_d_archive_abyssale",
+      "name": "Fragment d'archive abyssale",
+      "verb": "action_interpreter"
+    },
+    {
+      "id": "artefact_lampe_de_secours",
+      "name": "Lampe de secours",
+      "verb": "action_observer"
+    },
+    {
+      "id": "artefact_outil_de_reparation_de_coque",
+      "name": "Outil de réparation de coque",
+      "verb": "action_reparer"
+    }
+  ],
+  "requires_blender": false,
+  "requires_llm": false,
+  "rules_engine": {
+    "costs_source": "pipeline/simulate.py",
+    "kind": "deterministe"
+  },
+  "runtime_version": "1.0.0",
+  "seed": 20260924,
+  "systems": [
+    {
+      "failure_state": "etat_asphyxie",
+      "id": "systeme_oxygene",
+      "name": "Oxygène"
+    },
+    {
+      "failure_state": "etat_panne_seche",
+      "id": "systeme_batterie",
+      "name": "Batterie"
+    },
+    {
+      "failure_state": "etat_breche",
+      "id": "systeme_coque",
+      "name": "Coque"
+    },
+    {
+      "failure_state": "etat_derive",
+      "id": "systeme_propulsion",
+      "name": "Propulsion"
+    },
+    {
+      "failure_state": "etat_obscurite",
+      "id": "systeme_projecteur",
+      "name": "Projecteur"
+    }
+  ],
+  "zones": [
+    {
+      "id": "zone_la_faille_des_echos",
+      "name": "La Faille des Échos",
+      "role": "exploration"
+    },
+    {
+      "id": "zone_le_corridor_des_yeux",
+      "name": "Le Corridor des Yeux",
+      "role": "exploration"
+    },
+    {
+      "id": "zone_le_vitrail_noire",
+      "name": "Le Vitrail Noire",
+      "role": "base"
+    },
+    {
+      "id": "zone_les_ruines_du_son",
+      "name": "Les Ruines du Son",
+      "role": "exploration"
+    }
+  ]
+}
