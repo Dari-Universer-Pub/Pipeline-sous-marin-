@@ -558,6 +558,31 @@ La pipeline doit produire les assets par familles cohérentes lorsqu’ils sont 
 
 Un prompt individuel peut être utilisé pour un asset indépendant, mais les éléments dépendants visuellement doivent être produits par famille.
 
+PRODUCTION PAR ÉCHANTILLON D'ABORD (règle bloquante)
+Ne produis jamais en volume avant d'avoir validé la chaîne sur un échantillon.
+
+Pour chaque famille, commence par DEUX éléments qui doivent être différents.
+Vérifie sur eux la palette réelle, les dimensions, et la différenciation
+mesurable définie ci-dessous. Ce n'est qu'une fois ces deux-là conformes ET
+distincts que tu produis le reste de la famille.
+
+Si un défaut apparaît, détermine d'abord s'il est SYSTÉMIQUE — c'est-à-dire
+s'il touche tous les assets de la même manière, par exemple un filtre de
+réduction, une quantification, une palette d'outil, un chemin de sortie. Dans
+ce cas :
+
+- SUSPENDS immédiatement la production, n'en fabrique pas un de plus ;
+- corrige le mécanisme, pas l'asset ;
+- prouve la correction sur les deux éléments témoins ;
+- purge les assets déjà produits sous la configuration fautive, en les
+  supprimant explicitement du stockage de référence ;
+- puis seulement, reprends.
+
+Produire en volume sous une configuration défectueuse transforme un défaut
+unique en autant de fichiers à refaire. Un problème trouvé au premier asset
+coûte une correction ; le même problème trouvé au quarantième en coûte
+quarante.
+
 DIFFÉRENCIATION MESURABLE AU SEIN D'UNE FAMILLE (règle bloquante)
 Deux assets d'une même famille censés représenter des choses différentes
 doivent être DISTINGUABLES par une mesure objective, pas seulement conformes à
