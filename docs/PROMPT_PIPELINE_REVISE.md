@@ -509,6 +509,25 @@ Les règles de placement doivent préciser :
 * relations avec les points d’intérêt.
 
 RÈGLES DES ASSETS
+COUVERTURE VISUELLE DES ENTITÉS (règle universelle, valable pour tout type)
+La règle « un asset doit avoir une entité » a une réciproque, tout aussi
+obligatoire : toute entité CANONIQUE doit avoir soit des assets planifiés, soit
+une décision écrite qu'elle n'est jamais montrée à l'écran.
+
+Une entité canonique sans aucun asset planifié est une DÉCISION, jamais un
+oubli. Les deux seules issues acceptables sont :
+- elle est visible, et ses assets et animations figurent aux manifests ;
+- elle est délibérément hors champ, et cela est inscrit comme décision du
+  propriétaire, avec sa justification.
+
+L'entre-deux silencieux est interdit. Si tu ne sais pas laquelle des deux
+s'applique, POSE LA QUESTION au lieu de trancher.
+
+Cette règle ne dépend d'aucun type d'entité : elle s'applique aux objets, lieux,
+personnages, créatures, machines, ressources, phénomènes, et à tout ce que le
+canon de CE jeu nomme. Un jeu sans personnages y est soumis exactement autant
+qu'un jeu qui en a.
+
 Un asset ne doit jamais être généré isolément sans contexte.
 Chaque asset doit être rattaché à :
 
@@ -673,11 +692,8 @@ Chaque PNJ ou agent important doit pouvoir avoir :
 * des assets nécessaires, ou la décision explicite qu'il n'est jamais montré ;
 * des animations nécessaires si le PNJ est visible.
 
-Un PNJ canonique sans aucun asset planifié est une DÉCISION, pas un oubli : soit
-il est visible et ses assets sont planifiés, soit il est délibérément hors champ
-et cela est inscrit comme décision du propriétaire, avec sa justification. Ne
-laisse jamais une entité canonique sans représentation visuelle ET sans décision
-écrite. Cette règle vaut pour toute entité canonique, pas seulement les PNJ.
+Les PNJ sont soumis à la COUVERTURE VISUELLE DES ENTITÉS énoncée dans les
+règles des assets, comme toute autre entité canonique.
 
 Les dialogues doivent être générés à partir de :
 
@@ -1146,6 +1162,9 @@ Suis précisément cet ordre :
 69. Vérifier que le jeu final ne dépend pas de Blender runtime.
 70. Produire l’AUDIT DE COUVERTURE décrit ci-dessous.
 71. Vérifier qu’aucun doublon d’empreinte SHA-256 n’existe entre deux asset_id.
+71b. Vérifier la COUVERTURE VISUELLE DES ENTITÉS : lister chaque entité
+   canonique et, en face, ses assets planifiés ou la décision écrite qu’elle
+   n’est jamais montrée. Aucune ligne ne peut rester vide des deux côtés.
 72. Vérifier qu’ASSETS_BIN ne contient aucune fixture de test.
 73. Relire ce prompt en entier et corriger tout item omis, ou le déclarer.
 
@@ -1269,6 +1288,8 @@ La pipeline ne peut être déclarée terminée que si :
   raison ;
 * tout écart entre le plan annoncé en passe 1 et le livrable réel est expliqué ;
 * aucun doublon d’empreinte SHA-256 n’existe entre deux asset_id ;
+* chaque entité canonique a soit des assets planifiés, soit une décision écrite
+  qu’elle n’est jamais montrée ;
 * ASSETS_BIN ne contient aucune fixture de test.
 
 Tu dois donc terminer la fabrique qui produira le jeu, et non produire le jeu lui-même.
