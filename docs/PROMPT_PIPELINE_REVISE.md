@@ -422,6 +422,38 @@ Avant de valider une quantité, la pipeline doit expliquer :
 * quelles animations sont nécessaires ;
 * quels tests le couvrent.
 
+CHARPENTE DU JEU (distincte du contenu)
+Le canon décrit le MONDE. Il ne décrit pas la structure du JEU. Un catalogue
+complet d'entités canoniques ne fait pas un jeu jouable.
+
+Tu dois donc planifier, en plus du contenu, la charpente qui le porte :
+
+* la boucle jouable : la séquence exacte d'une session, du début à la fin, avec
+  ses états, ses transitions et ses conditions d'arrêt ;
+* le cadrage : ce que l'écran montre en permanence — bordure, cockpit, fenêtre,
+  caméra, hors-champ — et qui n'appartient à aucune entité du canon ;
+* le son : ambiances, événements sonores, silence, et leur lien avec les états
+  du jeu. Un jeu sans plan sonore est un jeu à moitié spécifié ;
+* l'interface : ce que le joueur lit et manipule — jauges, inventaire, menus,
+  retours d'action, écrans de transition ;
+* la progression : ce qui change d'une session à la suivante, ce qui se
+  débloque, ce qui persiste, ce dont le jeu se souvient ;
+* le placement réel : pas seulement des règles de principe, mais ce qui apparaît
+  concrètement dans chaque lieu, en quelle quantité et sous quelles conditions.
+
+Ces éléments sont rarement nommés dans un canon, parce qu'ils relèvent de la
+mécanique et non de la fiction. Leur absence du canon n'est donc PAS une raison
+de les omettre — c'est précisément pour cela qu'ils passent inaperçus.
+
+Pour chacun : s'il est déductible du brief et des systèmes de gameplay,
+planifie-le et documente la déduction. Sinon, déclare-le MANQUANT et pose la
+question. Ne l'invente jamais.
+
+Et ne conclus JAMAIS qu'il n'y a plus rien à produire tant que cette liste n'a
+pas été traitée point par point. Une liste de production vide ne prouve pas que
+le jeu est spécifié : elle prouve seulement que tout ce qui était inscrit a été
+fait.
+
 RÈGLES DE NOMMAGE
 Les noms doivent être cohérents avec :
 
@@ -1219,6 +1251,9 @@ Suis précisément cet ordre :
 69. Vérifier que le jeu final ne dépend pas de Blender runtime.
 70. Produire l’AUDIT DE COUVERTURE décrit ci-dessous.
 71. Vérifier qu’aucun doublon d’empreinte SHA-256 n’existe entre deux asset_id.
+71e. Vérifier la CHARPENTE DU JEU : boucle jouable, cadrage, son, interface,
+   progression, placement réel. Chaque point est planifié, ou déclaré manquant
+   avec la question posée. Aucun ne reste silencieux.
 71c. Vérifier que l’outil externe a honoré les paramètres transmis, et qu’une
    seule quantification de palette a lieu.
 71d. Vérifier la DIFFÉRENCIATION MESURABLE entre les assets de chaque famille.
@@ -1352,6 +1387,7 @@ La pipeline ne peut être déclarée terminée que si :
   qu’elle n’est jamais montrée ;
 * l’outil externe a honoré les paramètres transmis, sans quantification double ;
 * aucune paire d’assets d’une même famille n’est sous le seuil de différenciation ;
+* les six points de la CHARPENTE DU JEU sont planifiés ou déclarés manquants ;
 * ASSETS_BIN ne contient aucune fixture de test.
 
 Tu dois donc terminer la fabrique qui produira le jeu, et non produire le jeu lui-même.
