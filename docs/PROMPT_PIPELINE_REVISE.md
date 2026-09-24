@@ -557,6 +557,27 @@ La pipeline doit produire les assets par familles cohérentes lorsqu’ils sont 
 * familles d’objets.
 
 Un prompt individuel peut être utilisé pour un asset indépendant, mais les éléments dépendants visuellement doivent être produits par famille.
+
+DIFFÉRENCIATION MESURABLE AU SEIN D'UNE FAMILLE (règle bloquante)
+Deux assets d'une même famille censés représenter des choses différentes
+doivent être DISTINGUABLES par une mesure objective, pas seulement conformes à
+la palette. Conformité et distinction sont deux contrôles séparés : deux assets
+peuvent respecter la palette imposée et rester indiscernables.
+
+Mesure au minimum, entre chaque paire d'assets d'une même famille :
+- la distance entre leurs couleurs dominantes ;
+- la comparaison de leurs histogrammes de valeurs ;
+- leur taux de remplissage du cadre ;
+- le nombre de teintes distinctes réellement utilisées.
+
+En dessous du seuil, c'est une ERREUR : les deux assets sont trop proches, et
+le rapport doit nommer la paire fautive et la mesure en cause.
+
+N'AUTOMATISE JAMAIS UN JUGEMENT ESTHÉTIQUE. Une métrique de « beauté » est
+jouable et se trompe de registre : un style volontairement flou, informe ou
+minimaliste échouerait à un contrôle de netteté tout en étant exactement
+conforme à l'intention. La machine vérifie la conformité et la distinction ;
+le propriétaire juge si c'est bon. Ces deux contrôles ne se confondent pas.
 RÈGLES D’INTÉGRATION BLENDER
 Le framework Blender est un outil de production hors ligne.
 La pipeline doit rester responsable de :
@@ -597,7 +618,18 @@ L’adaptateur Blender doit :
 * retourner les empreintes SHA-256 des fichiers produits ;
 * retourner les dimensions ;
 * signaler les erreurs ;
-* transmettre les sorties aux validateurs.
+* transmettre les sorties aux validateurs ;
+* VÉRIFIER QUE L'OUTIL A HONORÉ LES PARAMÈTRES TRANSMIS.
+
+Transmettre un paramètre ne garantit pas qu'il est appliqué. Après chaque
+production, compare la sortie réelle aux paramètres envoyés — palette,
+dimensions, variantes, directions — et signale tout écart comme une
+INCOMPATIBILITÉ DE L'OUTIL, distincte d'un défaut de l'asset. Un outil externe
+qui possède sa propre palette, ses propres rampes de couleur ou son propre
+filtre de réduction peut écraser silencieusement ce que la pipeline impose.
+Vérifie notamment qu'une seule quantification a lieu, et vers la palette
+imposée : deux quantifications successives (celle de l'outil puis celle de la
+pipeline) détruisent l'intention de couleur sans aucun message d'erreur.
 
 Un asset suit obligatoirement ce cycle :
 PLANNED
@@ -1162,6 +1194,9 @@ Suis précisément cet ordre :
 69. Vérifier que le jeu final ne dépend pas de Blender runtime.
 70. Produire l’AUDIT DE COUVERTURE décrit ci-dessous.
 71. Vérifier qu’aucun doublon d’empreinte SHA-256 n’existe entre deux asset_id.
+71c. Vérifier que l’outil externe a honoré les paramètres transmis, et qu’une
+   seule quantification de palette a lieu.
+71d. Vérifier la DIFFÉRENCIATION MESURABLE entre les assets de chaque famille.
 71b. Vérifier la COUVERTURE VISUELLE DES ENTITÉS : lister chaque entité
    canonique et, en face, ses assets planifiés ou la décision écrite qu’elle
    n’est jamais montrée. Aucune ligne ne peut rester vide des deux côtés.
@@ -1290,6 +1325,8 @@ La pipeline ne peut être déclarée terminée que si :
 * aucun doublon d’empreinte SHA-256 n’existe entre deux asset_id ;
 * chaque entité canonique a soit des assets planifiés, soit une décision écrite
   qu’elle n’est jamais montrée ;
+* l’outil externe a honoré les paramètres transmis, sans quantification double ;
+* aucune paire d’assets d’une même famille n’est sous le seuil de différenciation ;
 * ASSETS_BIN ne contient aucune fixture de test.
 
 Tu dois donc terminer la fabrique qui produira le jeu, et non produire le jeu lui-même.
