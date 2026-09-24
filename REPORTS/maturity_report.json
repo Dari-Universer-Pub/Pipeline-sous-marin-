@@ -1,7 +1,9 @@
 {
-  "complete": 0,
+  "complete": 1,
   "distribution": {
-    "PLANNED": 23
+    "ART_GREEN": 1,
+    "IMPORTED": 1,
+    "PLANNED": 21
   },
   "rows": [
     {
@@ -85,11 +87,11 @@
       "stored_binary": false
     },
     {
-      "complete": false,
+      "complete": true,
       "id": "asset_artefact_carte_des_profondeurs_icone",
       "kind": "asset",
-      "next_step": "GENERATED",
-      "status": "PLANNED",
+      "next_step": null,
+      "status": "ART_GREEN",
       "stored_binary": true
     },
     {
@@ -128,8 +130,8 @@
       "complete": false,
       "id": "asset_systeme_batterie_cadran",
       "kind": "asset",
-      "next_step": "GENERATED",
-      "status": "PLANNED",
+      "next_step": "VALIDATED",
+      "status": "IMPORTED",
       "stored_binary": true
     },
     {

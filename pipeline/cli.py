@@ -104,6 +104,30 @@ def cmd_validate(framework_path=None):
     return 0 if rep["ok"] else 1
 
 
+def cmd_lifecycle():
+    from .lifecycle import load, summary
+    s = summary()
+    print(f"cycle de vie   : {s['tracked']} assets suivis — {s['distribution']}")
+    for aid, e in sorted(load()["assets"].items()):
+        print(f"  {e['status']:<15} {aid}")
+    return 0
+
+
+def cmd_advance(asset_id=None, status=None):
+    """Fait avancer un asset d'EXACTEMENT une etape. Aucun saut possible."""
+    from .lifecycle import record
+    if not asset_id or not status:
+        print("usage: python -m pipeline.cli advance <asset_id> <statut>")
+        return 64
+    try:
+        e = record(asset_id, status.upper())
+    except ValueError as err:
+        print(f"REFUSE: {err}")
+        return 1
+    print(f"{asset_id}: {e['history'][-1]['from']} -> {e['status']}")
+    return 0
+
+
 def cmd_verify_bin():
     from .assets_bin import reverify_all
     rv = reverify_all()
@@ -160,7 +184,8 @@ def cmd_all(framework_path=None):
                      ("PROMPTS", cmd_prompts),
                      ("BLENDER", lambda: cmd_blender(framework_path)),
                      ("VALIDATION", lambda: cmd_validate(framework_path)),
-                     ("BINAIRES", cmd_verify_bin), ("SIMULATION", cmd_simulate),
+                     ("BINAIRES", cmd_verify_bin), ("CYCLE_DE_VIE", cmd_lifecycle),
+                     ("SIMULATION", cmd_simulate),
                      ("COMPILATION", cmd_compile),
                      ("RAPPORTS", lambda: cmd_report(framework_path))]:
         print(f"\n--- {name} ---")
@@ -179,7 +204,8 @@ def cmd_all(framework_path=None):
 COMMANDS = {"all": cmd_all, "canon": cmd_canon, "manifests": cmd_manifests,
             "prompts": cmd_prompts, "blender": cmd_blender, "validate": cmd_validate,
             "verify-bin": cmd_verify_bin, "simulate": cmd_simulate,
-            "compile": cmd_compile, "report": cmd_report}
+            "compile": cmd_compile, "report": cmd_report,
+            "advance": cmd_advance, "lifecycle": cmd_lifecycle}
 
 
 def main(argv=None):
@@ -191,8 +217,10 @@ def main(argv=None):
     if cmd not in COMMANDS:
         print(f"commande inconnue: {cmd}\n{__doc__}")
         return 64
-    fp = argv[1] if len(argv) > 1 else None
     fn = COMMANDS[cmd]
+    if cmd == "advance":
+        return fn(*argv[1:3])
+    fp = argv[1] if len(argv) > 1 else None
     return fn(fp) if cmd in ("all", "blender", "validate", "report") else fn()
 
 

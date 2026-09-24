@@ -5,10 +5,11 @@ nominal, rejet, volume, donnee orpheline, reproductibilite, integration runtime,
 plus l'integration Blender et la verification binaire.
 """
 from __future__ import annotations
-import shutil, tempfile, unittest
+import os, shutil, tempfile, unittest
 from pathlib import Path
 
 from pipeline import binary_check as bc
+from pipeline import lifecycle
 from pipeline import blender_adapter as ba
 from pipeline import simulate, compile_runtime, validators, reports
 from pipeline.assets_bin import STORE, load_registry, reverify_all, store
@@ -17,7 +18,7 @@ from pipeline.catalogs import build as catalogs_build
 from pipeline.graph import build as graph_build, analyse
 from pipeline.ids import check_id, make_id
 from pipeline.importers import import_result
-from pipeline.inputs import load_all, missing_mandatory
+from pipeline.inputs import load_all, missing_mandatory, missing_optional
 from pipeline.manifests import build as manifests_build
 from pipeline.ontology import build as ontology_build
 from pipeline.palette import ABYSS_16
@@ -28,6 +29,21 @@ from pipeline.util import ROOT, jdump, sha256_file
 from tools.make_fixture_png import indexed_png
 
 DELIVERY = ROOT / "ASSETS_IN" / "fixture_tests"
+
+_LIFECYCLE_TMP = None
+
+
+def setUpModule():
+    """Isole le magasin de cycle de vie: les tests ne doivent jamais dependre
+    de ce qui a reellement ete produit sur la machine, ni le polluer."""
+    global _LIFECYCLE_TMP
+    _LIFECYCLE_TMP = tempfile.mkdtemp(prefix="abg_lifecycle_")
+    os.environ[lifecycle.ENV_VAR] = str(Path(_LIFECYCLE_TMP) / "lifecycle.json")
+
+
+def tearDownModule():
+    os.environ.pop(lifecycle.ENV_VAR, None)
+    shutil.rmtree(_LIFECYCLE_TMP, ignore_errors=True)
 
 
 def state():
@@ -47,10 +63,22 @@ class TestInputs(unittest.TestCase):
                 self.assertTrue(e["utf8"], f"{path} non UTF-8")
                 self.assertFalse(e["bom"], f"{path} porte un BOM")
 
-    def test_external_tools_absent_est_signale(self):
-        """L'entree manquante est remontee, jamais inventee."""
+    def test_entree_manquante_est_signalee_jamais_inventee(self):
+        """Teste le COMPORTEMENT, pas l'etat de l'environnement.
+
+        external_tools.md peut legitimement exister (blocage leve) ou non.
+        Dans les deux cas: s'il manque, il doit etre signale; s'il est la, il
+        doit etre lisible. Jamais invente ni ignore silencieusement.
+        """
         loaded = load_all()
-        self.assertFalse(loaded["INPUT/external_tools.md"]["present"])
+        e = loaded["INPUT/external_tools.md"]
+        if e["present"]:
+            self.assertTrue(e["utf8"], "external_tools.md present mais illisible")
+            self.assertEqual(e["status"], "LOADED")
+            self.assertNotIn("INPUT/external_tools.md", missing_optional(loaded))
+        else:
+            self.assertIn("INPUT/external_tools.md", missing_optional(loaded))
+            self.assertIsNone(e["text"], "aucun contenu ne doit etre invente")
 
 
 class TestCanon(unittest.TestCase):
@@ -390,11 +418,23 @@ class TestPrompts(unittest.TestCase):
 
 
 class TestValidateurs(unittest.TestCase):
-    def test_seule_famille_en_echec_est_blender(self):
+    def test_aucune_famille_interne_en_echec(self):
+        """Seule la famille Blender peut echouer, et seulement si le framework
+        est absent. Toutes les familles INTERNES doivent passer quel que soit
+        l'etat de l'environnement."""
         canon, _, catalogs, graph, manifests = state()
         rep = validators.run_all(canon=canon, catalogs=catalogs, graph=graph,
                                  manifests=manifests)
-        self.assertEqual(rep["blocking_families"], ["sorties_blender"])
+        internes = [f for f in rep["blocking_families"] if f != "sorties_blender"]
+        self.assertEqual(internes, [], f"familles internes en echec: {internes}")
+
+    def test_blender_absent_bloque_sa_famille(self):
+        """Comportement verifie explicitement, sans dependre de la machine."""
+        canon, _, catalogs, graph, manifests = state()
+        rep = validators.run_all(canon=canon, catalogs=catalogs, graph=graph,
+                                 manifests=manifests,
+                                 framework_path="/chemin/inexistant/FRAMEWORK")
+        self.assertIn("sorties_blender", rep["blocking_families"])
 
     def test_animation_sans_action_est_rejetee(self):
         canon, _, catalogs, graph, manifests = state()
@@ -483,10 +523,19 @@ class TestRuntime(unittest.TestCase):
 
 class TestRapports(unittest.TestCase):
     def test_maturite_aucun_asset_premature(self):
+        """Invariant de comportement, pas comptage d'environnement: tout asset
+        declare ART_GREEN doit avoir traverse les six etapes, sans saut."""
         canon, _, catalogs, graph, manifests = state()
         rep = reports.maturity(catalogs, manifests, graph)
-        self.assertEqual(rep["complete"], 0,
-                         "aucun asset ne doit etre ART_GREEN sans Blender")
+        for row in rep["rows"]:
+            if row["complete"]:
+                e = lifecycle.entry(row["id"])
+                self.assertIsNotNone(e, f"{row['id']} ART_GREEN sans historique")
+                atteints = [h["to"] for h in e["history"]]
+                for etape in ["GENERATED", "IMPORTED", "VALIDATED",
+                              "RUNTIME_TESTED", "ART_GREEN"]:
+                    self.assertIn(etape, atteints,
+                                  f"{row['id']} ART_GREEN sans passer par {etape}")
 
     def test_decisions_ouvertes_listees(self):
         rep = reports.open_decisions()

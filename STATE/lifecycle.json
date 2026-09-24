@@ -1,0 +1,74 @@
+{
+  "assets": {
+    "asset_artefact_carte_des_profondeurs_icone": {
+      "asset_id": "asset_artefact_carte_des_profondeurs_icone",
+      "history": [
+        {
+          "from": "PLANNED",
+          "note": "binaire verifie et stocke: ASSETS_BIN/famille_artefacts/asset_artefact_carte_des_profondeurs_icone.png",
+          "to": "GENERATED"
+        },
+        {
+          "from": "GENERATED",
+          "note": "binaire verifie et stocke: ASSETS_BIN/famille_artefacts/asset_artefact_carte_des_profondeurs_icone.png",
+          "to": "IMPORTED"
+        },
+        {
+          "from": "IMPORTED",
+          "note": "idempotent: binaire verifie et stocke: ASSETS_BIN/famille_artefacts/asset_artefact_carte_des_profondeurs_icone.png",
+          "to": "IMPORTED"
+        },
+        {
+          "from": "IMPORTED",
+          "note": "idempotent: binaire verifie et stocke: ASSETS_BIN/famille_artefacts/asset_artefact_carte_des_profondeurs_icone.png",
+          "to": "IMPORTED"
+        },
+        {
+          "from": "IMPORTED",
+          "note": null,
+          "to": "VALIDATED"
+        },
+        {
+          "from": "VALIDATED",
+          "note": null,
+          "to": "RUNTIME_TESTED"
+        },
+        {
+          "from": "RUNTIME_TESTED",
+          "note": null,
+          "to": "ART_GREEN"
+        }
+      ],
+      "sha256": "27d517f629b8952b14d2dcee5223b5c85f76d9f3c5ecbee05c086a2d3a1df9cf",
+      "status": "ART_GREEN"
+    },
+    "asset_systeme_batterie_cadran": {
+      "asset_id": "asset_systeme_batterie_cadran",
+      "history": [
+        {
+          "from": "PLANNED",
+          "note": "binaire verifie et stocke: ASSETS_BIN/famille_cockpit/asset_systeme_batterie_cadran.png",
+          "to": "GENERATED"
+        },
+        {
+          "from": "GENERATED",
+          "note": "binaire verifie et stocke: ASSETS_BIN/famille_cockpit/asset_systeme_batterie_cadran.png",
+          "to": "IMPORTED"
+        },
+        {
+          "from": "IMPORTED",
+          "note": "idempotent: binaire verifie et stocke: ASSETS_BIN/famille_cockpit/asset_systeme_batterie_cadran.png",
+          "to": "IMPORTED"
+        },
+        {
+          "from": "IMPORTED",
+          "note": "idempotent: binaire verifie et stocke: ASSETS_BIN/famille_cockpit/asset_systeme_batterie_cadran.png",
+          "to": "IMPORTED"
+        }
+      ],
+      "sha256": "27d517f629b8952b14d2dcee5223b5c85f76d9f3c5ecbee05c086a2d3a1df9cf",
+      "status": "IMPORTED"
+    }
+  },
+  "version": 1
+}

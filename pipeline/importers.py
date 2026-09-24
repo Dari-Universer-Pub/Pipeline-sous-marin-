@@ -8,6 +8,7 @@ from __future__ import annotations
 from pathlib import Path
 from .assets_bin import store
 from .binary_check import verify
+from .lifecycle import record
 from .schemas import validate
 from .status import advance_asset
 from .util import ROOT, write_json
@@ -109,6 +110,8 @@ def import_result(response: dict, manifest_assets: list, *, known_ids=None) -> d
         out["errors"].append({"code": "import.status", "detail": str(e)})
         return out
 
+    record(asset_id, "IMPORTED", sha256=st["sha256"], allow_initial=True,
+           note=f"binaire verifie et stocke: {st['stored_path']}")
     out.update(ok=True, status=status, stored_path=st["stored_path"],
                sha256=st["sha256"], width=st["width"], height=st["height"],
                format=st["format"])

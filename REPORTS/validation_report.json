@@ -15,12 +15,11 @@
       "family": "assets",
       "ok": true,
       "warnings": [
-        "asset_artefact_carte_des_profondeurs_icone: PLANNED — incomplet tant que ART_GREEN n'est pas atteint",
         "asset_artefact_flasque_d_oxygene_icone: PLANNED — incomplet tant que ART_GREEN n'est pas atteint",
         "asset_artefact_fragment_d_archive_abyssale_icone: PLANNED — incomplet tant que ART_GREEN n'est pas atteint",
         "asset_artefact_lampe_de_secours_icone: PLANNED — incomplet tant que ART_GREEN n'est pas atteint",
         "asset_artefact_outil_de_reparation_de_coque_icone: PLANNED — incomplet tant que ART_GREEN n'est pas atteint",
-        "asset_systeme_batterie_cadran: PLANNED — incomplet tant que ART_GREEN n'est pas atteint",
+        "asset_systeme_batterie_cadran: IMPORTED — incomplet tant que ART_GREEN n'est pas atteint",
         "asset_systeme_coque_cadran: PLANNED — incomplet tant que ART_GREEN n'est pas atteint",
         "asset_systeme_oxygene_cadran: PLANNED — incomplet tant que ART_GREEN n'est pas atteint",
         "asset_systeme_projecteur_cadran: PLANNED — incomplet tant que ART_GREEN n'est pas atteint",
@@ -178,5 +177,5 @@
   ],
   "family_count": 19,
   "ok": true,
-  "warning_total": 35
+  "warning_total": 34
 }

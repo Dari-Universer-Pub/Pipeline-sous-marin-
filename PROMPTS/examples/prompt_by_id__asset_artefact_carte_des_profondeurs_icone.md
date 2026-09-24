@@ -171,9 +171,10 @@ Tu produis UN asset pour le jeu Abyssal Glass via le framework Blender declare.
         66
       ]
     ],
+    "produced_sha256": "27d517f629b8952b14d2dcee5223b5c85f76d9f3c5ecbee05c086a2d3a1df9cf",
     "producer": "framework_blender",
     "resolution": "32x32@1x",
-    "status": "PLANNED",
+    "status": "ART_GREEN",
     "style": "pixel art 2D, mise a l'echelle entiere, sombre / oppressant / atmospherique, vue unique depuis l'interieur du sous-marin",
     "validations": [
       "binaire: octets magiques PNG + IHDR",
@@ -230,7 +231,7 @@ Tu produis UN asset pour le jeu Abyssal Glass via le framework Blender declare.
       "uses_asset"
     ]
   },
-  "production_status": "PLANNED",
+  "production_status": "ART_GREEN",
   "response_contract": {
     "binary_fields": {
       "file": "chemin du binaire livre, OBLIGATOIREMENT sous ASSETS_IN/<famille>/",

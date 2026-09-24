@@ -4,6 +4,7 @@ Aucun asset n'est genere ici. Tout asset naît au statut PLANNED.
 """
 from __future__ import annotations
 from .ids import make_id
+from .lifecycle import overlay
 from .palette import colors
 from .schemas import TILE
 from .util import ROOT, write_json
@@ -108,8 +109,10 @@ def build(canon, catalogs, graph) -> dict:
     manifests = {
         "manifest_version": "1.0.0",
         "seed": 20260924,
-        "assets": {"entries": sorted(assets, key=lambda a: a["id"]), "count": len(assets)},
-        "animations": {"entries": sorted(anims, key=lambda a: a["id"]), "count": len(anims)},
+        "assets": {"entries": overlay(sorted(assets, key=lambda a: a["id"])),
+                   "count": len(assets)},
+        "animations": {"entries": overlay(sorted(anims, key=lambda a: a["id"])),
+                       "count": len(anims)},
         "blocked_families": blocked_families,
         "objets": {"entries": [
             {"id": a["id"], "display_name": a["display_name"], "category": a["category"],

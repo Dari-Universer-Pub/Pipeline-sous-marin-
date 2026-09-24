@@ -99,6 +99,7 @@ SCHEMAS = {
         "status": f("enum", values=ASSET_LIFECYCLE + ["BLOCKED"]),
         "file": f("str", required=False),
         "file_sha256": f("str", required=False, pattern=r"^[0-9a-f]{64}$"),
+        "produced_sha256": f("str", required=False, pattern=r"^[0-9a-f]{64}$"),
     },
     "animation": {
         "id": f("id"), "entity_id": f("id"),
@@ -110,6 +111,7 @@ SCHEMAS = {
         "assets": f("list", of=f("ref", kind="asset"), min=1),
         "tests": f("list", of=f("str"), min=1),
         "status": f("enum", values=ASSET_LIFECYCLE + ["BLOCKED"]),
+        "produced_sha256": f("str", required=False, pattern=r"^[0-9a-f]{64}$"),
     },
     "map": {   # "fenetre de profondeur", cf. contra_tuiles_vs_vue_unique
         "id": f("id"), "display_name": f("str"),
